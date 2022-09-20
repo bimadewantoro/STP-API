@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -31,5 +32,9 @@ $api->version('v1', function ($api) {
     $api->group(['middleware' => 'auth:api'], function ($api) {
         $api->post('/token/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
         $api->post('/users/logout', 'App\Http\Controllers\Auth\AuthController@logout');
+    });
+
+    $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
+        $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
     });
 });
