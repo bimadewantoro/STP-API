@@ -32,6 +32,8 @@ $api->version('v1', function ($api) {
     $api->group(['middleware' => 'auth:api'], function ($api) {
         $api->post('/token/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
         $api->post('/users/logout', 'App\Http\Controllers\Auth\AuthController@logout');
+        $api->get('/users/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
+        $api->put('/users/update', 'App\Http\Controllers\Auth\AuthController@update');
     });
 
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
