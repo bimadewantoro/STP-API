@@ -33,6 +33,7 @@ class UserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
+            'password_confirmation' => ['required', 'string', 'same:password'],
         ]);
 
         if ($validator->fails()) {
@@ -46,6 +47,7 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'password_confirmation' => Hash::make($request->password_confirmation),
         ]);
 
         
@@ -80,7 +82,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**
@@ -103,6 +105,12 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'User deleted successfully',
+        ], 200);
     }
 }
