@@ -50,7 +50,7 @@ class UserController extends Controller
             'password_confirmation' => Hash::make($request->password_confirmation),
         ]);
 
-        
+        $user->assignRole('tenant');
 
         try {
             $token = auth()->login($user);
