@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
+use UserTransformer;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
+use App\Transformers\UserTransformer as TransformersUserTransformer;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AdminUserController extends Controller
 {
@@ -16,6 +18,7 @@ class AdminUserController extends Controller
      */
     public function index()
     {
+        
         if (! $users = User::with('roles')->get()) {
             return response()->json([
                 'success' => false,
