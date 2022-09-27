@@ -36,7 +36,6 @@ $api->version('v1', function ($api) {
             $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
         });
     });
-   
 
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
