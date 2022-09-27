@@ -1,5 +1,6 @@
 <?php
 
+use Dingo\Api\Auth\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,14 +30,17 @@ $api->version('v1', function ($api) {
     $api->group(['prefix' => 'auth'], function ($api) {
         $api->post('/signup', 'App\Http\Controllers\UserController@store');
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
+        $api->get('email/verify/{id}', 'App\Http\Controllers\Auth\VerificationController@verify')->name('verification.verify');
+        $api->get('email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('verification.resend');
         $api->group(['middleware' => 'auth:api'], function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
             $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
         });
+
     });
-   
+    
 
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');

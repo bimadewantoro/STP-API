@@ -48,7 +48,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'password_confirmation' => Hash::make($request->password_confirmation),
-        ]);
+        ])->sendEmailVerificationNotification();
 
         $user->assignRole('tenant');
 
