@@ -36,6 +36,11 @@ class RolesAndPermissionSeeder extends Seeder
         $deletePermission = 'delete-permission';
         $viewPermission = 'view-permission';
 
+        $addTenantDetail = 'add-tenant-detail';
+        $editTenantDetail = 'edit-tenant-detail';
+        $deleteTenantDetail = 'delete-tenant-detail';
+        $viewTenantDetail = 'view-tenant-detail';
+
         $addProposal = 'add-proposal';
         $editProposal = 'edit-proposal';
         $deleteProposal = 'delete-proposal';
@@ -71,6 +76,11 @@ class RolesAndPermissionSeeder extends Seeder
         Permission::create(['name' => $deletePermission]);
         Permission::create(['name' => $viewPermission]);
 
+        Permission::create(['name' => $addTenantDetail]);
+        Permission::create(['name' => $editTenantDetail]);
+        Permission::create(['name' => $deleteTenantDetail]);
+        Permission::create(['name' => $viewTenantDetail]);
+
         Permission::create(['name' => $addProposal]);
         Permission::create(['name' => $editProposal]);
         Permission::create(['name' => $deleteProposal]);
@@ -103,12 +113,14 @@ class RolesAndPermissionSeeder extends Seeder
                 $addUser, $editUser, $deleteUser, $viewUser, $approveUser, $suspendUser,
                 $addRole, $editRole, $deleteRole, $viewRole,
                 $addPermission, $editPermission, $deletePermission, $viewPermission,
+                $addTenantDetail, $editTenantDetail, $deleteTenantDetail, $viewTenantDetail,
                 $addProposal, $editProposal, $deleteProposal, $viewProposal, $approveProposal, $rejectProposal,
                 $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
                 $addActivity, $editActivity, $deleteActivity, $viewActivity,
             ]);
         Role::create(['name' => $tenant])
             ->givePermissionTo([
+                $addTenantDetail, $editTenantDetail, $deleteTenantDetail, $viewTenantDetail,
                 $addProposal, $editProposal, $deleteProposal, $viewProposal,
                 $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
                 $addActivity, $editActivity, $deleteActivity, $viewActivity,
