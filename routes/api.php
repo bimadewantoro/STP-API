@@ -27,7 +27,7 @@ $api->version('v1', function ($api) {
         return 'Hello STP-API';
     });
     
-    $api->group(['prefix' => 'auth'], function ($api) {
+    $api->group(['prefix' => 'auth', 'verify' => true], function ($api) {
         $api->post('/signup', 'App\Http\Controllers\UserController@store');
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
         $api->get('email/verify/{id}', 'App\Http\Controllers\Auth\VerificationController@verify')->name('verification.verify');
