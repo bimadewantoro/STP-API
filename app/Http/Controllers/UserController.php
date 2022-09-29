@@ -7,6 +7,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Controller;
+use Tymon\JWTAuth\Exceptions\JWTException;
+    
+
 
 
 class UserController extends Controller
@@ -72,7 +77,7 @@ class UserController extends Controller
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 60
+            'expires_in' => auth('api')->factory()->getTTL() * 60,
         ]);
     }
 
@@ -96,7 +101,31 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [ 
+            'name' => 'required',
+            'oldpassword' => 'required',
+            'newpassword' => 'required',
+        ]);
+ 
+        $hashedPassword = Auth::user()->password;
+        if (Hash::check($request->oldpassword , $hashedPassword)) {
+            if (Hash::check($request->newpassword , $hashedPassword)) {
+ 
+                $users = user::find(Auth::user()->id);
+                $users->password = bcrypt($request->newpassword);
+                $users->save();
+                session()->flash('message','password updated successfully');
+                return redirect()->back();
+            }
+            else{
+                session()->flash('message','new password can not be the old password!');
+                return redirect()->back();
+            } 
+        }
+        else{
+            session()->flash('message','old password doesnt matched');
+            return redirect()->back();
+        }
     }
 
     /**
@@ -115,4 +144,17 @@ class UserController extends Controller
             'message' => 'User deleted successfully',
         ], 200);
     }
+
+    /**
+    * Write code on Method
+    *
+    * @return response()
+    */
+    public function edit($id)
+    {
+        $users = user::find(Auth::user()->id);
+        return view('settings',compact('users'));
+    }
+    
+    
 }
