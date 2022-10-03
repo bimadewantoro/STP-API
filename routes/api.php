@@ -19,9 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::group(['middleware'=>'auth' ,'prefix'=>'user'], function() {  
-    Route::resource('settings', UserController::class);
-});
+
 
 $api =  app('Dingo\Api\Routing\Router');
 
@@ -35,6 +33,8 @@ $api->version('v1', function ($api) {
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
         $api->get('email/verify/{id}', 'App\Http\Controllers\Auth\VerificationController@verify')->name('verification.verify');
         $api->get('email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('verification.resend');
+        $api->get('change-password', 'App\Http\Controllers\ChangePasswordController@index');
+        $api->post('change-password', 'App\Http\Controllers\ChangePasswordController@store')->name('change.password');
         $api->group(['middleware' => 'auth:api'], function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
