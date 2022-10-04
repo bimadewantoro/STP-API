@@ -34,20 +34,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
-            'password_confirmation' => ['required', 'string', 'same:password'],
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'status' => 'error',
-                'message' => $validator->errors(),
-            ], 400);
-        }
-
+    
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -145,16 +132,7 @@ class UserController extends Controller
         ], 200);
     }
 
-    /**
-    * Write code on Method
-    *
-    * @return response()
-    */
-    public function edit($id)
-    {
-        $users = user::find(Auth::user()->id);
-        return view('settings',compact('users'));
-    }
+    
     
     
 }
