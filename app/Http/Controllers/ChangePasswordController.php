@@ -37,13 +37,15 @@ class ChangePasswordController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'new_name' => ['required'],
             'current_password' => ['required', new MatchOldPassword],
             'new_password' => ['required'],
             'new_confirm_password' => ['same:new_password'],
         ]);
    
+        User::find(auth()->user()->id)->update(['name'=> Hash::make($request->new_name)]);
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
    
-        dd('Password change successfully.');
+        dd('Name and Password change successfully.');
     }
 }
