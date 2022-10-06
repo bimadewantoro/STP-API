@@ -40,7 +40,6 @@ class ChangePasswordController extends Controller
     public function changePassword(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'new_name' => ['nullable'],
             'current_password' => ['required'],
             'password' => ['required'],
             'confirm_password' => ['same:password'],
@@ -57,7 +56,6 @@ class ChangePasswordController extends Controller
         if(Hash::check($request->current_password, $user->password)){
             $user->update([
                 'password' => Hash::make($request->password),
-                'new_name' => $request->name,
             ]);
             return response()->json([
                 'message' => 'password successfully update',
