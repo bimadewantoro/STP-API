@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Rules\MatchOldPassword;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Facades\Validator;
   
 class ChangePasswordController extends Controller
 {
@@ -34,18 +35,36 @@ class ChangePasswordController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function store(Request $request)
+    
+
+    public function change_password(Request $request)
     {
-        $request->validate([
-            'new_name' => ['required'],
-            'current_password' => ['required', new MatchOldPassword],
-            'new_password' => ['required'],
-            'new_confirm_password' => ['same:new_password'],
+        $validator = Validator::make($request->all(), [
+            'current_password' => ['required'],
+            'password' => ['required'],
+            'confirm_password' => ['same:password'],
         ]);
-   
-        User::find(auth()->user()->id)->update(['name'=> Hash::make($request->new_name)]);
-        User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
-   
-        dd('Name and Password change successfully.');
-    }
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Validations fails',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        $user=$request->user();
+        if(Hash::check($request->current_password, $user->password)){
+            $user->update([
+                'password' => Hash::make($request->password) 
+            ]);
+            return response()->json([
+                'message' => 'password successfully update',
+            ], 200); 
+        }
+        else{
+            return response()->json([
+                'message' => 'current password does not matched',
+            ], 400);  
+        }
+    } 
 }
