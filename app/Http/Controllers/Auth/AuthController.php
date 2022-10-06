@@ -55,36 +55,7 @@ class AuthController extends Controller
 
     public function update()
     {
-        $request = request();
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'password' => 'required|string',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'status' => 'error',
-                'message' => $validator->errors(),
-            ], 400);
-        }
-
-        $user = auth()->user();
-        $user->name = $request->name;
-        $user->password = bcrypt($request->password);
-
-        if ($user->save()) {
-            return response()->json([
-                'status' => 'success',
-                'message' => 'User updated successfully',
-                'data' => $user,
-            ], 200);
-        }
-        else {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'User could not be updated',
-            ], 500);
-        }
+        //
     }
 
     private function respondWithToken($token)

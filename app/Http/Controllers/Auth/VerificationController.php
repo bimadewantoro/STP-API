@@ -4,42 +4,67 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\VerifyUser;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class VerificationController extends Controller
 {
-    public function verify($user_id, Request $request)
+    public function verifyUser ($token)
     {
-        if (!$request->hasValidSignature()) {
+        $verifyUser = VerifyUser::where('token', $token)->first();
+        if(isset($verifyUser) ){
+            $user = $verifyUser->user;
+            if(!$user->verified) {
+                $verifyUser->user->verified = 1;
+                $verifyUser->user->email_verified_at = now();
+                $verifyUser->user->save();
+                $status = "Your e-mail is verified. You can now login.";
+            }else{
+                $status = "Your e-mail is already verified. You can now login.";
+            }
+        }else{
             return response()->json([
                 'status' => 'error',
-                'message' => 'Invalid or expired url provided.',
+                'message' => 'Sorry your email cannot be identified.',
             ], 401);
-        }
-
-        $user = User::findOrFail($user_id);
-
-        if (!$user->hasVerifiedEmail()) {
-            $user->markEmailAsVerified();
-            event(new Verified($user));
         }
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Email successfully verified.',
+            'message' => $status,
         ], 200);
     }
 
-    public function resend()
+    public function resend (Request $request)
     {
-        if (auth()->user()->hasVerifiedEmail()) {
-            return response()->json(['message' => 'Already verified'], 422);
+        if ($request->user()->hasVerifiedEmail()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Your email is already verified.',
+            ], 401);
         }
 
-        auth()->user()->sendEmailVerificationNotification();
+        $user = $request->user();
 
-        return response()->json(['message' => 'Verification link sent']);
+        $token = auth()->login($user);
+        
+        $verifyUser = VerifyUser::create([
+            'user_id' => $user->id,
+            'token' => $token
+        ]);
+
+        Mail::send('emails.verifyUser', ['user' => $user, 'verifyUser' => $verifyUser, 'token' => $token], function($mail) use ($user) {
+            $mail->from(getenv('MAIL_FROM_ADDRESS'), getenv('MAIL_FROM_NAME'));
+            $mail->to($user->email, $user->name);
+            $mail->subject('Verify your email address');
+        });
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'The notification has been resubmitted',
+        ], 200);
     }
 }
