@@ -37,7 +37,7 @@ class ChangePasswordController extends Controller
      */
     
 
-    public function change_password(Request $request)
+    public function changePassword(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'current_password' => ['required'],
