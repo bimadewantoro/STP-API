@@ -63,17 +63,9 @@ class UserController extends Controller
 
         return response()->json([
             'status' => 'success',
-            'message' => 'We sent you an activation code. Check your email and click on the link to verify.'
+            'message' => 'We sent you an activation code. Check your email and click on the link to verify.',
+            'token' => $token
         ], 200);
-
-        // try {
-        //     $token = auth()->login($user);
-        // } catch (JWTException $e) {
-        //     return response()->json([
-        //         'status' => 'error',
-        //         'message' => 'Could not create token',
-        //     ], 500);
-        // }
 
         return $this->respondWithToken($token);
 
