@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Mail\VerifyMail;
+use App\Models\VerifyUser;
+use Illuminate\Support\Facades\Mail;
 use Tymon\JWTAuth\Exceptions\JWTException;
     
 
@@ -32,6 +35,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    
     public function store(Request $request)
     {
     
@@ -44,16 +48,32 @@ class UserController extends Controller
 
         $user->assignRole('tenant');
 
-        $user->sendEmailVerificationNotification();
+        $token = auth()->login($user);
+        
+        $verifyUser = VerifyUser::create([
+            'user_id' => $user->id,
+            'token' => $token
+        ]);
 
-        try {
-            $token = auth()->login($user);
-        } catch (JWTException $e) {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'Could not create token',
-            ], 500);
-        }
+        Mail::send('emails.verifyUser', ['user' => $user, 'verifyUser' => $verifyUser, 'token' => $token], function($mail) use ($user) {
+            $mail->from(getenv('MAIL_FROM_ADDRESS'), getenv('MAIL_FROM_NAME'));
+            $mail->to($user->email, $user->name);
+            $mail->subject('Verify your email address');
+        });
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'We sent you an activation code. Check your email and click on the link to verify.'
+        ], 200);
+
+        // try {
+        //     $token = auth()->login($user);
+        // } catch (JWTException $e) {
+        //     return response()->json([
+        //         'status' => 'error',
+        //         'message' => 'Could not create token',
+        //     ], 500);
+        // }
 
         return $this->respondWithToken($token);
 
