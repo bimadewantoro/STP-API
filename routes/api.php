@@ -39,7 +39,6 @@ $api->version('v1', function ($api) {
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
             $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
-            $api->get('change-password', 'App\Http\Controllers\ChangePasswordController@index');
             $api->post('change-password', 'App\Http\Controllers\ChangePasswordController@change-password')->name('change.password');    
         });
 
