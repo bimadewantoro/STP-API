@@ -40,6 +40,7 @@ $api->version('v1', function ($api) {
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
             $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
             $api->post('change-password', 'App\Http\Controllers\ChangePasswordController@change-password')->name('change.password');    
+
         });
 
     });
