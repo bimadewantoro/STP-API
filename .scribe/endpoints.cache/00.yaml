@@ -8,7 +8,7 @@ endpoints:
       - POST
     uri: stp/auth/signup
     metadata:
-      title: 'Store a newly created resource in storage.'
+      title: ''
       description: ''
       authenticated: false
       custom: []
@@ -17,7 +17,28 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
     responses: []
     responseFields: []
   -
@@ -39,14 +60,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd
+        example: kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: deleniti
+        example: voluptas
         type: string
         custom: []
     responses: []
@@ -68,7 +89,7 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: earum
+        example: est
         type: string
         custom: []
     queryParameters: []
@@ -97,7 +118,7 @@ endpoints:
       - GET
     uri: stp/auth/member
     metadata:
-      title: 'Store a newly created resource in storage.'
+      title: ''
       description: ''
       authenticated: false
       custom: []
@@ -106,7 +127,28 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: praesentium
+        type: string
+        custom: []
     responses: []
     responseFields: []
   -
@@ -162,27 +204,10 @@ endpoints:
     responseFields: []
   -
     httpMethods:
-      - PUT
-    uri: stp/auth/update
-    metadata:
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    queryParameters: []
-    bodyParameters: []
-    responses: []
-    responseFields: []
-  -
-    httpMethods:
       - GET
-    uri: stp/auth/change-password
+    uri: stp/admin/users
     metadata:
-      title: 'Show the application dashboard.'
+      title: 'Display a listing of the resource.'
       description: ''
       authenticated: false
       custom: []
@@ -196,8 +221,8 @@ endpoints:
     responseFields: []
   -
     httpMethods:
-      - POST
-    uri: stp/auth/change-password
+      - PUT
+    uri: stp/auth/changepassword
     metadata:
       title: 'Show the application dashboard.'
       description: ''
@@ -209,18 +234,11 @@ endpoints:
     urlParameters: []
     queryParameters: []
     bodyParameters:
-      new_name:
-        name: new_name
-        description: ''
-        required: true
-        example: inventore
-        type: string
-        custom: []
       current_password:
         name: current_password
         description: ''
         required: true
-        example: aliquid
+        example: aliquam
         type: string
         custom: []
       new_password:
@@ -241,10 +259,10 @@ endpoints:
     responseFields: []
   -
     httpMethods:
-      - GET
-    uri: stp/admin/users
+      - PUT
+    uri: stp/auth/changename
     metadata:
-      title: 'Display a listing of the resource.'
+      title: ''
       description: ''
       authenticated: false
       custom: []
@@ -253,6 +271,13 @@ endpoints:
       Accept: application/json
     urlParameters: []
     queryParameters: []
-    bodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: perspiciatis
+        type: string
+        custom: []
     responses: []
     responseFields: []

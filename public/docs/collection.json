@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "http:\/\/localhost"
+            "value": "https:\/\/semarangtechnopark.herokuapp.com"
         }
     ],
     "info": {
-        "name": "Laravel",
-        "_postman_id": "84eb743b-5e2f-4d2c-866e-dd47b5d5edc3",
+        "name": "Semarang Technopark API",
+        "_postman_id": "8085d0a3-37ad-44ad-b67a-4696b4913dcd",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -20,7 +20,7 @@
             "description": "",
             "item": [
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "stp\/auth\/signup",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -39,7 +39,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq\",\"email\":\"vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh\",\"password\":\"omnis\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -69,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd\",\"password\":\"deleniti\"}"
+                            "raw": "{\"email\":\"kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz\",\"password\":\"voluptas\"}"
                         },
                         "description": "",
                         "auth": {
@@ -90,7 +93,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "earum",
+                                    "value": "est",
                                     "description": ""
                                 }
                             ]
@@ -143,7 +146,7 @@
                     "response": []
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "stp\/auth\/member",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -162,7 +165,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect\",\"email\":\"pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps\",\"password\":\"praesentium\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -255,93 +261,6 @@
                     "response": []
                 },
                 {
-                    "name": "stp\/auth\/update",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/update",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/update"
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show the application dashboard.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/change-password",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/change-password"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show the application dashboard.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/change-password",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/change-password"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"new_name\":\"inventore\",\"current_password\":\"aliquid\",\"new_password\":\"ut\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
                     "name": "Display a listing of the resource.",
                     "request": {
                         "url": {
@@ -362,6 +281,68 @@
                             }
                         ],
                         "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Show the application dashboard.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changepassword",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changepassword"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"current_password\":\"aliquam\",\"new_password\":\"ut\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/changename",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changename",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changename"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"perspiciatis\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"

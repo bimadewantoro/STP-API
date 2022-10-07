@@ -1,15 +1,15 @@
 openapi: 3.0.3
 info:
-  title: Laravel
+  title: 'Semarang Technopark API'
   description: ''
   version: 1.0.0
 servers:
   -
-    url: 'http://localhost'
+    url: 'https://semarangtechnopark.herokuapp.com'
 paths:
   /stp/auth/signup:
     post:
-      summary: 'Store a newly created resource in storage.'
+      summary: ''
       description: ''
       parameters:
         -
@@ -29,6 +29,29 @@ paths:
       responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh
+                password:
+                  type: string
+                  description: ''
+                  example: omnis
+              required:
+                - name
+                - email
+                - password
       security: []
   /stp/auth/login:
     post:
@@ -62,11 +85,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd
+                  example: kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz
                 password:
                   type: string
                   description: ''
-                  example: deleniti
+                  example: voluptas
               required:
                 - email
                 - password
@@ -99,7 +122,7 @@ paths:
         in: path
         name: token
         description: ''
-        example: earum
+        example: est
         required: true
         schema:
           type: string
@@ -128,7 +151,7 @@ paths:
       security: []
   /stp/auth/member:
     get:
-      summary: 'Store a newly created resource in storage.'
+      summary: ''
       description: ''
       parameters:
         -
@@ -148,6 +171,29 @@ paths:
       responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps
+                password:
+                  type: string
+                  description: ''
+                  example: praesentium
+              required:
+                - name
+                - email
+                - password
       security: []
   /stp/auth/refresh:
     post:
@@ -218,32 +264,9 @@ paths:
       tags:
         - Endpoints
       security: []
-  /stp/auth/update:
-    put:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - Endpoints
-      security: []
-  /stp/auth/change-password:
+  /stp/admin/users:
     get:
-      summary: 'Show the application dashboard.'
+      summary: 'Display a listing of the resource.'
       description: ''
       parameters:
         -
@@ -264,7 +287,8 @@ paths:
       tags:
         - Endpoints
       security: []
-    post:
+  /stp/auth/changepassword:
+    put:
       summary: 'Show the application dashboard.'
       description: ''
       parameters:
@@ -292,14 +316,10 @@ paths:
             schema:
               type: object
               properties:
-                new_name:
-                  type: string
-                  description: ''
-                  example: inventore
                 current_password:
                   type: string
                   description: ''
-                  example: aliquid
+                  example: aliquam
                 new_password:
                   type: string
                   description: ''
@@ -309,13 +329,12 @@ paths:
                   description: 'The value and <code>new_password</code> must match.'
                   example: null
               required:
-                - new_name
                 - current_password
                 - new_password
       security: []
-  /stp/admin/users:
-    get:
-      summary: 'Display a listing of the resource.'
+  /stp/auth/changename:
+    put:
+      summary: ''
       description: ''
       parameters:
         -
@@ -335,6 +354,19 @@ paths:
       responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: perspiciatis
+              required:
+                - name
       security: []
 tags:
   -

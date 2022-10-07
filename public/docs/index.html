@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Laravel Documentation</title>
+    <title>Semarang Technopark API</title>
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var baseUrl = "http://localhost";
+        var baseUrl = "https://semarangtechnopark.herokuapp.com";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -45,6 +45,7 @@
     </span>
 </a>
 <div class="tocify-wrapper">
+            <img src="https://i.ibb.co/WWR5B4Q/image-7.png" alt="logo" class="logo" style="padding-top: 10px;" width="100%"/>
     
             <div class="lang-selector">
                                             <button type="button" class="lang-button" data-language-name="bash">bash</button>
@@ -75,7 +76,7 @@
                 </li>
                                     <ul id="tocify-subheader-endpoints" class="tocify-subheader">
                                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-signup">
-                        <a href="#endpoints-POSTstp-auth-signup">Store a newly created resource in storage.</a>
+                        <a href="#endpoints-POSTstp-auth-signup">POST stp/auth/signup</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-login">
                         <a href="#endpoints-POSTstp-auth-login">POST stp/auth/login</a>
@@ -87,7 +88,7 @@
                         <a href="#endpoints-GETstp-auth-email-resend">GET stp/auth/email/resend</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-member">
-                        <a href="#endpoints-GETstp-auth-member">Store a newly created resource in storage.</a>
+                        <a href="#endpoints-GETstp-auth-member">GET stp/auth/member</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-refresh">
                         <a href="#endpoints-POSTstp-auth-refresh">POST stp/auth/refresh</a>
@@ -98,17 +99,14 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-userprofile">
                         <a href="#endpoints-GETstp-auth-userprofile">GET stp/auth/userprofile</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-auth-update">
-                        <a href="#endpoints-PUTstp-auth-update">PUT stp/auth/update</a>
-                    </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-change-password">
-                        <a href="#endpoints-GETstp-auth-change-password">Show the application dashboard.</a>
-                    </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-change-password">
-                        <a href="#endpoints-POSTstp-auth-change-password">Show the application dashboard.</a>
-                    </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-GETstp-admin-users">
                         <a href="#endpoints-GETstp-admin-users">Display a listing of the resource.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-auth-changepassword">
+                        <a href="#endpoints-PUTstp-auth-changepassword">Show the application dashboard.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-auth-changename">
+                        <a href="#endpoints-PUTstp-auth-changename">PUT stp/auth/changename</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -145,7 +143,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 
     
 
-            <h2 id="endpoints-POSTstp-auth-signup">Store a newly created resource in storage.</h2>
+            <h2 id="endpoints-POSTstp-auth-signup">POST stp/auth/signup</h2>
 
 <p>
 </p>
@@ -158,14 +156,20 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/stp/auth/signup" \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/signup" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq\",
+    \"email\": \"vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh\",
+    \"password\": \"omnis\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/signup"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/signup"
 );
 
 const headers = {
@@ -173,9 +177,16 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq",
+    "email": "vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh",
+    "password": "omnis"
+};
+
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -221,7 +232,38 @@ fetch(url, {
             <small class="badge badge-black">POST</small>
             <b><code>stp/auth/signup</code></b>
         </p>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="POSTstp-auth-signup"
+               value="hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq"
+               data-component="body" hidden>
+    <br>
+<p>Must not be greater than 255 characters.</p>
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="POSTstp-auth-signup"
+               value="vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid email address. Must not be greater than 255 characters.</p>
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="POSTstp-auth-signup"
+               value="omnis"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
 
             <h2 id="endpoints-POSTstp-auth-login">POST stp/auth/login</h2>
 
@@ -236,19 +278,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/stp/auth/login" \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd\",
-    \"password\": \"deleniti\"
+    \"email\": \"kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz\",
+    \"password\": \"voluptas\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/login"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/login"
 );
 
 const headers = {
@@ -257,8 +299,8 @@ const headers = {
 };
 
 let body = {
-    "email": "qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd",
-    "password": "deleniti"
+    "email": "kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz",
+    "password": "voluptas"
 };
 
 fetch(url, {
@@ -316,7 +358,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-auth-login"
-               value="qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd"
+               value="kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -326,7 +368,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-auth-login"
-               value="deleniti"
+               value="voluptas"
                data-component="body" hidden>
     <br>
 
@@ -346,14 +388,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/auth/email/verify/earum" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/est" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/email/verify/earum"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/est"
 );
 
 const headers = {
@@ -415,7 +457,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="GETstp-auth-email-verify--token-"
-               value="earum"
+               value="est"
                data-component="url" hidden>
     <br>
 
@@ -435,14 +477,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/auth/email/resend" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/email/resend"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend"
 );
 
 const headers = {
@@ -500,7 +542,7 @@ fetch(url, {
         </p>
                     </form>
 
-            <h2 id="endpoints-GETstp-auth-member">Store a newly created resource in storage.</h2>
+            <h2 id="endpoints-GETstp-auth-member">GET stp/auth/member</h2>
 
 <p>
 </p>
@@ -513,14 +555,20 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/auth/member" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/member" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect\",
+    \"email\": \"pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps\",
+    \"password\": \"praesentium\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/member"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/member"
 );
 
 const headers = {
@@ -528,9 +576,16 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect",
+    "email": "pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps",
+    "password": "praesentium"
+};
+
 fetch(url, {
     method: "GET",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -576,7 +631,38 @@ fetch(url, {
             <small class="badge badge-green">GET</small>
             <b><code>stp/auth/member</code></b>
         </p>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="GETstp-auth-member"
+               value="ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect"
+               data-component="body" hidden>
+    <br>
+<p>Must not be greater than 255 characters.</p>
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="GETstp-auth-member"
+               value="pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid email address. Must not be greater than 255 characters.</p>
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="GETstp-auth-member"
+               value="praesentium"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
 
             <h2 id="endpoints-POSTstp-auth-refresh">POST stp/auth/refresh</h2>
 
@@ -591,14 +677,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/stp/auth/refresh" \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/refresh" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/refresh"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/refresh"
 );
 
 const headers = {
@@ -669,14 +755,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/stp/auth/logout" \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/logout" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/logout"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/logout"
 );
 
 const headers = {
@@ -747,14 +833,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/auth/userprofile" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/userprofile" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/userprofile"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/userprofile"
 );
 
 const headers = {
@@ -812,294 +898,6 @@ fetch(url, {
         </p>
                     </form>
 
-            <h2 id="endpoints-PUTstp-auth-update">PUT stp/auth/update</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTstp-auth-update">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/stp/auth/update" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/update"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTstp-auth-update">
-</span>
-<span id="execution-results-PUTstp-auth-update" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTstp-auth-update"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTstp-auth-update"></code></pre>
-</span>
-<span id="execution-error-PUTstp-auth-update" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTstp-auth-update"></code></pre>
-</span>
-<form id="form-PUTstp-auth-update" data-method="PUT"
-      data-path="stp/auth/update"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-update', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTstp-auth-update"
-                    onclick="tryItOut('PUTstp-auth-update');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTstp-auth-update"
-                    onclick="cancelTryOut('PUTstp-auth-update');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTstp-auth-update" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>stp/auth/update</code></b>
-        </p>
-                    </form>
-
-            <h2 id="endpoints-GETstp-auth-change-password">Show the application dashboard.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETstp-auth-change-password">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/auth/change-password" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/change-password"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETstp-auth-change-password">
-    </span>
-<span id="execution-results-GETstp-auth-change-password" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETstp-auth-change-password"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETstp-auth-change-password"></code></pre>
-</span>
-<span id="execution-error-GETstp-auth-change-password" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETstp-auth-change-password"></code></pre>
-</span>
-<form id="form-GETstp-auth-change-password" data-method="GET"
-      data-path="stp/auth/change-password"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETstp-auth-change-password', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETstp-auth-change-password"
-                    onclick="tryItOut('GETstp-auth-change-password');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETstp-auth-change-password"
-                    onclick="cancelTryOut('GETstp-auth-change-password');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETstp-auth-change-password" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>stp/auth/change-password</code></b>
-        </p>
-                    </form>
-
-            <h2 id="endpoints-POSTstp-auth-change-password">Show the application dashboard.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-POSTstp-auth-change-password">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/stp/auth/change-password" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"new_name\": \"inventore\",
-    \"current_password\": \"aliquid\",
-    \"new_password\": \"ut\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/auth/change-password"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "new_name": "inventore",
-    "current_password": "aliquid",
-    "new_password": "ut"
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTstp-auth-change-password">
-</span>
-<span id="execution-results-POSTstp-auth-change-password" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTstp-auth-change-password"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTstp-auth-change-password"></code></pre>
-</span>
-<span id="execution-error-POSTstp-auth-change-password" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTstp-auth-change-password"></code></pre>
-</span>
-<form id="form-POSTstp-auth-change-password" data-method="POST"
-      data-path="stp/auth/change-password"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTstp-auth-change-password', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTstp-auth-change-password"
-                    onclick="tryItOut('POSTstp-auth-change-password');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTstp-auth-change-password"
-                    onclick="cancelTryOut('POSTstp-auth-change-password');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTstp-auth-change-password" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>stp/auth/change-password</code></b>
-        </p>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <p>
-            <b><code>new_name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="new_name"
-               data-endpoint="POSTstp-auth-change-password"
-               value="inventore"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-                <p>
-            <b><code>current_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="current_password"
-               data-endpoint="POSTstp-auth-change-password"
-               value="aliquid"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-                <p>
-            <b><code>new_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="new_password"
-               data-endpoint="POSTstp-auth-change-password"
-               value="ut"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-                <p>
-            <b><code>new_confirm_password</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-                <input type="text"
-               name="new_confirm_password"
-               data-endpoint="POSTstp-auth-change-password"
-               value=""
-               data-component="body" hidden>
-    <br>
-<p>The value and <code>new_password</code> must match.</p>
-        </p>
-        </form>
-
             <h2 id="endpoints-GETstp-admin-users">Display a listing of the resource.</h2>
 
 <p>
@@ -1113,14 +911,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/stp/admin/users" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/admin/users" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/stp/admin/users"
+    "https://semarangtechnopark.herokuapp.com/stp/admin/users"
 );
 
 const headers = {
@@ -1177,6 +975,224 @@ fetch(url, {
             <b><code>stp/admin/users</code></b>
         </p>
                     </form>
+
+            <h2 id="endpoints-PUTstp-auth-changepassword">Show the application dashboard.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-auth-changepassword">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"current_password\": \"aliquam\",
+    \"new_password\": \"ut\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "current_password": "aliquam",
+    "new_password": "ut"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-auth-changepassword">
+</span>
+<span id="execution-results-PUTstp-auth-changepassword" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-auth-changepassword"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-auth-changepassword"></code></pre>
+</span>
+<span id="execution-error-PUTstp-auth-changepassword" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-auth-changepassword"></code></pre>
+</span>
+<form id="form-PUTstp-auth-changepassword" data-method="PUT"
+      data-path="stp/auth/changepassword"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changepassword', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-auth-changepassword"
+                    onclick="tryItOut('PUTstp-auth-changepassword');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-auth-changepassword"
+                    onclick="cancelTryOut('PUTstp-auth-changepassword');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-auth-changepassword" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/auth/changepassword</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>current_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="current_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value="aliquam"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>new_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="new_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value="ut"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>new_confirm_password</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="new_confirm_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value=""
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>new_password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-PUTstp-auth-changename">PUT stp/auth/changename</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-auth-changename">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changename" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"perspiciatis\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changename"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "perspiciatis"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-auth-changename">
+</span>
+<span id="execution-results-PUTstp-auth-changename" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-auth-changename"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-auth-changename"></code></pre>
+</span>
+<span id="execution-error-PUTstp-auth-changename" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-auth-changename"></code></pre>
+</span>
+<form id="form-PUTstp-auth-changename" data-method="PUT"
+      data-path="stp/auth/changename"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changename', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-auth-changename"
+                    onclick="tryItOut('PUTstp-auth-changename');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-auth-changename"
+                    onclick="cancelTryOut('PUTstp-auth-changename');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-auth-changename" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/auth/changename</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="PUTstp-auth-changename"
+               value="perspiciatis"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
 
     
 
