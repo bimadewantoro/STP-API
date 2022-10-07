@@ -7,6 +7,29 @@ servers:
   -
     url: 'https://semarangtechnopark.herokuapp.com'
 paths:
+  /stp/admin/users:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Admin API'
+      security: []
   /stp/auth/signup:
     post:
       summary: ''
@@ -39,15 +62,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq
+                  example: xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh
+                  example: wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro
                 password:
                   type: string
                   description: ''
-                  example: omnis
+                  example: et
               required:
                 - name
                 - email
@@ -85,11 +108,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz
+                  example: eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct
                 password:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: earum
               required:
                 - email
                 - password
@@ -122,7 +145,7 @@ paths:
         in: path
         name: token
         description: ''
-        example: est
+        example: voluptas
         required: true
         schema:
           type: string
@@ -181,15 +204,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect
+                  example: ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps
+                  example: tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso
                 password:
                   type: string
                   description: ''
-                  example: praesentium
+                  example: voluptas
               required:
                 - name
                 - email
@@ -264,32 +287,9 @@ paths:
       tags:
         - Endpoints
       security: []
-  /stp/admin/users:
-    get:
-      summary: 'Display a listing of the resource.'
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - Endpoints
-      security: []
   /stp/auth/changepassword:
     put:
-      summary: 'Show the application dashboard.'
+      summary: ''
       description: ''
       parameters:
         -
@@ -319,11 +319,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: aut
                 new_password:
                   type: string
                   description: ''
-                  example: ut
+                  example: earum
                 new_confirm_password:
                   type: string
                   description: 'The value and <code>new_password</code> must match.'
@@ -364,11 +364,14 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: perspiciatis
+                  example: omnis
               required:
                 - name
       security: []
 tags:
+  -
+    name: 'Admin API'
+    description: ''
   -
     name: Endpoints
     description: ''

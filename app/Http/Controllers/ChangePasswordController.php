@@ -30,13 +30,6 @@ class ChangePasswordController extends Controller
     {
         return view('changePassword');
     } 
-   
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    
 
     public function changePassword(Request $request)
     {

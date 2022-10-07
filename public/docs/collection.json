@@ -10,11 +10,45 @@
     ],
     "info": {
         "name": "Semarang Technopark API",
-        "_postman_id": "8085d0a3-37ad-44ad-b67a-4696b4913dcd",
+        "_postman_id": "6c4c24c8-007a-4e33-8cba-b6c83934f7d9",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
+        {
+            "name": "Admin API",
+            "description": "",
+            "item": [
+                {
+                    "name": "stp\/admin\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/admin\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/admin\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
         {
             "name": "Endpoints",
             "description": "",
@@ -41,7 +75,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"hfsqvmofqqruuwtjsgcmmlthdihgvmqftosywsddwcpaojyipxqznhrbhpppyylqekqvwycsgwlpriavebgbjwlbodnweipdrzwrxpboucmvcmsyxipxkhhboldnxxxpugoizfuebkuotxoeomrkcmntjhclxpugfypybxklifkoelejxzijvhhjiwjlqjsqxq\",\"email\":\"vukvhjopobmaxifjyrllqaasoquboieuhbqeathoeydyvbhbypiglojygybsmftywhnwquvkjayoqijerjgicqjfojeawvwkvqrdxavkdvrgudyqnvqvgifrpfcncozuwbjyxykmlnemwejvcpnuvutdrheztnaicotquuiuscyfqqnrbzpkxcoqbehmdqbslmkarh\",\"password\":\"omnis\"}"
+                            "raw": "{\"name\":\"xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz\",\"email\":\"wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro\",\"password\":\"et\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +106,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"kqjnmarrxuweyoffjyfrtvqdnrhynimfbbqihjkwpfzqfooswqupkehjolvdhbwvcrcwqnoddsgveinkjentrsgnfepzosdhfvehmjcgmrtpsypgvmwwemnzpoaywerz\",\"password\":\"voluptas\"}"
+                            "raw": "{\"email\":\"eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct\",\"password\":\"earum\"}"
                         },
                         "description": "",
                         "auth": {
@@ -93,7 +127,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "est",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -167,7 +201,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ykmbualolukoqhyreryfevvsbnypvsjcwyzenhvqifbeqqect\",\"email\":\"pcavaiwdvwgccuoulpttqhosyslxnmjljivbickcxqqqbtdovvwrpwokfhbpqacxkwdiaoioztlbywfrhymajzkhurkksheyiittrkeaprsvowiqijdzbgvmsfshllyiqkvehosfcczguixchpjlkphutgiibkmgxgdsenxpkmixbwompgpkslcacapbhsrsslivuaiqgicjyxfxpps\",\"password\":\"praesentium\"}"
+                            "raw": "{\"name\":\"ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes\",\"email\":\"tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso\",\"password\":\"voluptas\"}"
                         },
                         "description": "",
                         "auth": {
@@ -261,35 +295,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/admin\/users",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/admin\/users"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show the application dashboard.",
+                    "name": "stp\/auth\/changepassword",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -310,7 +316,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"aliquam\",\"new_password\":\"ut\"}"
+                            "raw": "{\"current_password\":\"aut\",\"new_password\":\"earum\"}"
                         },
                         "description": "",
                         "auth": {
@@ -341,7 +347,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"perspiciatis\"}"
+                            "raw": "{\"name\":\"omnis\"}"
                         },
                         "description": "",
                         "auth": {
