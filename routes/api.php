@@ -33,13 +33,13 @@ $api->version('v1', function ($api) {
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
         $api->get('email/verify/{id}', 'App\Http\Controllers\Auth\VerificationController@verify')->name('verification.verify');
         $api->get('email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('verification.resend');
-        $api->get('member', 'App\Http\Controllers\UserController@store')->name('member');
+        $api->post('member', 'App\Http\Controllers\CreateMember@store')->name('member');
         $api->group(['middleware' => 'auth:api'], function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
             $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
-            $api->post('changepassword', 'App\Http\Controllers\ChangePasswordController@changePassword')->name('change.password');    
+            $api->post('change-password', 'App\Http\Controllers\ChangePasswordController@changePassword')->name('change.password');    
         });
 
     });
