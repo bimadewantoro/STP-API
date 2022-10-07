@@ -100,31 +100,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [ 
-            'name' => 'required',
-            'oldpassword' => 'required',
-            'newpassword' => 'required',
-        ]);
- 
-        $hashedPassword = Auth::user()->password;
-        if (Hash::check($request->oldpassword , $hashedPassword)) {
-            if (Hash::check($request->newpassword , $hashedPassword)) {
- 
-                $users = user::find(Auth::user()->id);
-                $users->password = bcrypt($request->newpassword);
-                $users->save();
-                session()->flash('message','password updated successfully');
-                return redirect()->back();
-            }
-            else{
-                session()->flash('message','new password can not be the old password!');
-                return redirect()->back();
-            } 
-        }
-        else{
-            session()->flash('message','old password doesnt matched');
-            return redirect()->back();
-        }
+        //
     }
 
     /**

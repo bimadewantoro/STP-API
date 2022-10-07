@@ -38,13 +38,10 @@ $api->version('v1', function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
-            $api->put('/update', 'App\Http\Controllers\Auth\AuthController@update');
-            $api->post('change-password', 'App\Http\Controllers\ChangePasswordController@change-password')->name('change.password');    
-
+            $api->put('/changepassword', 'App\Http\Controllers\ChangePasswordController@changePassword')->name('change.password');
+            $api->put('/changename', 'App\Http\Controllers\ChangePasswordController@changeName')->name('change.name');
         });
-
-    });
-    
+    });   
 
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
