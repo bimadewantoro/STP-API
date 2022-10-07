@@ -7,7 +7,8 @@ use App\Rules\MatchOldPassword;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
-  
+use Illuminate\Validation\Rules\Password;
+
 class ChangePasswordController extends Controller
 {
     /**
@@ -41,7 +42,7 @@ class ChangePasswordController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'current_password' => ['required', new MatchOldPassword],
-            'new_password' => ['required'],
+            'new_password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
             'new_confirm_password' => ['same:new_password'],
         ]);
 
