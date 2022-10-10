@@ -6,7 +6,7 @@ use App\Models\User;
 use UserTransformer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Transformers\UserTransformer as TransformersUserTransformer;
+use profilesTenant;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AdminUserController extends Controller
@@ -25,13 +25,17 @@ class AdminUserController extends Controller
                 'message' => 'Users not found'
             ], 404);
         };
-
+        
         return response()->json([
             'success' => true,
             'message' => 'Users found',
-            'data' => $users
+            'data' => $users ,
         ], 200);
+
+        $this->response->collection($users, new profilesTenant);
     }
+
+
 
     /**
      * Store a newly created resource in storage.
