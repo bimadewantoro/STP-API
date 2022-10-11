@@ -1,0 +1,365 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "https:\/\/semarangtechnopark.herokuapp.com"
+        }
+    ],
+    "info": {
+        "name": "Semarang Technopark API",
+        "_postman_id": "6c4c24c8-007a-4e33-8cba-b6c83934f7d9",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Admin API",
+            "description": "",
+            "item": [
+                {
+                    "name": "stp\/admin\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/admin\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/admin\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "stp\/auth\/signup",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/signup",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/signup"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz\",\"email\":\"wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro\",\"password\":\"et\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct\",\"password\":\"earum\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/email\/verify\/{token}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/email\/verify\/:token",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/email\/verify\/:token",
+                            "variable": [
+                                {
+                                    "id": "token",
+                                    "key": "token",
+                                    "value": "voluptas",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/email\/resend",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/email\/resend",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/email\/resend"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/member",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/member",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/member"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes\",\"email\":\"tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso\",\"password\":\"voluptas\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/refresh",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/refresh",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/refresh"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/userprofile",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/userprofile",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/userprofile"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/changepassword",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changepassword",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changepassword"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"current_password\":\"aut\",\"new_password\":\"earum\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/changename",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changename",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changename"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"omnis\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
