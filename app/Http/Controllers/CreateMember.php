@@ -4,11 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Member;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Stringable;
+
 
 class CreateMember extends Controller
 {
 
+    public function index()
+    {
+        //
+    }
+    
     public function store()
     {
         $this->validate(request(), [
@@ -34,7 +41,12 @@ class CreateMember extends Controller
         $this->assignRole('tenant');  
     }
 
-    public function update(Request $request, $id)
+    public function show(Member $member)
+    {
+        return view('member.show',compact('member'));
+    }
+
+    public function update(Request $request, Member $member)
     {
         $this->validate(request(), [
             'name' => 'required',
@@ -44,15 +56,8 @@ class CreateMember extends Controller
             'address'=> 'required',             
         ]);
         
-        $member = Member::findOrFail($id);
-        $member->update([
-            'name' => $request->name,
-            'email' => $request->email,
-            'age' => $request->age,
-            'phone_number' => $request->phone_number,
-            'address' => $request->address,
-            'slug' => Str::slug($request->title)
-        ]);
+        // $member = Member::findOrFail($id);
+        $member->update($request->all());
 
         return response()->json([
                         'message' => 'member successfully updated',
@@ -69,10 +74,10 @@ class CreateMember extends Controller
         
     }
 
-    public function destroy($id)
+    public function destroy($id, Member $member)
     {
-        $user = Member::find($id);
-        $user->delete();
+        $member = Member::find($id);
+        $member->delete();
 
         return response()->json([
             'status' => 'success',
