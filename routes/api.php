@@ -48,7 +48,11 @@ $api->version('v1', function ($api) {
     });
 
     $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
-        $api->post('member', 'App\Http\Controllers\CreateMember@store')->name('member');
+        $api->post('memberregister', 'App\Http\Controllers\CreateMember@store')->name('member.register');
+        
+        $api->put('memberupdate', 'App\Http\Controllers\CreateMember@update')->name('member.update');
+        $api->delete('memberdelete', 'App\Http\Controllers\CreateMember@destroy')->name('member.delete');
+
     });
 
 });
