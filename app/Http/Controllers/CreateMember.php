@@ -41,20 +41,21 @@ class CreateMember extends Controller
         $this->assignRole('tenant');  
     }
 
-    public function show(Member $member)
+    public function show($id)
     {
-        return view('member.show',compact('member'));
+        $member = Member::all();
+        return 
     }
 
     public function update(Request $request, Member $member)
     {
-        $this->validate(request(), [
-            'name' => 'required',
-            'email' => 'required|email',
-            'age'=> 'required',
-            'phone_number'=> 'required', 
-            'address'=> 'required',             
-        ]);
+        // $member->validate(request(), [
+        //     'name' => 'required',
+        //     'email' => 'required|email',
+        //     'age'=> 'required',
+        //     'phone_number'=> 'required', 
+        //     'address'=> 'required',             
+        // ]);
         
         // $member = Member::findOrFail($id);
         $member->update($request->all());
@@ -69,8 +70,6 @@ class CreateMember extends Controller
                             'errors' => $this->errors(),
                         ], 422);
                     }
-        $this->assignRole('tenant');
-
         
     }
 
