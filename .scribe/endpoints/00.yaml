@@ -1,0 +1,20 @@
+name: 'Admin API'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: stp/admin/users
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []

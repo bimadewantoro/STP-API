@@ -11,10 +11,10 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AdminUserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
+
+     /**
+     * @group Admin API
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {

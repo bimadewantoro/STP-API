@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Mail\VerifyMail;
+use App\Models\VerifyUser;
+use Illuminate\Support\Facades\Mail;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
     
@@ -26,15 +29,21 @@ class UserController extends Controller
     {
         //
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => $validator->errors(),
+            ], 400);
+        }
     
         $user = User::create([
             'name' => $request->name,
@@ -45,16 +54,24 @@ class UserController extends Controller
 
         $user->assignRole('tenant');
 
-        $user->sendEmailVerificationNotification();
+        $token = auth()->login($user);
+        
+        $verifyUser = VerifyUser::create([
+            'user_id' => $user->id,
+            'token' => $token
+        ]);
 
-        try {
-            $token = auth()->login($user);
-        } catch (JWTException $e) {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'Could not create token',
-            ], 500);
-        }
+        Mail::send('emails.verifyUser', ['user' => $user, 'verifyUser' => $verifyUser, 'token' => $token], function($mail) use ($user) {
+            // $mail->from(getenv('MAIL_FROM_ADDRESS'), getenv('MAIL_FROM_NAME'));
+            $mail->to($user->email, $user->name);
+            $mail->subject('Verify your email address');
+        });
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'We sent you an activation code. Check your email and click on the link to verify.',
+            'token' => $token
+        ], 200);
 
         return $this->respondWithToken($token);
 
@@ -89,31 +106,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [ 
-            'name' => 'required',
-            'oldpassword' => 'required',
-            'newpassword' => 'required',
-        ]);
- 
-        $hashedPassword = Auth::user()->password;
-        if (Hash::check($request->oldpassword , $hashedPassword)) {
-            if (Hash::check($request->newpassword , $hashedPassword)) {
- 
-                $users = user::find(Auth::user()->id);
-                $users->password = bcrypt($request->newpassword);
-                $users->save();
-                session()->flash('message','password updated successfully');
-                return redirect()->back();
-            }
-            else{
-                session()->flash('message','new password can not be the old password!');
-                return redirect()->back();
-            } 
-        }
-        else{
-            session()->flash('message','old password doesnt matched');
-            return redirect()->back();
-        }
+        //
     }
 
     /**

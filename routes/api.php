@@ -31,17 +31,17 @@ $api->version('v1', function ($api) {
     $api->group(['prefix' => 'auth', 'verify' => true], function ($api) {
         $api->post('/signup', 'App\Http\Controllers\UserController@store');
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
-        $api->get('email/verify/{id}', 'App\Http\Controllers\Auth\VerificationController@verify')->name('verification.verify');
-        $api->get('email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('verification.resend');
+        $api->get('/email/verify/{token}', 'App\Http\Controllers\Auth\VerificationController@verifyUser')->name('verify.mail');
+        $api->get('/email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('resend.mail');
+        $api->get('member', 'App\Http\Controllers\UserController@store')->name('member');
         $api->group(['middleware' => 'auth:api'], function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
             $api->get('/userprofile', 'App\Http\Controllers\Auth\AuthController@me');
-            $api->post('changepassword', 'App\Http\Controllers\ChangePasswordController@changePassword')->name('change.password');    
+            $api->put('/changepassword', 'App\Http\Controllers\ChangePasswordController@changePassword')->name('change.password');
+            $api->put('/changename', 'App\Http\Controllers\ChangePasswordController@changeName')->name('change.name');
         });
-
-    });
-    
+    });   
 
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
