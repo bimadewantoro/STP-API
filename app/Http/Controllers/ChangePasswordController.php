@@ -11,25 +11,11 @@ use Illuminate\Validation\Rules\Password;
 
 class ChangePasswordController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-   
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         return view('changePassword');
     } 
+
 
     public function changePassword(Request $request)
     {
@@ -45,7 +31,6 @@ class ChangePasswordController extends Controller
                 'message' => $validator->errors(),
             ], 400);
         }
-
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
 
         return response()->json([
