@@ -5,22 +5,56 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "http:\/\/localhost"
+            "value": "https:\/\/semarangtechnopark.herokuapp.com"
         }
     ],
     "info": {
-        "name": "Laravel",
-        "_postman_id": "84eb743b-5e2f-4d2c-866e-dd47b5d5edc3",
+        "name": "Semarang Technopark API",
+        "_postman_id": "6c4c24c8-007a-4e33-8cba-b6c83934f7d9",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
         {
+            "name": "Admin API",
+            "description": "",
+            "item": [
+                {
+                    "name": "stp\/admin\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/admin\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/admin\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
             "name": "Endpoints",
             "description": "",
             "item": [
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "stp\/auth\/signup",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -39,7 +73,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz\",\"email\":\"wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro\",\"password\":\"et\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -69,7 +106,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"qydnujsvoqkzlngmkdkkvblvmkgfqaaktgmamrvxxwutpvejmigibxjddjjvuwqanmhzdqheewermjykjukengnontsnrgorfazasdaazrrrsyyphnvxattalfgqoyzivoqpzqfdfelsrnaefkihawspunnwhnhhqgtbzvbhmncrkmmqfwjdrpxkd\",\"password\":\"deleniti\"}"
+                            "raw": "{\"email\":\"eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct\",\"password\":\"earum\"}"
                         },
                         "description": "",
                         "auth": {
@@ -90,7 +127,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "earum",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -143,7 +180,7 @@
                     "response": []
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "stp\/auth\/member",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -162,7 +199,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes\",\"email\":\"tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso\",\"password\":\"voluptas\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -255,13 +295,13 @@
                     "response": []
                 },
                 {
-                    "name": "stp\/auth\/update",
+                    "name": "stp\/auth\/changepassword",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/update",
+                            "path": "stp\/auth\/changepassword",
                             "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/update"
+                            "raw": "{{baseUrl}}\/stp\/auth\/changepassword"
                         },
                         "method": "PUT",
                         "header": [
@@ -274,7 +314,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"current_password\":\"aut\",\"new_password\":\"earum\"}"
+                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -283,43 +326,15 @@
                     "response": []
                 },
                 {
-                    "name": "Show the application dashboard.",
+                    "name": "stp\/auth\/changename",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/change-password",
+                            "path": "stp\/auth\/changename",
                             "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/change-password"
+                            "raw": "{{baseUrl}}\/stp\/auth\/changename"
                         },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show the application dashboard.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/change-password",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/change-password"
-                        },
-                        "method": "POST",
+                        "method": "PUT",
                         "header": [
                             {
                                 "key": "Content-Type",
@@ -332,36 +347,8 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"new_name\":\"inventore\",\"current_password\":\"aliquid\",\"new_password\":\"ut\"}"
+                            "raw": "{\"name\":\"omnis\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/admin\/users",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/admin\/users"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"

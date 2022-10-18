@@ -13,6 +13,7 @@ use App\Mail\VerifyMail;
 use App\Models\VerifyUser;
 use Illuminate\Support\Facades\Mail;
 use Tymon\JWTAuth\Exceptions\JWTException;
+
     
 
 
@@ -28,16 +29,21 @@ class UserController extends Controller
     {
         //
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => $validator->errors(),
+            ], 400);
+        }
     
         $user = User::create([
             'name' => $request->name,
@@ -100,31 +106,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [ 
-            'name' => 'required',
-            'oldpassword' => 'required',
-            'newpassword' => 'required',
-        ]);
- 
-        $hashedPassword = Auth::user()->password;
-        if (Hash::check($request->oldpassword , $hashedPassword)) {
-            if (Hash::check($request->newpassword , $hashedPassword)) {
- 
-                $users = user::find(Auth::user()->id);
-                $users->password = bcrypt($request->newpassword);
-                $users->save();
-                session()->flash('message','password updated successfully');
-                return redirect()->back();
-            }
-            else{
-                session()->flash('message','new password can not be the old password!');
-                return redirect()->back();
-            } 
-        }
-        else{
-            session()->flash('message','old password doesnt matched');
-            return redirect()->back();
-        }
+        //
     }
 
     /**
