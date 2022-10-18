@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CreateMember;
 use Dingo\Api\Auth\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -48,10 +49,11 @@ $api->version('v1', function ($api) {
     });
 
     $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
-        $api->post('memberregister', 'App\Http\Controllers\CreateMember@store')->name('member.register');
-        $api->get('memberme', 'App\Http\Controllers\CreateMember@show')->name('member.me');
-        $api->put('memberupdate', 'App\Http\Controllers\CreateMember@update')->name('member.update');
-        $api->delete('memberdelete', 'App\Http\Controllers\CreateMember@destroy')->name('member.delete');
+        $api->get('member', 'App\Http\Controllers\CreateMember@index');
+        $api->post('member', 'App\Http\Controllers\CreateMember@store')->name('member.store');
+        $api->get('member/{id}', 'App\Http\Controllers\CreateMember@show')->name('member.me');
+        $api->put('member/{id}', 'App\Http\Controllers\CreateMember@update')->name('member.update');
+        $api->delete('member/{id}', 'App\Http\Controllers\CreateMember@destroy')->name('member.delete');
 
     });
 
