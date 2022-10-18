@@ -57,7 +57,6 @@ class VerificationController extends Controller
         ]);
 
         Mail::send('emails.verifyUser', ['user' => $user, 'verifyUser' => $verifyUser, 'token' => $token], function($mail) use ($user) {
-            $mail->from(getenv('MAIL_FROM_ADDRESS'), getenv('MAIL_FROM_NAME'));
             $mail->to($user->email, $user->name);
             $mail->subject('Verify your email address');
         });
