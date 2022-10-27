@@ -20,11 +20,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->get('/test', function () {
-        return 'Hello STP-API';
-    });
+    $api->group(['prefix' => 'auth', 'verify' => true], function ($api) {
+        $api->get('/email/verify/{token}', 'App\Http\Controllers\VerificationController@verifyUser')->name('verify.mail');
+        $api->get('/email/resend', 'App\Http\Controllers\VerificationController@resend')->name('resend.mail');
+    });   
 });
