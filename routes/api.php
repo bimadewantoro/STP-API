@@ -34,7 +34,6 @@ $api->version('v1', function ($api) {
         $api->post('/login', 'App\Http\Controllers\Auth\AuthController@login');
         $api->get('/email/verify/{token}', 'App\Http\Controllers\Auth\VerificationController@verifyUser')->name('verify.mail');
         $api->get('/email/resend', 'App\Http\Controllers\Auth\VerificationController@resend')->name('resend.mail');
-        $api->get('member', 'App\Http\Controllers\UserController@store')->name('member');
         $api->group(['middleware' => 'auth:api'], function ($api) {
             $api->post('/refresh', 'App\Http\Controllers\Auth\AuthController@refresh');
             $api->post('/logout', 'App\Http\Controllers\Auth\AuthController@logout');
@@ -48,13 +47,6 @@ $api->version('v1', function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
     });
 
-    $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
-        $api->get('member', 'App\Http\Controllers\CreateMember@index');
-        $api->post('member', 'App\Http\Controllers\CreateMember@store')->name('member.store');
-        $api->get('member/{id}', 'App\Http\Controllers\CreateMember@show')->name('member.me');
-        $api->put('member/{id}', 'App\Http\Controllers\CreateMember@update')->name('member.update');
-        $api->delete('member/{id}', 'App\Http\Controllers\CreateMember@destroy')->name('member.delete');
 
-    });
 
 });
