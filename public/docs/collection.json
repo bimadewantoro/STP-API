@@ -10,45 +10,11 @@
     ],
     "info": {
         "name": "Semarang Technopark API",
-        "_postman_id": "6c4c24c8-007a-4e33-8cba-b6c83934f7d9",
+        "_postman_id": "b7a29fc0-ec6f-498e-bb44-361ff237047c",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
-        {
-            "name": "Admin API",
-            "description": "",
-            "item": [
-                {
-                    "name": "stp\/admin\/users",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/admin\/users",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/admin\/users"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                }
-            ]
-        },
         {
             "name": "Endpoints",
             "description": "",
@@ -75,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz\",\"email\":\"wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro\",\"password\":\"et\"}"
+                            "raw": "{\"name\":\"bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc\",\"email\":\"ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali\",\"password\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -106,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct\",\"password\":\"earum\"}"
+                            "raw": "{\"email\":\"bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs\",\"password\":\"eius\"}"
                         },
                         "description": "",
                         "auth": {
@@ -127,7 +93,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "voluptas",
+                                    "value": "ea",
                                     "description": ""
                                 }
                             ]
@@ -172,37 +138,6 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/auth\/member",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/member",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/member"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"name\":\"ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes\",\"email\":\"tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso\",\"password\":\"voluptas\"}"
-                        },
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -267,34 +202,6 @@
                     "response": []
                 },
                 {
-                    "name": "stp\/auth\/userprofile",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/auth\/userprofile",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/auth\/userprofile"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
                     "name": "stp\/auth\/changepassword",
                     "request": {
                         "url": {
@@ -316,7 +223,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"aut\",\"new_password\":\"earum\"}"
+                            "raw": "{\"current_password\":\"soluta\",\"new_password\":\"nulla\"}"
                         },
                         "description": "",
                         "auth": {
@@ -349,6 +256,78 @@
                             "mode": "raw",
                             "raw": "{\"name\":\"omnis\"}"
                         },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/test",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/test",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/test"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "\"Hello STP-API\"",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "stp\/auth\/me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"
