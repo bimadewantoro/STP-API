@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 
 
-class CreateMember extends Controller
+class MemberController extends Controller
 {
 
     public function index()
