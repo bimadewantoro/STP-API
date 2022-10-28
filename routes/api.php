@@ -46,7 +46,5 @@ $api->version('v1', function ($api) {
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
     });
-
-
-
+    
 });

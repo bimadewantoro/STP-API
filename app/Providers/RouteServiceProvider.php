@@ -53,7 +53,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/member_api.php'));
         });
     }
-
+    
     /**
      * Configure the rate limiters for the application.
      *

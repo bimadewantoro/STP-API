@@ -37,5 +37,5 @@ $api->version('v1', function ($api) {
         $api->delete('member/{id}', 'App\Http\Controllers\MemberController@destroy')->name('member.delete');
 
     });
-
+    
 });
