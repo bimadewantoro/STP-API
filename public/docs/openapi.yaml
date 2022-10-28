@@ -7,6 +7,29 @@ servers:
   -
     url: 'https://semarangtechnopark.herokuapp.com'
 paths:
+  /stp/admin/users:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'Admin API'
+      security: []
   /stp/auth/signup:
     post:
       summary: ''
@@ -39,15 +62,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc
+                  example: xfxyyqibhasrbzoykydktqjyzfclmdrdbiykvpbhrwspbtmbivfwmsnnrshwnosuivstggqhzbyypxmaklfeizshrcrlcuqbjwxdgmwhefiipigjjiufbmlsmemaxmiuivfxynxhtnataammnwzkzmbtdwcbaoraujnbtxgdmwiwxyagddhnauwxbguhxjjwnvpruz
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali
+                  example: wnoankuvpbcoerfxzbfixidrsoqrxnbazfasuluygrpdntffjzazifjnguvnshytdeyqwaqbbvybczoyraabbrxueadfcrgifro
                 password:
                   type: string
                   description: ''
-                  example: est
+                  example: et
               required:
                 - name
                 - email
@@ -85,11 +108,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs
+                  example: eoxvfiwahnscytkvpbbdgyqqadekqlyzzuwtgrheyygmypjntluzvienzvevpbsfycglqydzzeagkaclmuqcgaforkrmqrauwfgkeliowbmjnkrajhjbuwdahyxruqzqapphfsfltcxgbpduxgmrkkjblunghiqzjwykabahcqlbgkmfpwperfavidweuesuaagjijwusuzgxntffct
                 password:
                   type: string
                   description: ''
-                  example: eius
+                  example: earum
               required:
                 - email
                 - password
@@ -122,7 +145,7 @@ paths:
         in: path
         name: token
         description: ''
-        example: ea
+        example: voluptas
         required: true
         schema:
           type: string
@@ -149,6 +172,52 @@ paths:
       tags:
         - Endpoints
       security: []
+  /stp/auth/member:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ahtekweqoqpsbzmmdbcqnsvayabfwlrknspgzlrzpydqttyvwsssejpvprpmfmgsecilqvqcbuuxzzpgrzrjizhwzpxbgvmhcehvskvxxpwzbgiprmtphnrexrxyaflkjhviigcqszlakqrqoxsvevleitsaiurjjzuzmfxsuacvxnilmfdsjwjtdsslykealuniogdrfqvhtupitokxvzgjfqsuhpwtgqzaneqes
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: tdfbokmhtitfhqokscuaatlqxelcwvfswahtrawuozwkcffviifsxarmjwxcapcaltmwfmnudoevegsvzvnssitpzyso
+                password:
+                  type: string
+                  description: ''
+                  example: voluptas
+              required:
+                - name
+                - email
+                - password
+      security: []
   /stp/auth/refresh:
     post:
       summary: ''
@@ -174,6 +243,29 @@ paths:
       security: []
   /stp/auth/logout:
     post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/userprofile:
+    get:
       summary: ''
       description: ''
       parameters:
@@ -227,11 +319,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: soluta
+                  example: aut
                 new_password:
                   type: string
                   description: ''
-                  example: nulla
+                  example: earum
                 new_confirm_password:
                   type: string
                   description: 'The value and <code>new_password</code> must match.'
@@ -276,60 +368,10 @@ paths:
               required:
                 - name
       security: []
-  /stp/test:
-    get:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses:
-        200:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: string
-                example: 'Hello STP-API'
-      tags:
-        - Endpoints
-      security: []
-  /stp/auth/me:
-    get:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - Endpoints
-      security: []
 tags:
+  -
+    name: 'Admin API'
+    description: ''
   -
     name: Endpoints
     description: ''
