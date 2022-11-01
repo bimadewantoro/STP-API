@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->get('/', function () {
+    $api->get('/test', function () {
         return 'Hello STP-API';
     });
     
@@ -46,5 +46,5 @@ $api->version('v1', function ($api) {
     $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'admin'], function ($api) {
         $api->get('/users', 'App\Http\Controllers\Admin\AdminUserController@index');
     });
-    
+
 });
