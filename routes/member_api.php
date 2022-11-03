@@ -30,12 +30,7 @@ $api->version('v1', function ($api) {
     });
     
     $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
-        $api->get('member', 'App\Http\Controllers\MemberController@index');
-        $api->post('member', 'App\Http\Controllers\MemberController@store')->name('member.store');
-        $api->get('member/{id}', 'App\Http\Controllers\MemberController@show')->name('member.me');
-        $api->put('member/{id}', 'App\Http\Controllers\MemberController@update')->name('member.update');
-        $api->delete('member/{id}', 'App\Http\Controllers\MemberController@destroy')->name('member.delete');
-
+        $api->resource('member', MemberController::class);
     });
     
 });
