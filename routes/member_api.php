@@ -25,12 +25,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->get('/', function () {
-        return 'Hello STP-API';
-    });
-    
     $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
         $api->resource('member', MemberController::class);
+        $api->get('member/search/{name}', 'App\Http\Controllers\MemberController@search')->name('member.search');
     });
     
 });

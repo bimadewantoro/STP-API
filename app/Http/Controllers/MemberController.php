@@ -68,6 +68,11 @@ class MemberController extends Controller
             ]);
         }
 
+    public function search($name)
+    {
+        return Member::where('name', 'like', '%'.$name.'%')->get();
+    }
+
     public function destroy($id)
     {
         $member = Member::findOrFail($id);
