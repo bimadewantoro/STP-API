@@ -47,12 +47,6 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
 
-
-            Route::prefix('member_api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/member_api.php'));
-
             Route::prefix('auth')
                 ->middleware('api')
                 ->namespace($this->namespace)
@@ -63,6 +57,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/verification_api.php'));
 
+            Route::prefix('member_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/member_api.php'));
         });
     }
     
