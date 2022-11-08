@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 
 
-class CreateMember extends Controller
+class MemberController extends Controller
 {
 
     public function index()
@@ -67,6 +67,11 @@ class CreateMember extends Controller
             "data" => $member
             ]);
         }
+
+    public function search($name)
+    {
+        return Member::where('name', 'like', '%'.$name.'%')->get();
+    }
 
     public function destroy($id)
     {

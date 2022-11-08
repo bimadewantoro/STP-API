@@ -56,9 +56,14 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/verification_api.php'));
+
+            Route::prefix('member_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/member_api.php'));
         });
     }
-
+    
     /**
      * Configure the rate limiters for the application.
      *
