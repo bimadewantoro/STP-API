@@ -10,8 +10,8 @@ class ProposalKontenController extends Controller
 {
     public function index()
     {
-        $konten = ProposalKonten::all();
-        return $konten;
+        $proposalkonten = ProposalKonten::all();
+        return $proposalkonten;
     }
     
     public function store(Request $request)
