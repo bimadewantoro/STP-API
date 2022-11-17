@@ -7,19 +7,17 @@ use App\Models\User;
 use App\Models\VerifyUser;
 use Illuminate\Http\Request;
 use App\Rules\MatchOldPassword;
+use Dingo\Api\Auth\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
+use Spatie\Permission\Traits\HasRoles;
 
 class AuthController extends Controller
 {
     public function signup(Request $request)
     {
-        /**
-        * @group Auth API
-        *
-        */
         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -40,7 +38,7 @@ class AuthController extends Controller
             'password_confirmation' => Hash::make($request->password_confirmation),
         ]);
 
-        $user->assignRole('tenant');
+        $user->assignRole($request->role);
 
         $token = auth()->login($user);
         
@@ -80,7 +78,47 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if ($token = auth()->attempt($credentials)) {
-            return $this->respondWithToken($token);
+            if (auth()->user()->hasRole('admin')) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Login success',
+                    'token' => $token,
+                    'role' => 'admin'
+                ], 200);
+            } elseif (auth()->user()->hasRole('mentor')) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Login success',
+                    'token' => $token,
+                    'role' => 'mentor'
+                ], 200);
+            } elseif (auth()->user()->hasRole('juri')) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Login success',
+                    'token' => $token,
+                    'role' => 'juri'
+                ], 200);
+            } elseif (auth()->user()->hasRole('tenant')) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Login success',
+                    'token' => $token,
+                    'role' => 'tenant'
+                ], 200);
+            } elseif (auth()->user()->hasRole('talent')) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Login success',
+                    'token' => $token,
+                    'role' => 'talent'
+                ], 200);
+            } else {
+                return response()->json([
+                    'status' => 'error',
+                    'message' => 'Login Gagal',
+                ], 401);
+            }
         }
 
         return response()->json(['error' => 'Unauthorized'], 401);

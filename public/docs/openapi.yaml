@@ -7,6 +7,36 @@ servers:
   -
     url: 'https://semarangtechnopark.herokuapp.com'
 paths:
+  /stp/test:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: string
+                example: 'Hello STP-API'
+      tags:
+        - Endpoints
+      security: []
   /stp/auth/signup:
     post:
       summary: ''
@@ -39,15 +69,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc
+                  example: kxrkwqjeisxnovgnrdbapngtwqnazplaihozxzdxyswjwhuahglpisfsafpdqouuhanglufthhnynevcbcihdcutpisbscjaqewrdtbcpnsxzsywwdcyfctgcnohusajkpzionoawqooidjqqqxybtxmeelhuq
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali
+                  example: txcfowceadoincdqotkzmmlbjoamnxtmyccmeefmy
                 password:
                   type: string
                   description: ''
-                  example: est
+                  example: perspiciatis
               required:
                 - name
                 - email
@@ -85,69 +115,14 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs
+                  example: zrszmltaob
                 password:
                   type: string
                   description: ''
-                  example: eius
+                  example: aperiam
               required:
                 - email
                 - password
-      security: []
-  '/stp/auth/email/verify/{token}':
-    get:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - Endpoints
-      security: []
-    parameters:
-      -
-        in: path
-        name: token
-        description: ''
-        example: ea
-        required: true
-        schema:
-          type: string
-  /stp/auth/email/resend:
-    get:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - Endpoints
       security: []
   /stp/auth/refresh:
     post:
@@ -174,6 +149,29 @@ paths:
       security: []
   /stp/auth/logout:
     post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/me:
+    get:
       summary: ''
       description: ''
       parameters:
@@ -227,11 +225,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: soluta
+                  example: cupiditate
                 new_password:
                   type: string
                   description: ''
-                  example: nulla
+                  example: at
                 new_confirm_password:
                   type: string
                   description: 'The value and <code>new_password</code> must match.'
@@ -272,41 +270,11 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: omnis
+                  example: sequi
               required:
                 - name
       security: []
-  /stp/test:
-    get:
-      summary: ''
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses:
-        200:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: string
-                example: 'Hello STP-API'
-      tags:
-        - Endpoints
-      security: []
-  /stp/auth/me:
+  '/stp/auth/email/verify/{token}':
     get:
       summary: ''
       description: ''
@@ -329,6 +297,618 @@ paths:
       tags:
         - Endpoints
       security: []
+    parameters:
+      -
+        in: path
+        name: token
+        description: ''
+        example: perspiciatis
+        required: true
+        schema:
+          type: string
+  /stp/auth/email/resend:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/tenant/member:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                email:
+                  type: string
+                  description: ''
+                  example: blanditiis
+                age:
+                  type: string
+                  description: ''
+                  example: voluptatibus
+                phone_number:
+                  type: string
+                  description: ''
+                  example: voluptas
+                address:
+                  type: string
+                  description: ''
+                  example: ipsam
+              required:
+                - name
+                - email
+                - age
+                - phone_number
+                - address
+      security: []
+  '/stp/tenant/member/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the member.'
+        example: 4
+        required: true
+        schema:
+          type: integer
+  '/stp/tenant/member/search/{name}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: name
+        description: ''
+        example: quas
+        required: true
+        schema:
+          type: string
+  /stp/juri/add-juri:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: soluta
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: reba08@example.org
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: sifs
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: provident
+              required:
+                - name
+                - email
+                - password
+                - password_confirmation
+      security: []
+  /stp/juri/get-juri:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/stp/juri/get-juri/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the get juri.'
+        example: qui
+        required: true
+        schema:
+          type: string
+  '/stp/juri/update-juri/{id}':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: cupiditate
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: enmy
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: ipsam
+              required:
+                - name
+                - password
+                - password_confirmation
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update juri.'
+        example: nesciunt
+        required: true
+        schema:
+          type: string
+  '/stp/juri/delete-juri/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete juri.'
+        example: ratione
+        required: true
+        schema:
+          type: string
+  /stp/mentor/add-mentor:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: et
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: jakayla66@example.com
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: 'y'
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: est
+              required:
+                - name
+                - email
+                - password
+                - password_confirmation
+      security: []
+  /stp/mentor/get-mentor:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/stp/mentor/get-mentor/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the get mentor.'
+        example: ut
+        required: true
+        schema:
+          type: string
+  '/stp/mentor/update-mentor/{id}':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: cumque
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: kvrn
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: veritatis
+              required:
+                - name
+                - password
+                - password_confirmation
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update mentor.'
+        example: est
+        required: true
+        schema:
+          type: string
+  '/stp/mentor/delete-mentor/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete mentor.'
+        example: in
+        required: true
+        schema:
+          type: string
 tags:
   -
     name: Endpoints

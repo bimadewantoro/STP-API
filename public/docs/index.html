@@ -75,17 +75,14 @@
                     <a href="#endpoints">Endpoints</a>
                 </li>
                                     <ul id="tocify-subheader-endpoints" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-signup">
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-test">
+                        <a href="#endpoints-GETstp-test">GET stp/test</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-signup">
                         <a href="#endpoints-POSTstp-auth-signup">POST stp/auth/signup</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-login">
                         <a href="#endpoints-POSTstp-auth-login">POST stp/auth/login</a>
-                    </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-email-verify--token-">
-                        <a href="#endpoints-GETstp-auth-email-verify--token-">GET stp/auth/email/verify/{token}</a>
-                    </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-email-resend">
-                        <a href="#endpoints-GETstp-auth-email-resend">GET stp/auth/email/resend</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-refresh">
                         <a href="#endpoints-POSTstp-auth-refresh">POST stp/auth/refresh</a>
@@ -93,17 +90,68 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTstp-auth-logout">
                         <a href="#endpoints-POSTstp-auth-logout">POST stp/auth/logout</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-me">
+                        <a href="#endpoints-GETstp-auth-me">GET stp/auth/me</a>
+                    </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-PUTstp-auth-changepassword">
                         <a href="#endpoints-PUTstp-auth-changepassword">PUT stp/auth/changepassword</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-PUTstp-auth-changename">
                         <a href="#endpoints-PUTstp-auth-changename">PUT stp/auth/changename</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-test">
-                        <a href="#endpoints-GETstp-test">GET stp/test</a>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-email-verify--token-">
+                        <a href="#endpoints-GETstp-auth-email-verify--token-">GET stp/auth/email/verify/{token}</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-me">
-                        <a href="#endpoints-GETstp-auth-me">GET stp/auth/me</a>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-auth-email-resend">
+                        <a href="#endpoints-GETstp-auth-email-resend">GET stp/auth/email/resend</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-tenant-member">
+                        <a href="#endpoints-GETstp-tenant-member">GET stp/tenant/member</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-tenant-member">
+                        <a href="#endpoints-POSTstp-tenant-member">POST stp/tenant/member</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-tenant-member--id-">
+                        <a href="#endpoints-GETstp-tenant-member--id-">GET stp/tenant/member/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-tenant-member--id-">
+                        <a href="#endpoints-PUTstp-tenant-member--id-">PUT stp/tenant/member/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEstp-tenant-member--id-">
+                        <a href="#endpoints-DELETEstp-tenant-member--id-">DELETE stp/tenant/member/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-tenant-member-search--name-">
+                        <a href="#endpoints-GETstp-tenant-member-search--name-">GET stp/tenant/member/search/{name}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-juri-add-juri">
+                        <a href="#endpoints-POSTstp-juri-add-juri">POST stp/juri/add-juri</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-juri-get-juri">
+                        <a href="#endpoints-GETstp-juri-get-juri">GET stp/juri/get-juri</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-juri-get-juri--id-">
+                        <a href="#endpoints-GETstp-juri-get-juri--id-">GET stp/juri/get-juri/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-juri-update-juri--id-">
+                        <a href="#endpoints-PUTstp-juri-update-juri--id-">PUT stp/juri/update-juri/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEstp-juri-delete-juri--id-">
+                        <a href="#endpoints-DELETEstp-juri-delete-juri--id-">DELETE stp/juri/delete-juri/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-mentor-add-mentor">
+                        <a href="#endpoints-POSTstp-mentor-add-mentor">POST stp/mentor/add-mentor</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-mentor-get-mentor">
+                        <a href="#endpoints-GETstp-mentor-get-mentor">GET stp/mentor/get-mentor</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-mentor-get-mentor--id-">
+                        <a href="#endpoints-GETstp-mentor-get-mentor--id-">GET stp/mentor/get-mentor/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-mentor-update-mentor--id-">
+                        <a href="#endpoints-PUTstp-mentor-update-mentor--id-">PUT stp/mentor/update-mentor/{id}</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEstp-mentor-delete-mentor--id-">
+                        <a href="#endpoints-DELETEstp-mentor-delete-mentor--id-">DELETE stp/mentor/delete-mentor/{id}</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -117,7 +165,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: October 27 2022</li>
+        <li>Last updated: November 15 2022</li>
     </ul>
 </div>
 
@@ -140,6 +188,98 @@ You can switch the language used with the tabs at the top right (or from the nav
 
     
 
+            <h2 id="endpoints-GETstp-test">GET stp/test</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-test">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/test" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/test"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-test">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">&quot;Hello STP-API&quot;</code>
+ </pre>
+    </span>
+<span id="execution-results-GETstp-test" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-test"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-test"></code></pre>
+</span>
+<span id="execution-error-GETstp-test" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-test"></code></pre>
+</span>
+<form id="form-GETstp-test" data-method="GET"
+      data-path="stp/test"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-test', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-test"
+                    onclick="tryItOut('GETstp-test');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-test"
+                    onclick="cancelTryOut('GETstp-test');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-test" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/test</code></b>
+        </p>
+                    </form>
+
             <h2 id="endpoints-POSTstp-auth-signup">POST stp/auth/signup</h2>
 
 <p>
@@ -157,9 +297,9 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc\",
-    \"email\": \"ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali\",
-    \"password\": \"est\"
+    \"name\": \"kxrkwqjeisxnovgnrdbapngtwqnazplaihozxzdxyswjwhuahglpisfsafpdqouuhanglufthhnynevcbcihdcutpisbscjaqewrdtbcpnsxzsywwdcyfctgcnohusajkpzionoawqooidjqqqxybtxmeelhuq\",
+    \"email\": \"txcfowceadoincdqotkzmmlbjoamnxtmyccmeefmy\",
+    \"password\": \"perspiciatis\"
 }"
 </code></pre></div>
 
@@ -175,9 +315,9 @@ const headers = {
 };
 
 let body = {
-    "name": "bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc",
-    "email": "ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali",
-    "password": "est"
+    "name": "kxrkwqjeisxnovgnrdbapngtwqnazplaihozxzdxyswjwhuahglpisfsafpdqouuhanglufthhnynevcbcihdcutpisbscjaqewrdtbcpnsxzsywwdcyfctgcnohusajkpzionoawqooidjqqqxybtxmeelhuq",
+    "email": "txcfowceadoincdqotkzmmlbjoamnxtmyccmeefmy",
+    "password": "perspiciatis"
 };
 
 fetch(url, {
@@ -235,7 +375,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTstp-auth-signup"
-               value="bqktbjclyfofnoshtnukmaslffyrhtfzovqaqjvbjqsqbtgyedtgufnezlmqrwhnbrpyrcswcdyjevtouiluzsdcekhuuplxvvnhhckgwapfyctojjjqkoqyyjqowvdzfxgqc"
+               value="kxrkwqjeisxnovgnrdbapngtwqnazplaihozxzdxyswjwhuahglpisfsafpdqouuhanglufthhnynevcbcihdcutpisbscjaqewrdtbcpnsxzsywwdcyfctgcnohusajkpzionoawqooidjqqqxybtxmeelhuq"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -245,7 +385,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-auth-signup"
-               value="ixjcexhsrbuchppgetnbphxtizbrhxooxhxsnebznffddvecrxzdali"
+               value="txcfowceadoincdqotkzmmlbjoamnxtmyccmeefmy"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -255,7 +395,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-auth-signup"
-               value="est"
+               value="perspiciatis"
                data-component="body" hidden>
     <br>
 
@@ -279,8 +419,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs\",
-    \"password\": \"eius\"
+    \"email\": \"zrszmltaob\",
+    \"password\": \"aperiam\"
 }"
 </code></pre></div>
 
@@ -296,8 +436,8 @@ const headers = {
 };
 
 let body = {
-    "email": "bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs",
-    "password": "eius"
+    "email": "zrszmltaob",
+    "password": "aperiam"
 };
 
 fetch(url, {
@@ -355,7 +495,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-auth-login"
-               value="bojgargdumyemkltzkflikqmrwwtupxmzneddwjimvbquulejkvruklzsfypdsagswebkupieeeosopvezhyrmmjqqexxtcvtejapwdxdhmhnapzbgonjqtifmzappqeouiwncmhactzvsvpxruxhhtxtelpsjkzcoeigxs"
+               value="zrszmltaob"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -365,179 +505,12 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-auth-login"
-               value="eius"
+               value="aperiam"
                data-component="body" hidden>
     <br>
 
         </p>
         </form>
-
-            <h2 id="endpoints-GETstp-auth-email-verify--token-">GET stp/auth/email/verify/{token}</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETstp-auth-email-verify--token-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/ea" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/ea"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETstp-auth-email-verify--token-">
-    </span>
-<span id="execution-results-GETstp-auth-email-verify--token-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETstp-auth-email-verify--token-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETstp-auth-email-verify--token-"></code></pre>
-</span>
-<span id="execution-error-GETstp-auth-email-verify--token-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETstp-auth-email-verify--token-"></code></pre>
-</span>
-<form id="form-GETstp-auth-email-verify--token-" data-method="GET"
-      data-path="stp/auth/email/verify/{token}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETstp-auth-email-verify--token-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETstp-auth-email-verify--token-"
-                    onclick="tryItOut('GETstp-auth-email-verify--token-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETstp-auth-email-verify--token-"
-                    onclick="cancelTryOut('GETstp-auth-email-verify--token-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETstp-auth-email-verify--token-" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>stp/auth/email/verify/{token}</code></b>
-        </p>
-                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <p>
-                <b><code>token</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="token"
-               data-endpoint="GETstp-auth-email-verify--token-"
-               value="ea"
-               data-component="url" hidden>
-    <br>
-
-            </p>
-                    </form>
-
-            <h2 id="endpoints-GETstp-auth-email-resend">GET stp/auth/email/resend</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETstp-auth-email-resend">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETstp-auth-email-resend">
-    </span>
-<span id="execution-results-GETstp-auth-email-resend" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETstp-auth-email-resend"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETstp-auth-email-resend"></code></pre>
-</span>
-<span id="execution-error-GETstp-auth-email-resend" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETstp-auth-email-resend"></code></pre>
-</span>
-<form id="form-GETstp-auth-email-resend" data-method="GET"
-      data-path="stp/auth/email/resend"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETstp-auth-email-resend', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETstp-auth-email-resend"
-                    onclick="tryItOut('GETstp-auth-email-resend');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETstp-auth-email-resend"
-                    onclick="cancelTryOut('GETstp-auth-email-resend');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETstp-auth-email-resend" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>stp/auth/email/resend</code></b>
-        </p>
-                    </form>
 
             <h2 id="endpoints-POSTstp-auth-refresh">POST stp/auth/refresh</h2>
 
@@ -695,316 +668,6 @@ fetch(url, {
         </p>
                     </form>
 
-            <h2 id="endpoints-PUTstp-auth-changepassword">PUT stp/auth/changepassword</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTstp-auth-changepassword">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"current_password\": \"soluta\",
-    \"new_password\": \"nulla\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "current_password": "soluta",
-    "new_password": "nulla"
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTstp-auth-changepassword">
-</span>
-<span id="execution-results-PUTstp-auth-changepassword" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTstp-auth-changepassword"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTstp-auth-changepassword"></code></pre>
-</span>
-<span id="execution-error-PUTstp-auth-changepassword" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTstp-auth-changepassword"></code></pre>
-</span>
-<form id="form-PUTstp-auth-changepassword" data-method="PUT"
-      data-path="stp/auth/changepassword"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changepassword', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTstp-auth-changepassword"
-                    onclick="tryItOut('PUTstp-auth-changepassword');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTstp-auth-changepassword"
-                    onclick="cancelTryOut('PUTstp-auth-changepassword');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTstp-auth-changepassword" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>stp/auth/changepassword</code></b>
-        </p>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <p>
-            <b><code>current_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="current_password"
-               data-endpoint="PUTstp-auth-changepassword"
-               value="soluta"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-                <p>
-            <b><code>new_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="new_password"
-               data-endpoint="PUTstp-auth-changepassword"
-               value="nulla"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-                <p>
-            <b><code>new_confirm_password</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
-                <input type="text"
-               name="new_confirm_password"
-               data-endpoint="PUTstp-auth-changepassword"
-               value=""
-               data-component="body" hidden>
-    <br>
-<p>The value and <code>new_password</code> must match.</p>
-        </p>
-        </form>
-
-            <h2 id="endpoints-PUTstp-auth-changename">PUT stp/auth/changename</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTstp-auth-changename">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/auth/changename" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"name\": \"omnis\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/auth/changename"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "name": "omnis"
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTstp-auth-changename">
-</span>
-<span id="execution-results-PUTstp-auth-changename" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTstp-auth-changename"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTstp-auth-changename"></code></pre>
-</span>
-<span id="execution-error-PUTstp-auth-changename" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTstp-auth-changename"></code></pre>
-</span>
-<form id="form-PUTstp-auth-changename" data-method="PUT"
-      data-path="stp/auth/changename"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changename', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTstp-auth-changename"
-                    onclick="tryItOut('PUTstp-auth-changename');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTstp-auth-changename"
-                    onclick="cancelTryOut('PUTstp-auth-changename');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTstp-auth-changename" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>stp/auth/changename</code></b>
-        </p>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <p>
-            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-                <input type="text"
-               name="name"
-               data-endpoint="PUTstp-auth-changename"
-               value="omnis"
-               data-component="body" hidden>
-    <br>
-
-        </p>
-        </form>
-
-            <h2 id="endpoints-GETstp-test">GET stp/test</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETstp-test">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/test" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/test"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETstp-test">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary>
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
- </code></pre>
-        </details>         <pre>
-
-<code class="language-json">&quot;Hello STP-API&quot;</code>
- </pre>
-    </span>
-<span id="execution-results-GETstp-test" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETstp-test"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETstp-test"></code></pre>
-</span>
-<span id="execution-error-GETstp-test" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETstp-test"></code></pre>
-</span>
-<form id="form-GETstp-test" data-method="GET"
-      data-path="stp/test"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETstp-test', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETstp-test"
-                    onclick="tryItOut('GETstp-test');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETstp-test"
-                    onclick="cancelTryOut('GETstp-test');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETstp-test" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>stp/test</code></b>
-        </p>
-                    </form>
-
             <h2 id="endpoints-GETstp-auth-me">GET stp/auth/me</h2>
 
 <p>
@@ -1081,6 +744,2041 @@ fetch(url, {
             <small class="badge badge-green">GET</small>
             <b><code>stp/auth/me</code></b>
         </p>
+                    </form>
+
+            <h2 id="endpoints-PUTstp-auth-changepassword">PUT stp/auth/changepassword</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-auth-changepassword">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"current_password\": \"cupiditate\",
+    \"new_password\": \"at\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changepassword"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "current_password": "cupiditate",
+    "new_password": "at"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-auth-changepassword">
+</span>
+<span id="execution-results-PUTstp-auth-changepassword" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-auth-changepassword"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-auth-changepassword"></code></pre>
+</span>
+<span id="execution-error-PUTstp-auth-changepassword" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-auth-changepassword"></code></pre>
+</span>
+<form id="form-PUTstp-auth-changepassword" data-method="PUT"
+      data-path="stp/auth/changepassword"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changepassword', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-auth-changepassword"
+                    onclick="tryItOut('PUTstp-auth-changepassword');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-auth-changepassword"
+                    onclick="cancelTryOut('PUTstp-auth-changepassword');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-auth-changepassword" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/auth/changepassword</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>current_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="current_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value="cupiditate"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>new_password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="new_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value="at"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>new_confirm_password</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="new_confirm_password"
+               data-endpoint="PUTstp-auth-changepassword"
+               value=""
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>new_password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-PUTstp-auth-changename">PUT stp/auth/changename</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-auth-changename">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changename" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"sequi\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/changename"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "sequi"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-auth-changename">
+</span>
+<span id="execution-results-PUTstp-auth-changename" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-auth-changename"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-auth-changename"></code></pre>
+</span>
+<span id="execution-error-PUTstp-auth-changename" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-auth-changename"></code></pre>
+</span>
+<form id="form-PUTstp-auth-changename" data-method="PUT"
+      data-path="stp/auth/changename"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-auth-changename', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-auth-changename"
+                    onclick="tryItOut('PUTstp-auth-changename');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-auth-changename"
+                    onclick="cancelTryOut('PUTstp-auth-changename');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-auth-changename" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/auth/changename</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="PUTstp-auth-changename"
+               value="sequi"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-auth-email-verify--token-">GET stp/auth/email/verify/{token}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-auth-email-verify--token-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/perspiciatis" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/perspiciatis"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-auth-email-verify--token-">
+    </span>
+<span id="execution-results-GETstp-auth-email-verify--token-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-auth-email-verify--token-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-auth-email-verify--token-"></code></pre>
+</span>
+<span id="execution-error-GETstp-auth-email-verify--token-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-auth-email-verify--token-"></code></pre>
+</span>
+<form id="form-GETstp-auth-email-verify--token-" data-method="GET"
+      data-path="stp/auth/email/verify/{token}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-auth-email-verify--token-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-auth-email-verify--token-"
+                    onclick="tryItOut('GETstp-auth-email-verify--token-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-auth-email-verify--token-"
+                    onclick="cancelTryOut('GETstp-auth-email-verify--token-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-auth-email-verify--token-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/auth/email/verify/{token}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>token</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="token"
+               data-endpoint="GETstp-auth-email-verify--token-"
+               value="perspiciatis"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-auth-email-resend">GET stp/auth/email/resend</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-auth-email-resend">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/auth/email/resend"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-auth-email-resend">
+    </span>
+<span id="execution-results-GETstp-auth-email-resend" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-auth-email-resend"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-auth-email-resend"></code></pre>
+</span>
+<span id="execution-error-GETstp-auth-email-resend" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-auth-email-resend"></code></pre>
+</span>
+<form id="form-GETstp-auth-email-resend" data-method="GET"
+      data-path="stp/auth/email/resend"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-auth-email-resend', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-auth-email-resend"
+                    onclick="tryItOut('GETstp-auth-email-resend');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-auth-email-resend"
+                    onclick="cancelTryOut('GETstp-auth-email-resend');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-auth-email-resend" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/auth/email/resend</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-tenant-member">GET stp/tenant/member</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-tenant-member">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-tenant-member">
+    </span>
+<span id="execution-results-GETstp-tenant-member" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-tenant-member"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-tenant-member"></code></pre>
+</span>
+<span id="execution-error-GETstp-tenant-member" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-tenant-member"></code></pre>
+</span>
+<form id="form-GETstp-tenant-member" data-method="GET"
+      data-path="stp/tenant/member"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-tenant-member', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-tenant-member"
+                    onclick="tryItOut('GETstp-tenant-member');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-tenant-member"
+                    onclick="cancelTryOut('GETstp-tenant-member');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-tenant-member" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/tenant/member</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-POSTstp-tenant-member">POST stp/tenant/member</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTstp-tenant-member">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"voluptatem\",
+    \"email\": \"blanditiis\",
+    \"age\": \"voluptatibus\",
+    \"phone_number\": \"voluptas\",
+    \"address\": \"ipsam\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "voluptatem",
+    "email": "blanditiis",
+    "age": "voluptatibus",
+    "phone_number": "voluptas",
+    "address": "ipsam"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTstp-tenant-member">
+</span>
+<span id="execution-results-POSTstp-tenant-member" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTstp-tenant-member"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTstp-tenant-member"></code></pre>
+</span>
+<span id="execution-error-POSTstp-tenant-member" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTstp-tenant-member"></code></pre>
+</span>
+<form id="form-POSTstp-tenant-member" data-method="POST"
+      data-path="stp/tenant/member"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTstp-tenant-member', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTstp-tenant-member"
+                    onclick="tryItOut('POSTstp-tenant-member');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTstp-tenant-member"
+                    onclick="cancelTryOut('POSTstp-tenant-member');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTstp-tenant-member" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>stp/tenant/member</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="POSTstp-tenant-member"
+               value="voluptatem"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="POSTstp-tenant-member"
+               value="blanditiis"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>age</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="age"
+               data-endpoint="POSTstp-tenant-member"
+               value="voluptatibus"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>phone_number</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="phone_number"
+               data-endpoint="POSTstp-tenant-member"
+               value="voluptas"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>address</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="address"
+               data-endpoint="POSTstp-tenant-member"
+               value="ipsam"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-tenant-member--id-">GET stp/tenant/member/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-tenant-member--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/4" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/4"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-tenant-member--id-">
+    </span>
+<span id="execution-results-GETstp-tenant-member--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-tenant-member--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-tenant-member--id-"></code></pre>
+</span>
+<span id="execution-error-GETstp-tenant-member--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-tenant-member--id-"></code></pre>
+</span>
+<form id="form-GETstp-tenant-member--id-" data-method="GET"
+      data-path="stp/tenant/member/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-tenant-member--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-tenant-member--id-"
+                    onclick="tryItOut('GETstp-tenant-member--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-tenant-member--id-"
+                    onclick="cancelTryOut('GETstp-tenant-member--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-tenant-member--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/tenant/member/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="GETstp-tenant-member--id-"
+               value="4"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the member.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTstp-tenant-member--id-">PUT stp/tenant/member/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-tenant-member--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/7" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/7"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-tenant-member--id-">
+</span>
+<span id="execution-results-PUTstp-tenant-member--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-tenant-member--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-tenant-member--id-"></code></pre>
+</span>
+<span id="execution-error-PUTstp-tenant-member--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-tenant-member--id-"></code></pre>
+</span>
+<form id="form-PUTstp-tenant-member--id-" data-method="PUT"
+      data-path="stp/tenant/member/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-tenant-member--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-tenant-member--id-"
+                    onclick="tryItOut('PUTstp-tenant-member--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-tenant-member--id-"
+                    onclick="cancelTryOut('PUTstp-tenant-member--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-tenant-member--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/tenant/member/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>stp/tenant/member/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="PUTstp-tenant-member--id-"
+               value="7"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the member.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-DELETEstp-tenant-member--id-">DELETE stp/tenant/member/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEstp-tenant-member--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/15" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/15"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEstp-tenant-member--id-">
+</span>
+<span id="execution-results-DELETEstp-tenant-member--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEstp-tenant-member--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEstp-tenant-member--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEstp-tenant-member--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEstp-tenant-member--id-"></code></pre>
+</span>
+<form id="form-DELETEstp-tenant-member--id-" data-method="DELETE"
+      data-path="stp/tenant/member/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEstp-tenant-member--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEstp-tenant-member--id-"
+                    onclick="tryItOut('DELETEstp-tenant-member--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEstp-tenant-member--id-"
+                    onclick="cancelTryOut('DELETEstp-tenant-member--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEstp-tenant-member--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>stp/tenant/member/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="DELETEstp-tenant-member--id-"
+               value="15"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the member.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-tenant-member-search--name-">GET stp/tenant/member/search/{name}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-tenant-member-search--name-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/quas" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/quas"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-tenant-member-search--name-">
+    </span>
+<span id="execution-results-GETstp-tenant-member-search--name-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-tenant-member-search--name-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-tenant-member-search--name-"></code></pre>
+</span>
+<span id="execution-error-GETstp-tenant-member-search--name-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-tenant-member-search--name-"></code></pre>
+</span>
+<form id="form-GETstp-tenant-member-search--name-" data-method="GET"
+      data-path="stp/tenant/member/search/{name}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-tenant-member-search--name-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-tenant-member-search--name-"
+                    onclick="tryItOut('GETstp-tenant-member-search--name-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-tenant-member-search--name-"
+                    onclick="cancelTryOut('GETstp-tenant-member-search--name-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-tenant-member-search--name-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/tenant/member/search/{name}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="GETstp-tenant-member-search--name-"
+               value="quas"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
+
+            <h2 id="endpoints-POSTstp-juri-add-juri">POST stp/juri/add-juri</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTstp-juri-add-juri">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/add-juri" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"soluta\",
+    \"email\": \"reba08@example.org\",
+    \"password\": \"sifs\",
+    \"password_confirmation\": \"provident\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/juri/add-juri"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "soluta",
+    "email": "reba08@example.org",
+    "password": "sifs",
+    "password_confirmation": "provident"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTstp-juri-add-juri">
+</span>
+<span id="execution-results-POSTstp-juri-add-juri" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTstp-juri-add-juri"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTstp-juri-add-juri"></code></pre>
+</span>
+<span id="execution-error-POSTstp-juri-add-juri" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTstp-juri-add-juri"></code></pre>
+</span>
+<form id="form-POSTstp-juri-add-juri" data-method="POST"
+      data-path="stp/juri/add-juri"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTstp-juri-add-juri', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTstp-juri-add-juri"
+                    onclick="tryItOut('POSTstp-juri-add-juri');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTstp-juri-add-juri"
+                    onclick="cancelTryOut('POSTstp-juri-add-juri');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTstp-juri-add-juri" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>stp/juri/add-juri</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="POSTstp-juri-add-juri"
+               value="soluta"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="POSTstp-juri-add-juri"
+               value="reba08@example.org"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid email address.</p>
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="POSTstp-juri-add-juri"
+               value="sifs"
+               data-component="body" hidden>
+    <br>
+<p>Must be at least 8 characters.</p>
+        </p>
+                <p>
+            <b><code>password_confirmation</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password_confirmation"
+               data-endpoint="POSTstp-juri-add-juri"
+               value="provident"
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-juri-get-juri">GET stp/juri/get-juri</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-juri-get-juri">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-juri-get-juri">
+    </span>
+<span id="execution-results-GETstp-juri-get-juri" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-juri-get-juri"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-juri-get-juri"></code></pre>
+</span>
+<span id="execution-error-GETstp-juri-get-juri" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-juri-get-juri"></code></pre>
+</span>
+<form id="form-GETstp-juri-get-juri" data-method="GET"
+      data-path="stp/juri/get-juri"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-juri-get-juri', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-juri-get-juri"
+                    onclick="tryItOut('GETstp-juri-get-juri');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-juri-get-juri"
+                    onclick="cancelTryOut('GETstp-juri-get-juri');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-juri-get-juri" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/juri/get-juri</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-juri-get-juri--id-">GET stp/juri/get-juri/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-juri-get-juri--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/qui" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/qui"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-juri-get-juri--id-">
+    </span>
+<span id="execution-results-GETstp-juri-get-juri--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-juri-get-juri--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-juri-get-juri--id-"></code></pre>
+</span>
+<span id="execution-error-GETstp-juri-get-juri--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-juri-get-juri--id-"></code></pre>
+</span>
+<form id="form-GETstp-juri-get-juri--id-" data-method="GET"
+      data-path="stp/juri/get-juri/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-juri-get-juri--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-juri-get-juri--id-"
+                    onclick="tryItOut('GETstp-juri-get-juri--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-juri-get-juri--id-"
+                    onclick="cancelTryOut('GETstp-juri-get-juri--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-juri-get-juri--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/juri/get-juri/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="GETstp-juri-get-juri--id-"
+               value="qui"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the get juri.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTstp-juri-update-juri--id-">PUT stp/juri/update-juri/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-juri-update-juri--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/nesciunt" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"cupiditate\",
+    \"password\": \"enmy\",
+    \"password_confirmation\": \"ipsam\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/nesciunt"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "cupiditate",
+    "password": "enmy",
+    "password_confirmation": "ipsam"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-juri-update-juri--id-">
+</span>
+<span id="execution-results-PUTstp-juri-update-juri--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-juri-update-juri--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-juri-update-juri--id-"></code></pre>
+</span>
+<span id="execution-error-PUTstp-juri-update-juri--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-juri-update-juri--id-"></code></pre>
+</span>
+<form id="form-PUTstp-juri-update-juri--id-" data-method="PUT"
+      data-path="stp/juri/update-juri/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-juri-update-juri--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-juri-update-juri--id-"
+                    onclick="tryItOut('PUTstp-juri-update-juri--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-juri-update-juri--id-"
+                    onclick="cancelTryOut('PUTstp-juri-update-juri--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-juri-update-juri--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/juri/update-juri/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="PUTstp-juri-update-juri--id-"
+               value="nesciunt"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the update juri.</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="PUTstp-juri-update-juri--id-"
+               value="cupiditate"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="PUTstp-juri-update-juri--id-"
+               value=""
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="PUTstp-juri-update-juri--id-"
+               value="enmy"
+               data-component="body" hidden>
+    <br>
+<p>Must be at least 8 characters.</p>
+        </p>
+                <p>
+            <b><code>password_confirmation</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password_confirmation"
+               data-endpoint="PUTstp-juri-update-juri--id-"
+               value="ipsam"
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-DELETEstp-juri-delete-juri--id-">DELETE stp/juri/delete-juri/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEstp-juri-delete-juri--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/ratione" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/ratione"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEstp-juri-delete-juri--id-">
+</span>
+<span id="execution-results-DELETEstp-juri-delete-juri--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEstp-juri-delete-juri--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEstp-juri-delete-juri--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEstp-juri-delete-juri--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEstp-juri-delete-juri--id-"></code></pre>
+</span>
+<form id="form-DELETEstp-juri-delete-juri--id-" data-method="DELETE"
+      data-path="stp/juri/delete-juri/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEstp-juri-delete-juri--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEstp-juri-delete-juri--id-"
+                    onclick="tryItOut('DELETEstp-juri-delete-juri--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEstp-juri-delete-juri--id-"
+                    onclick="cancelTryOut('DELETEstp-juri-delete-juri--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEstp-juri-delete-juri--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>stp/juri/delete-juri/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="DELETEstp-juri-delete-juri--id-"
+               value="ratione"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the delete juri.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-POSTstp-mentor-add-mentor">POST stp/mentor/add-mentor</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTstp-mentor-add-mentor">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/add-mentor" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"et\",
+    \"email\": \"jakayla66@example.com\",
+    \"password\": \"y\",
+    \"password_confirmation\": \"est\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/add-mentor"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "et",
+    "email": "jakayla66@example.com",
+    "password": "y",
+    "password_confirmation": "est"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTstp-mentor-add-mentor">
+</span>
+<span id="execution-results-POSTstp-mentor-add-mentor" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTstp-mentor-add-mentor"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTstp-mentor-add-mentor"></code></pre>
+</span>
+<span id="execution-error-POSTstp-mentor-add-mentor" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTstp-mentor-add-mentor"></code></pre>
+</span>
+<form id="form-POSTstp-mentor-add-mentor" data-method="POST"
+      data-path="stp/mentor/add-mentor"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTstp-mentor-add-mentor', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTstp-mentor-add-mentor"
+                    onclick="tryItOut('POSTstp-mentor-add-mentor');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTstp-mentor-add-mentor"
+                    onclick="cancelTryOut('POSTstp-mentor-add-mentor');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTstp-mentor-add-mentor" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>stp/mentor/add-mentor</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="POSTstp-mentor-add-mentor"
+               value="et"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="POSTstp-mentor-add-mentor"
+               value="jakayla66@example.com"
+               data-component="body" hidden>
+    <br>
+<p>Must be a valid email address.</p>
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="POSTstp-mentor-add-mentor"
+               value="y"
+               data-component="body" hidden>
+    <br>
+<p>Must be at least 8 characters.</p>
+        </p>
+                <p>
+            <b><code>password_confirmation</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password_confirmation"
+               data-endpoint="POSTstp-mentor-add-mentor"
+               value="est"
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-mentor-get-mentor">GET stp/mentor/get-mentor</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-mentor-get-mentor">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-mentor-get-mentor">
+    </span>
+<span id="execution-results-GETstp-mentor-get-mentor" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-mentor-get-mentor"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-mentor-get-mentor"></code></pre>
+</span>
+<span id="execution-error-GETstp-mentor-get-mentor" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-mentor-get-mentor"></code></pre>
+</span>
+<form id="form-GETstp-mentor-get-mentor" data-method="GET"
+      data-path="stp/mentor/get-mentor"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-mentor-get-mentor', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-mentor-get-mentor"
+                    onclick="tryItOut('GETstp-mentor-get-mentor');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-mentor-get-mentor"
+                    onclick="cancelTryOut('GETstp-mentor-get-mentor');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-mentor-get-mentor" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/mentor/get-mentor</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-mentor-get-mentor--id-">GET stp/mentor/get-mentor/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-mentor-get-mentor--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/ut" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/ut"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-mentor-get-mentor--id-">
+    </span>
+<span id="execution-results-GETstp-mentor-get-mentor--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-mentor-get-mentor--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-mentor-get-mentor--id-"></code></pre>
+</span>
+<span id="execution-error-GETstp-mentor-get-mentor--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-mentor-get-mentor--id-"></code></pre>
+</span>
+<form id="form-GETstp-mentor-get-mentor--id-" data-method="GET"
+      data-path="stp/mentor/get-mentor/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-mentor-get-mentor--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-mentor-get-mentor--id-"
+                    onclick="tryItOut('GETstp-mentor-get-mentor--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-mentor-get-mentor--id-"
+                    onclick="cancelTryOut('GETstp-mentor-get-mentor--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-mentor-get-mentor--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/mentor/get-mentor/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="GETstp-mentor-get-mentor--id-"
+               value="ut"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the get mentor.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTstp-mentor-update-mentor--id-">PUT stp/mentor/update-mentor/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-mentor-update-mentor--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/est" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"cumque\",
+    \"password\": \"kvrn\",
+    \"password_confirmation\": \"veritatis\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/est"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "cumque",
+    "password": "kvrn",
+    "password_confirmation": "veritatis"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-mentor-update-mentor--id-">
+</span>
+<span id="execution-results-PUTstp-mentor-update-mentor--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-mentor-update-mentor--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-mentor-update-mentor--id-"></code></pre>
+</span>
+<span id="execution-error-PUTstp-mentor-update-mentor--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-mentor-update-mentor--id-"></code></pre>
+</span>
+<form id="form-PUTstp-mentor-update-mentor--id-" data-method="PUT"
+      data-path="stp/mentor/update-mentor/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-mentor-update-mentor--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-mentor-update-mentor--id-"
+                    onclick="tryItOut('PUTstp-mentor-update-mentor--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-mentor-update-mentor--id-"
+                    onclick="cancelTryOut('PUTstp-mentor-update-mentor--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-mentor-update-mentor--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/mentor/update-mentor/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="PUTstp-mentor-update-mentor--id-"
+               value="est"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the update mentor.</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="name"
+               data-endpoint="PUTstp-mentor-update-mentor--id-"
+               value="cumque"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="email"
+               data-endpoint="PUTstp-mentor-update-mentor--id-"
+               value=""
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password"
+               data-endpoint="PUTstp-mentor-update-mentor--id-"
+               value="kvrn"
+               data-component="body" hidden>
+    <br>
+<p>Must be at least 8 characters.</p>
+        </p>
+                <p>
+            <b><code>password_confirmation</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="password_confirmation"
+               data-endpoint="PUTstp-mentor-update-mentor--id-"
+               value="veritatis"
+               data-component="body" hidden>
+    <br>
+<p>The value and <code>password</code> must match.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-DELETEstp-mentor-delete-mentor--id-">DELETE stp/mentor/delete-mentor/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEstp-mentor-delete-mentor--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/in" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/in"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEstp-mentor-delete-mentor--id-">
+</span>
+<span id="execution-results-DELETEstp-mentor-delete-mentor--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEstp-mentor-delete-mentor--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEstp-mentor-delete-mentor--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEstp-mentor-delete-mentor--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEstp-mentor-delete-mentor--id-"></code></pre>
+</span>
+<form id="form-DELETEstp-mentor-delete-mentor--id-" data-method="DELETE"
+      data-path="stp/mentor/delete-mentor/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEstp-mentor-delete-mentor--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEstp-mentor-delete-mentor--id-"
+                    onclick="tryItOut('DELETEstp-mentor-delete-mentor--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEstp-mentor-delete-mentor--id-"
+                    onclick="cancelTryOut('DELETEstp-mentor-delete-mentor--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEstp-mentor-delete-mentor--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>stp/mentor/delete-mentor/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="DELETEstp-mentor-delete-mentor--id-"
+               value="in"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the delete mentor.</p>
+            </p>
                     </form>
 
     
