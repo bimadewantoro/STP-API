@@ -13,5 +13,5 @@ class PenilaianJuri extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['proposal_id', 'user_id', 'penerapan_id_masyarakat', 'manfaat', 'keberlangsungan', 'presentasi_penyajian_produk'];
+    protected $fillable = ['proposal_id', 'user_id', 'penerapan_di_masyarakat', 'manfaat', 'keberlangsungan', 'presentasi_penyajian_produk'];
 }
