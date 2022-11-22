@@ -46,21 +46,21 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: kxrkwqjeisxnovgnrdbapngtwqnazplaihozxzdxyswjwhuahglpisfsafpdqouuhanglufthhnynevcbcihdcutpisbscjaqewrdtbcpnsxzsywwdcyfctgcnohusajkpzionoawqooidjqqqxybtxmeelhuq
+        example: vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: txcfowceadoincdqotkzmmlbjoamnxtmyccmeefmy
+        example: uynpepudqevvol
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: perspiciatis
+        example: quia
         type: string
         custom: []
     responses: []
@@ -84,14 +84,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: zrszmltaob
+        example: uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: aperiam
+        example: beatae
         type: string
         custom: []
     responses: []
@@ -166,14 +166,14 @@ endpoints:
         name: current_password
         description: ''
         required: true
-        example: cupiditate
+        example: molestias
         type: string
         custom: []
       new_password:
         name: new_password
         description: ''
         required: true
-        example: at
+        example: doloremque
         type: string
         custom: []
       new_confirm_password:
@@ -204,7 +204,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: sequi
+        example: esse
         type: string
         custom: []
     responses: []
@@ -226,7 +226,7 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: perspiciatis
+        example: quisquam
         type: string
         custom: []
     queryParameters: []
@@ -286,35 +286,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: voluptatem
+        example: ut
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: blanditiis
+        example: dolorem
         type: string
         custom: []
       age:
         name: age
         description: ''
         required: true
-        example: voluptatibus
+        example: illo
         type: string
         custom: []
       phone_number:
         name: phone_number
         description: ''
         required: true
-        example: voluptas
+        example: cupiditate
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: ipsam
+        example: rerum
         type: string
         custom: []
     responses: []
@@ -336,7 +336,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 4
+        example: 15
         type: integer
         custom: []
     queryParameters: []
@@ -361,7 +361,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 7
+        example: 2
         type: integer
         custom: []
     queryParameters: []
@@ -385,7 +385,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 15
+        example: 20
         type: integer
         custom: []
     queryParameters: []
@@ -409,7 +409,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: quas
+        example: itaque
         type: string
         custom: []
     queryParameters: []
@@ -435,28 +435,28 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: soluta
+        example: ipsum
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: reba08@example.org
+        example: jharris@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: sifs
+        example: xrscu
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: provident
+        example: fuga
         type: string
         custom: []
     responses: []
@@ -495,7 +495,7 @@ endpoints:
         name: id
         description: 'The ID of the get juri.'
         required: true
-        example: qui
+        example: accusantium
         type: string
         custom: []
     queryParameters: []
@@ -519,7 +519,7 @@ endpoints:
         name: id
         description: 'The ID of the update juri.'
         required: true
-        example: nesciunt
+        example: illo
         type: string
         custom: []
     queryParameters: []
@@ -528,7 +528,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: cupiditate
+        example: explicabo
         type: string
         custom: []
       email:
@@ -542,14 +542,14 @@ endpoints:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: enmy
+        example: cmbhi
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: ipsam
+        example: magnam
         type: string
         custom: []
     responses: []
@@ -571,7 +571,7 @@ endpoints:
         name: id
         description: 'The ID of the delete juri.'
         required: true
-        example: ratione
+        example: necessitatibus
         type: string
         custom: []
     queryParameters: []
@@ -597,28 +597,28 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: et
+        example: nisi
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jakayla66@example.com
+        example: tyler55@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: 'y'
+        example: vy
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: est
+        example: molestiae
         type: string
         custom: []
     responses: []
@@ -657,7 +657,7 @@ endpoints:
         name: id
         description: 'The ID of the get mentor.'
         required: true
-        example: ut
+        example: dolorem
         type: string
         custom: []
     queryParameters: []
@@ -681,7 +681,7 @@ endpoints:
         name: id
         description: 'The ID of the update mentor.'
         required: true
-        example: est
+        example: ipsum
         type: string
         custom: []
     queryParameters: []
@@ -690,7 +690,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: cumque
+        example: consectetur
         type: string
         custom: []
       email:
@@ -704,14 +704,14 @@ endpoints:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: kvrn
+        example: dfm
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: veritatis
+        example: ut
         type: string
         custom: []
     responses: []
@@ -733,8 +733,441 @@ endpoints:
         name: id
         description: 'The ID of the delete mentor.'
         required: true
-        example: in
+        example: delectus
         type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/tenant/proposal-konten/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal konten.'
+        required: true
+        example: 19
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/tenant/proposal-konten/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal konten.'
+        required: true
+        example: 9
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      konten_judul:
+        name: konten_judul
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      konten_subjudul:
+        name: konten_subjudul
+        description: ''
+        required: true
+        example: repellendus
+        type: string
+        custom: []
+      konten_isi:
+        name: konten_isi
+        description: 'Must be at least 50 characters.'
+        required: true
+        example: srlauxsreylfvpgustpaduczyks
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/tenant/proposal-konten/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal konten.'
+        required: true
+        example: 15
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/tenant/proposal-konten
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      konten_judul:
+        name: konten_judul
+        description: ''
+        required: true
+        example: officiis
+        type: string
+        custom: []
+      konten_subjudul:
+        name: konten_subjudul
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      konten_isi:
+        name: konten_isi
+        description: 'Must be at least 50 characters.'
+        required: true
+        example: gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/tenant/proposal-konten
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/juri/penilaian-juri
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/juri/penilaian-juri
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      penerapan_di_masyarakat:
+        name: penerapan_di_masyarakat
+        description: ''
+        required: true
+        example: dicta
+        type: string
+        custom: []
+      manfaat:
+        name: manfaat
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+      keberlangsungan:
+        name: keberlangsungan
+        description: ''
+        required: true
+        example: aut
+        type: string
+        custom: []
+      presentasi_penyajian_produk:
+        name: presentasi_penyajian_produk
+        description: ''
+        required: true
+        example: dolor
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/juri/penilaian-juri/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the penilaian juri.'
+        required: true
+        example: 9
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/juri/penilaian-juri/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the penilaian juri.'
+        required: true
+        example: 11
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      penerapan_di_masyarakat:
+        name: penerapan_di_masyarakat
+        description: ''
+        required: true
+        example: dignissimos
+        type: string
+        custom: []
+      manfaat:
+        name: manfaat
+        description: ''
+        required: true
+        example: consequuntur
+        type: string
+        custom: []
+      keberlangsungan:
+        name: keberlangsungan
+        description: ''
+        required: true
+        example: eius
+        type: string
+        custom: []
+      presentasi_penyajian_produk:
+        name: presentasi_penyajian_produk
+        description: ''
+        required: true
+        example: incidunt
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/juri/penilaian-juri/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the penilaian juri.'
+        required: true
+        example: 17
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/tenant/proposal/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal.'
+        required: true
+        example: 7
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      proposal_abstrak:
+        name: proposal_abstrak
+        description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+        required: true
+        example: sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/tenant/proposal/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal.'
+        required: true
+        example: 5
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/tenant/proposal
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      proposal_abstrak:
+        name: proposal_abstrak
+        description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+        required: true
+        example: grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/tenant/proposal
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/tenant/proposal/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the proposal.'
+        required: true
+        example: 11
+        type: integer
         custom: []
     queryParameters: []
     bodyParameters: []
