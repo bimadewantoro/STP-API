@@ -87,6 +87,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/mentor_api.php'));
 
+            Route::prefix('coworking_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/workspace_api.php'));
         });
     }
     
