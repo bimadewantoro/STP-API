@@ -105,6 +105,7 @@ class RolesAndPermissionSeeder extends Seeder
         $tenant = 'tenant';
         $juri = 'juri';
         $mentor = 'mentor';
+        $talent= 'talent';
 
         Role::create(['name' => $superAdmin])
             ->givePermissionTo([Permission::all()]);
@@ -132,6 +133,13 @@ class RolesAndPermissionSeeder extends Seeder
         Role::create(['name' => $mentor])
             ->givePermissionTo([
                 $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
+            ]);
+        
+        Role::create(['name' => $talent])
+            ->givePermissionTo([
+                $addProposal, $editProposal, $deleteProposal, $viewProposal,
+                $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
+                $addActivity, $editActivity, $deleteActivity, $viewActivity,
             ]);
     }
 }

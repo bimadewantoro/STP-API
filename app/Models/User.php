@@ -10,7 +10,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable implements JWTSubject
+class User extends Authenticatable implements JWTSubject, MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
@@ -23,6 +23,7 @@ class User extends Authenticatable implements JWTSubject
         'name',
         'email',
         'password',
+        'verified',
     ];
 
     /**
@@ -76,5 +77,10 @@ class User extends Authenticatable implements JWTSubject
     public function userProfile()
     {
         return $this->hasOne(UserProfile::class);
+    }
+
+    public function verifyUser ()
+    {
+        return $this->hasOne(VerifyUser::class);
     }
 }

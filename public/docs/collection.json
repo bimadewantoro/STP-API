@@ -1,0 +1,1397 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "https:\/\/semarangtechnopark.herokuapp.com"
+        }
+    ],
+    "info": {
+        "name": "Semarang Technopark API",
+        "_postman_id": "8993d642-28d8-472e-831f-7e98f18aee23",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "stp\/test",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/test",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/test"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "\"Hello STP-API\"",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "stp\/auth\/signup",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/signup",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/signup"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp\",\"email\":\"uynpepudqevvol\",\"password\":\"quia\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc\",\"password\":\"beatae\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/refresh",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/refresh",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/refresh"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/changepassword",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changepassword",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changepassword"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"current_password\":\"molestias\",\"new_password\":\"doloremque\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/changename",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/changename",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/changename"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"esse\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/email\/verify\/{token}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/email\/verify\/:token",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/email\/verify\/:token",
+                            "variable": [
+                                {
+                                    "id": "token",
+                                    "key": "token",
+                                    "value": "quisquam",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/auth\/email\/resend",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/auth\/email\/resend",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/auth\/email\/resend"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ut\",\"email\":\"dolorem\",\"age\":\"illo\",\"phone_number\":\"cupiditate\",\"address\":\"rerum\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/member\/search\/{name}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/member\/search\/:name",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/member\/search\/:name",
+                            "variable": [
+                                {
+                                    "id": "name",
+                                    "key": "name",
+                                    "value": "itaque",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/add-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/add-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/add-juri"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ipsum\",\"email\":\"jharris@example.com\",\"password\":\"xrscu\",\"password_confirmation\":\"fuga\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/get-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/get-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/get-juri"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/get-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/get-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/get-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "accusantium",
+                                    "description": "The ID of the get juri."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/update-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/update-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/update-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "illo",
+                                    "description": "The ID of the update juri."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"explicabo\",\"password\":\"cmbhi\",\"password_confirmation\":\"magnam\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/delete-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/delete-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/delete-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "necessitatibus",
+                                    "description": "The ID of the delete juri."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/mentor\/add-mentor",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/mentor\/add-mentor",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/mentor\/add-mentor"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"nisi\",\"email\":\"tyler55@example.org\",\"password\":\"vy\",\"password_confirmation\":\"molestiae\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/mentor\/get-mentor",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/mentor\/get-mentor",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/mentor\/get-mentor"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/mentor\/get-mentor\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/mentor\/get-mentor\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/mentor\/get-mentor\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "dolorem",
+                                    "description": "The ID of the get mentor."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/mentor\/update-mentor\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/mentor\/update-mentor\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/mentor\/update-mentor\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "ipsum",
+                                    "description": "The ID of the update mentor."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"consectetur\",\"password\":\"dfm\",\"password_confirmation\":\"ut\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/mentor\/delete-mentor\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/mentor\/delete-mentor\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/mentor\/delete-mentor\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "delectus",
+                                    "description": "The ID of the delete mentor."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"konten_judul\":\"et\",\"konten_subjudul\":\"repellendus\",\"konten_isi\":\"srlauxsreylfvpgustpaduczyks\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"konten_judul\":\"officiis\",\"konten_subjudul\":\"et\",\"konten_isi\":\"gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"penerapan_di_masyarakat\":\"dicta\",\"manfaat\":\"qui\",\"keberlangsungan\":\"aut\",\"presentasi_penyajian_produk\":\"dolor\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "The ID of the penilaian juri."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "The ID of the penilaian juri."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"penerapan_di_masyarakat\":\"dignissimos\",\"manfaat\":\"consequuntur\",\"keberlangsungan\":\"eius\",\"presentasi_penyajian_produk\":\"incidunt\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "The ID of the penilaian juri."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "The ID of the proposal."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"proposal_abstrak\":\"sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "The ID of the proposal."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"proposal_abstrak\":\"grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "The ID of the proposal."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

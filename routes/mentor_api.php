@@ -25,8 +25,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->get('/test', function () {
-        return 'Hello STP-API';
+    $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'mentor'], function ($api) {
+        $api->post('/add-mentor', 'App\Http\Controllers\MentorController@store');
+        $api->get('/get-mentor', 'App\Http\Controllers\MentorController@index');
+        $api->get('/get-mentor/{id}', 'App\Http\Controllers\MentorController@show');
+        $api->put('/update-mentor/{id}', 'App\Http\Controllers\MentorController@update');
+        $api->delete('/delete-mentor/{id}', 'App\Http\Controllers\MentorController@destroy');
     });
     
 });

@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\CreateMember;
-use Dingo\Api\Auth;
+use App\Http\Controllers\MemberController;
+use Dingo\Api\Auth\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,8 +25,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->get('/test', function () {
-        return 'Hello STP-API';
+    $api->group(['middleware' => ['role:tenant|super-admin'], 'prefix' => 'tenant'], function ($api) {
+        $api->resource('member', MemberController::class);
+        $api->get('member/search/{name}', 'App\Http\Controllers\MemberController@search')->name('member.search');
     });
     
 });

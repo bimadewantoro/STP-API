@@ -46,9 +46,50 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
+
+            Route::prefix('auth')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/auth_api.php'));
+
+            Route::prefix('verification')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/verification_api.php'));
+
+            Route::prefix('member_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/member_api.php'));
+
+            Route::prefix('proposal_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/proposal_api.php'));
+            
+            Route::prefix('proposal_konten_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/proposal_konten_api.php'));
+
+            Route::prefix('juri_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/juri_api.php'));
+                
+            Route::prefix('penilaian_juri_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/penilaian_juri_api.php'));
+                
+            Route::prefix('mentor_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/mentor_api.php'));
+
         });
     }
-
+    
     /**
      * Configure the rate limiters for the application.
      *

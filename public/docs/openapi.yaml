@@ -1,0 +1,1406 @@
+openapi: 3.0.3
+info:
+  title: 'Semarang Technopark API'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'https://semarangtechnopark.herokuapp.com'
+paths:
+  /stp/test:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: string
+                example: 'Hello STP-API'
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/signup:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: uynpepudqevvol
+                password:
+                  type: string
+                  description: ''
+                  example: quia
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /stp/auth/login:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc
+                password:
+                  type: string
+                  description: ''
+                  example: beatae
+              required:
+                - email
+                - password
+      security: []
+  /stp/auth/refresh:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/logout:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/me:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/auth/changepassword:
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                current_password:
+                  type: string
+                  description: ''
+                  example: molestias
+                new_password:
+                  type: string
+                  description: ''
+                  example: doloremque
+                new_confirm_password:
+                  type: string
+                  description: 'The value and <code>new_password</code> must match.'
+                  example: null
+              required:
+                - current_password
+                - new_password
+      security: []
+  /stp/auth/changename:
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: esse
+              required:
+                - name
+      security: []
+  '/stp/auth/email/verify/{token}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: token
+        description: ''
+        example: quisquam
+        required: true
+        schema:
+          type: string
+  /stp/auth/email/resend:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/tenant/member:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: ut
+                email:
+                  type: string
+                  description: ''
+                  example: dolorem
+                age:
+                  type: string
+                  description: ''
+                  example: illo
+                phone_number:
+                  type: string
+                  description: ''
+                  example: cupiditate
+                address:
+                  type: string
+                  description: ''
+                  example: rerum
+              required:
+                - name
+                - email
+                - age
+                - phone_number
+                - address
+      security: []
+  '/stp/tenant/member/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the member.'
+        example: 15
+        required: true
+        schema:
+          type: integer
+  '/stp/tenant/member/search/{name}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: name
+        description: ''
+        example: itaque
+        required: true
+        schema:
+          type: string
+  /stp/juri/add-juri:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: ipsum
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: jharris@example.com
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: xrscu
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: fuga
+              required:
+                - name
+                - email
+                - password
+                - password_confirmation
+      security: []
+  /stp/juri/get-juri:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/stp/juri/get-juri/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the get juri.'
+        example: accusantium
+        required: true
+        schema:
+          type: string
+  '/stp/juri/update-juri/{id}':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: explicabo
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: cmbhi
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: magnam
+              required:
+                - name
+                - password
+                - password_confirmation
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update juri.'
+        example: illo
+        required: true
+        schema:
+          type: string
+  '/stp/juri/delete-juri/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete juri.'
+        example: necessitatibus
+        required: true
+        schema:
+          type: string
+  /stp/mentor/add-mentor:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: nisi
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: tyler55@example.org
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: vy
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: molestiae
+              required:
+                - name
+                - email
+                - password
+                - password_confirmation
+      security: []
+  /stp/mentor/get-mentor:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/stp/mentor/get-mentor/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the get mentor.'
+        example: dolorem
+        required: true
+        schema:
+          type: string
+  '/stp/mentor/update-mentor/{id}':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: consectetur
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: dfm
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: ut
+              required:
+                - name
+                - password
+                - password_confirmation
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update mentor.'
+        example: ipsum
+        required: true
+        schema:
+          type: string
+  '/stp/mentor/delete-mentor/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete mentor.'
+        example: delectus
+        required: true
+        schema:
+          type: string
+  '/stp/tenant/proposal-konten/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                konten_judul:
+                  type: string
+                  description: ''
+                  example: et
+                konten_subjudul:
+                  type: string
+                  description: ''
+                  example: repellendus
+                konten_isi:
+                  type: string
+                  description: 'Must be at least 50 characters.'
+                  example: srlauxsreylfvpgustpaduczyks
+              required:
+                - konten_judul
+                - konten_subjudul
+                - konten_isi
+      security: []
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the proposal konten.'
+        example: 19
+        required: true
+        schema:
+          type: integer
+  /stp/tenant/proposal-konten:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                konten_judul:
+                  type: string
+                  description: ''
+                  example: officiis
+                konten_subjudul:
+                  type: string
+                  description: ''
+                  example: et
+                konten_isi:
+                  type: string
+                  description: 'Must be at least 50 characters.'
+                  example: gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt
+              required:
+                - konten_judul
+                - konten_subjudul
+                - konten_isi
+      security: []
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/juri/penilaian-juri:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                penerapan_di_masyarakat:
+                  type: string
+                  description: ''
+                  example: dicta
+                manfaat:
+                  type: string
+                  description: ''
+                  example: qui
+                keberlangsungan:
+                  type: string
+                  description: ''
+                  example: aut
+                presentasi_penyajian_produk:
+                  type: string
+                  description: ''
+                  example: dolor
+              required:
+                - penerapan_di_masyarakat
+                - manfaat
+                - keberlangsungan
+                - presentasi_penyajian_produk
+      security: []
+  '/stp/juri/penilaian-juri/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                penerapan_di_masyarakat:
+                  type: string
+                  description: ''
+                  example: dignissimos
+                manfaat:
+                  type: string
+                  description: ''
+                  example: consequuntur
+                keberlangsungan:
+                  type: string
+                  description: ''
+                  example: eius
+                presentasi_penyajian_produk:
+                  type: string
+                  description: ''
+                  example: incidunt
+              required:
+                - penerapan_di_masyarakat
+                - manfaat
+                - keberlangsungan
+                - presentasi_penyajian_produk
+      security: []
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the penilaian juri.'
+        example: 9
+        required: true
+        schema:
+          type: integer
+  '/stp/tenant/proposal/{id}':
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                proposal_abstrak:
+                  type: string
+                  description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+                  example: sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf
+              required:
+                - proposal_abstrak
+      security: []
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the proposal.'
+        example: 7
+        required: true
+        schema:
+          type: integer
+  /stp/tenant/proposal:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                proposal_abstrak:
+                  type: string
+                  description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+                  example: grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn
+              required:
+                - proposal_abstrak
+      security: []
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
