@@ -69,15 +69,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp
+                  example: sccaejaeqzgapytlelzpfhhixzfsxyiwebnazybx
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: uynpepudqevvol
+                  example: tywzdllriiymgslubpvvyhovgjnzxfja
                 password:
                   type: string
                   description: ''
-                  example: quia
+                  example: sint
               required:
                 - name
                 - email
@@ -115,11 +115,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc
+                  example: obyfyuayudzaqeeqsintcvksqrvftsqnixvdhbinmhqfbleolsflspcnejjhceapuzlpvuigqtjwlsawciyaqrpbcbbenacmciupsxtospelgwg
                 password:
                   type: string
                   description: ''
-                  example: beatae
+                  example: officia
               required:
                 - email
                 - password
@@ -225,11 +225,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: molestias
+                  example: ratione
                 new_password:
                   type: string
                   description: ''
-                  example: doloremque
+                  example: numquam
                 new_confirm_password:
                   type: string
                   description: 'The value and <code>new_password</code> must match.'
@@ -270,7 +270,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: esse
+                  example: est
               required:
                 - name
       security: []
@@ -302,7 +302,7 @@ paths:
         in: path
         name: token
         description: ''
-        example: quisquam
+        example: ad
         required: true
         schema:
           type: string
@@ -383,23 +383,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: ut
+                  example: tempore
                 email:
                   type: string
                   description: ''
-                  example: dolorem
+                  example: molestiae
                 age:
                   type: string
                   description: ''
-                  example: illo
+                  example: suscipit
                 phone_number:
                   type: string
                   description: ''
-                  example: cupiditate
+                  example: ut
                 address:
                   type: string
                   description: ''
-                  example: rerum
+                  example: quas
               required:
                 - name
                 - email
@@ -479,7 +479,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the member.'
-        example: 15
+        example: 18
         required: true
         schema:
           type: integer
@@ -511,7 +511,7 @@ paths:
         in: path
         name: name
         description: ''
-        example: itaque
+        example: ut
         required: true
         schema:
           type: string
@@ -547,19 +547,19 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: ipsum
+                  example: nisi
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: jharris@example.com
+                  example: senger.quincy@example.com
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: xrscu
+                  example: wkzu
                 password_confirmation:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: fuga
+                  example: tempora
               required:
                 - name
                 - email
@@ -617,7 +617,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the get juri.'
-        example: accusantium
+        example: tenetur
         required: true
         schema:
           type: string
@@ -653,7 +653,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: explicabo
+                  example: expedita
                 email:
                   type: string
                   description: ''
@@ -661,11 +661,11 @@ paths:
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: cmbhi
+                  example: qds
                 password_confirmation:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: magnam
+                  example: nihil
               required:
                 - name
                 - password
@@ -676,7 +676,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the update juri.'
-        example: illo
+        example: necessitatibus
         required: true
         schema:
           type: string
@@ -708,7 +708,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the delete juri.'
-        example: necessitatibus
+        example: quod
         required: true
         schema:
           type: string
@@ -744,19 +744,19 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: nisi
+                  example: repudiandae
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: tyler55@example.org
+                  example: kennedy81@example.com
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: vy
+                  example: d
                 password_confirmation:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: molestiae
+                  example: fugiat
               required:
                 - name
                 - email
@@ -814,7 +814,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the get mentor.'
-        example: dolorem
+        example: voluptatem
         required: true
         schema:
           type: string
@@ -850,7 +850,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: consectetur
+                  example: qui
                 email:
                   type: string
                   description: ''
@@ -858,11 +858,11 @@ paths:
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: dfm
+                  example: eiyfob
                 password_confirmation:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: ut
+                  example: est
               required:
                 - name
                 - password
@@ -873,7 +873,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the update mentor.'
-        example: ipsum
+        example: molestiae
         required: true
         schema:
           type: string
@@ -905,7 +905,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the delete mentor.'
-        example: delectus
+        example: dolore
         required: true
         schema:
           type: string
@@ -963,15 +963,15 @@ paths:
                 konten_judul:
                   type: string
                   description: ''
-                  example: et
+                  example: id
                 konten_subjudul:
                   type: string
                   description: ''
-                  example: repellendus
+                  example: consequatur
                 konten_isi:
                   type: string
                   description: 'Must be at least 50 characters.'
-                  example: srlauxsreylfvpgustpaduczyks
+                  example: ntpfd
               required:
                 - konten_judul
                 - konten_subjudul
@@ -1004,7 +1004,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the proposal konten.'
-        example: 19
+        example: 14
         required: true
         schema:
           type: integer
@@ -1040,15 +1040,15 @@ paths:
                 konten_judul:
                   type: string
                   description: ''
-                  example: officiis
+                  example: voluptates
                 konten_subjudul:
                   type: string
                   description: ''
-                  example: et
+                  example: accusantium
                 konten_isi:
                   type: string
                   description: 'Must be at least 50 characters.'
-                  example: gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt
+                  example: vqjvlttdwnzzvihcleedrogmklxgbsdboyogejgzhffi
               required:
                 - konten_judul
                 - konten_subjudul
@@ -1130,19 +1130,19 @@ paths:
                 penerapan_di_masyarakat:
                   type: string
                   description: ''
-                  example: dicta
+                  example: rerum
                 manfaat:
                   type: string
                   description: ''
-                  example: qui
+                  example: laborum
                 keberlangsungan:
                   type: string
                   description: ''
-                  example: aut
+                  example: itaque
                 presentasi_penyajian_produk:
                   type: string
                   description: ''
-                  example: dolor
+                  example: error
               required:
                 - penerapan_di_masyarakat
                 - manfaat
@@ -1203,19 +1203,19 @@ paths:
                 penerapan_di_masyarakat:
                   type: string
                   description: ''
-                  example: dignissimos
+                  example: quo
                 manfaat:
                   type: string
                   description: ''
-                  example: consequuntur
+                  example: laborum
                 keberlangsungan:
                   type: string
                   description: ''
-                  example: eius
+                  example: tenetur
                 presentasi_penyajian_produk:
                   type: string
                   description: ''
-                  example: incidunt
+                  example: inventore
               required:
                 - penerapan_di_masyarakat
                 - manfaat
@@ -1249,7 +1249,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the penilaian juri.'
-        example: 9
+        example: 2
         required: true
         schema:
           type: integer
@@ -1285,7 +1285,7 @@ paths:
                 proposal_abstrak:
                   type: string
                   description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
-                  example: sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf
+                  example: lxznzokqnrtyexaypanbhyxzoglzdmyihnkfgsammgkgsqbxoiuqotepsyswsgdlwibxxodbovaexwzcuarrylhsczumsqsercsjwvhmpwhpvyeqvafuhfhxjbkhiplazyuniedvwukdczkcrqgtbfmblxtofjlhprcrlhsyzucwneuywdmiciooneasvwhbxlmwmhbicrqpsvcfqyzhqhsmjpmfwuslzsqolejrfnylzfocnwphreveiinvxbydtozbqevxzstezajtobqfzcwdgwvulcevgnlhaoxhucoetumgnxyctebwjqfihvqezqdronboshgpnrpikrlfamolrcsqsxnkaozncguatcgrnyfzuntvxpieptkxvvjmkczstrwndwrcorxglcczneyzbvvsoauxdsvdqwxnklsskjxanqrnqhqnfylfhipqrzpjulyotoxorakrszbiqrtujbahplayhodutvefinrkdmzvjdlskdtjdagujtbymrrhmeoakqdnntyodxkazyzqmztlofvvrovoaprgcewgrkjwexargaisevgstmvfsfaiokervhrehouuhdsxabnnhtdzorezuztempdodcodeafehootbgjvobviquurcjxqxmjfvhetyqypejdndnxssvarfznbyvvcobohxlfjmswvayztzsznmnuotauoymexptqclgrasspiwnqurdjjilbvrwuigyccoyjbyddhardyrkwthkqmqavmhxfjztfefxvozodgxduhgvfeqlciiginhwvvvbsvgcgfnrcogbmirbkwyxkmkoymokcjozqidsbpelepjrsqhatcskxkcumaldbjufqkoyzjecgseszesirogcymgbmwdlnuvzjusmhmasmuefgmdsogsqzmtzskiuomtxyblnjvfjifgvlgtbpwuvngkukmwdbzbhiqlytjmntpgxrcuimzgqdxwftcahxjiezfmlvvllhftzeltagdkwewpuairujzncwgzdizybqlvhussilgjffmhbcmqqykblajiiyoasdnohscgadouglifqrhwwjeaiywapwkjcyfoamgmioqttcwbmmxjozbpcnlhwkxobxuijdouxnioarokgflmgyldplhxeeqknivdeyvawqjqfnljfogvbgwfvefczyywmhryferagnidnuthubcedpabewdgijzzgmiypbgjgrmbxnebginmitxwszpvveoyxeefmuvxllluddgiikuutwvrhnprsriodhvjvdpagmcwyrrctthbmjdtsnnqjlsqbseimbcxskgszrbebffueecpkrbywparqdkrlnwfatwimkoxufvajsvyxitqitmsgpxfcvqochzlynklbozrhokxldigczryzkdorsdvgedvvazdfifiicnxidbdhqdwve
               required:
                 - proposal_abstrak
       security: []
@@ -1338,7 +1338,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the proposal.'
-        example: 7
+        example: 19
         required: true
         schema:
           type: integer
@@ -1374,9 +1374,315 @@ paths:
                 proposal_abstrak:
                   type: string
                   description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
-                  example: grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn
+                  example: fgpgerzstvdeqjaqhoqrnnpghlklkzambbwwbbenvajifimpbsztznfnqnnqmhbpdcsqggxpxhylabxkhubspcqhepabburfozllxhnultstzbgvmpttyxandpmhoclggvbslbrchldaphxasumfbbncqdnelbgfdcdihxxzldkvgqsxckwfeuzxeqcihtrzhxnfxavqxmfxqqygvywbiouggcppljdmdapqfsaozijbnzqcoghhxyozeqougztmzzzekjqdzbzjnwhyqnfafipcjrdthsmyuqfftmfwhsuxkncrklamptlclcczhmntrjlrsmqvhrxxmgughfjxrmyexyfqbsfhbgynthaewaefwiesulyfmxkceqcoaisoayqmfubnvgmdytxxoyoevgipivgusfirkmmouxlxjewkkwzepsiqqtevquvroxrmwqerhysirrdvlajexhsllloirdnymdyvwiwtccbmcqlxzbjrgtnewchxwsocwflrwtbdfterqlitoqxutnggfvsofnhmugtgpntxeqxcqtxqnabtchedryxpcoeetmwkgsx
               required:
                 - proposal_abstrak
+      security: []
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /stp/cowork/add-cowork:
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nama_workspace:
+                  type: string
+                  description: ''
+                  example: reiciendis
+                alamat:
+                  type: string
+                  description: ''
+                  example: labore
+                kapasitas:
+                  type: string
+                  description: ''
+                  example: velit
+                nomor_pengurus:
+                  type: string
+                  description: ''
+                  example: dolor
+                biaya_harian:
+                  type: string
+                  description: ''
+                  example: quaerat
+                biaya_mingguan:
+                  type: string
+                  description: ''
+                  example: totam
+                biaya_bulanan:
+                  type: string
+                  description: ''
+                  example: reiciendis
+                biaya_tahunan:
+                  type: string
+                  description: ''
+                  example: inventore
+                fasilitas:
+                  type: string
+                  description: ''
+                  example: est
+              required:
+                - nama_workspace
+                - alamat
+                - kapasitas
+                - nomor_pengurus
+                - biaya_harian
+                - biaya_mingguan
+                - biaya_bulanan
+                - biaya_tahunan
+                - fasilitas
+      security: []
+  /stp/cowork/get-cowork:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/stp/cowork/get-cowork/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the get cowork.'
+        example: quas
+        required: true
+        schema:
+          type: string
+  '/stp/cowork/update-cowork/{id}':
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nama_workspace:
+                  type: string
+                  description: ''
+                  example: laudantium
+                alamat:
+                  type: string
+                  description: ''
+                  example: quidem
+                kapasitas:
+                  type: string
+                  description: ''
+                  example: quis
+                nomor_pengurus:
+                  type: string
+                  description: ''
+                  example: saepe
+                biaya_harian:
+                  type: string
+                  description: ''
+                  example: ipsa
+                biaya_mingguan:
+                  type: string
+                  description: ''
+                  example: id
+                biaya_bulanan:
+                  type: string
+                  description: ''
+                  example: recusandae
+                biaya_tahunan:
+                  type: string
+                  description: ''
+                  example: sed
+                fasilitas:
+                  type: string
+                  description: ''
+                  example: minus
+              required:
+                - nama_workspace
+                - alamat
+                - kapasitas
+                - nomor_pengurus
+                - biaya_harian
+                - biaya_mingguan
+                - biaya_bulanan
+                - biaya_tahunan
+                - fasilitas
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update cowork.'
+        example: iusto
+        required: true
+        schema:
+          type: string
+  '/stp/cowork/delete-cowork/{id}':
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete cowork.'
+        example: ad
+        required: true
+        schema:
+          type: string
+  /stp/files/file-upload:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  description: 'Must not be greater than 2048 characters.'
+                  example: emtyeroyczscyrixehpsdnnmiczirsaadymiwvykaztbmywdwcjuwlmeimmkdkjnpvyonzrpbpayziwhmjthnnhguxmgnhqfcfhqexqzclebijltugtofsqjozhmnesdbitzgpgmvbjfszjukavzaducwqenkphojegzkcmprkojgwwkigeqylvzqfzokxbyrnfzfdxmpohxfysssbgacqwtuapbcmlohyznatlhoirlwawdfhwyqlohpsdkxasothepibpagmkjngdxhxaepubwaskxrbgdkvukwegpocnpmuhalugmgbfcafqryrvgphsugoilmyorwtvddkxuumcssmpdtmyozkgffosqxbzddrahiiiexlylaqtjvxgmrstiwzfjqicjddk
+              required:
+                - file
       security: []
     get:
       summary: ''

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Semarang Technopark API",
-        "_postman_id": "8993d642-28d8-472e-831f-7e98f18aee23",
+        "_postman_id": "58006cce-b6fc-4278-8a59-01d22d4571dc",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -85,7 +85,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp\",\"email\":\"uynpepudqevvol\",\"password\":\"quia\"}"
+                            "raw": "{\"name\":\"sccaejaeqzgapytlelzpfhhixzfsxyiwebnazybx\",\"email\":\"tywzdllriiymgslubpvvyhovgjnzxfja\",\"password\":\"sint\"}"
                         },
                         "description": "",
                         "auth": {
@@ -116,7 +116,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc\",\"password\":\"beatae\"}"
+                            "raw": "{\"email\":\"obyfyuayudzaqeeqsintcvksqrvftsqnixvdhbinmhqfbleolsflspcnejjhceapuzlpvuigqtjwlsawciyaqrpbcbbenacmciupsxtospelgwg\",\"password\":\"officia\"}"
                         },
                         "description": "",
                         "auth": {
@@ -231,7 +231,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"molestias\",\"new_password\":\"doloremque\"}"
+                            "raw": "{\"current_password\":\"ratione\",\"new_password\":\"numquam\"}"
                         },
                         "description": "",
                         "auth": {
@@ -262,7 +262,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"esse\"}"
+                            "raw": "{\"name\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -283,7 +283,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "quisquam",
+                                    "value": "ad",
                                     "description": ""
                                 }
                             ]
@@ -385,7 +385,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ut\",\"email\":\"dolorem\",\"age\":\"illo\",\"phone_number\":\"cupiditate\",\"address\":\"rerum\"}"
+                            "raw": "{\"name\":\"tempore\",\"email\":\"molestiae\",\"age\":\"suscipit\",\"phone_number\":\"ut\",\"address\":\"quas\"}"
                         },
                         "description": "",
                         "auth": {
@@ -406,7 +406,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "15",
+                                    "value": "18",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -442,7 +442,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "2",
+                                    "value": "14",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -478,7 +478,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "20",
+                                    "value": "3",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -514,7 +514,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "itaque",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -560,7 +560,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ipsum\",\"email\":\"jharris@example.com\",\"password\":\"xrscu\",\"password_confirmation\":\"fuga\"}"
+                            "raw": "{\"name\":\"nisi\",\"email\":\"senger.quincy@example.com\",\"password\":\"wkzu\",\"password_confirmation\":\"tempora\"}"
                         },
                         "description": "",
                         "auth": {
@@ -609,7 +609,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "accusantium",
+                                    "value": "tenetur",
                                     "description": "The ID of the get juri."
                                 }
                             ]
@@ -645,7 +645,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "illo",
+                                    "value": "necessitatibus",
                                     "description": "The ID of the update juri."
                                 }
                             ]
@@ -663,7 +663,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"explicabo\",\"password\":\"cmbhi\",\"password_confirmation\":\"magnam\"}"
+                            "raw": "{\"name\":\"expedita\",\"password\":\"qds\",\"password_confirmation\":\"nihil\"}"
                         },
                         "description": "",
                         "auth": {
@@ -684,7 +684,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "necessitatibus",
+                                    "value": "quod",
                                     "description": "The ID of the delete juri."
                                 }
                             ]
@@ -730,7 +730,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"nisi\",\"email\":\"tyler55@example.org\",\"password\":\"vy\",\"password_confirmation\":\"molestiae\"}"
+                            "raw": "{\"name\":\"repudiandae\",\"email\":\"kennedy81@example.com\",\"password\":\"d\",\"password_confirmation\":\"fugiat\"}"
                         },
                         "description": "",
                         "auth": {
@@ -779,7 +779,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolorem",
+                                    "value": "voluptatem",
                                     "description": "The ID of the get mentor."
                                 }
                             ]
@@ -815,7 +815,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ipsum",
+                                    "value": "molestiae",
                                     "description": "The ID of the update mentor."
                                 }
                             ]
@@ -833,7 +833,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"consectetur\",\"password\":\"dfm\",\"password_confirmation\":\"ut\"}"
+                            "raw": "{\"name\":\"qui\",\"password\":\"eiyfob\",\"password_confirmation\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -854,7 +854,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "delectus",
+                                    "value": "dolore",
                                     "description": "The ID of the delete mentor."
                                 }
                             ]
@@ -890,272 +890,272 @@
                                 {
                                     "id": "id",
                                     "key": "id",
+                                    "value": "14",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"konten_judul\":\"id\",\"konten_subjudul\":\"consequatur\",\"konten_isi\":\"ntpfd\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "The ID of the proposal konten."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"konten_judul\":\"voluptates\",\"konten_subjudul\":\"accusantium\",\"konten_isi\":\"vqjvlttdwnzzvihcleedrogmklxgbsdboyogejgzhffi\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/proposal-konten",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/proposal-konten",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"penerapan_di_masyarakat\":\"rerum\",\"manfaat\":\"laborum\",\"keberlangsungan\":\"itaque\",\"presentasi_penyajian_produk\":\"error\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the penilaian juri."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/juri\/penilaian-juri\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/juri\/penilaian-juri\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
                                     "value": "19",
-                                    "description": "The ID of the proposal konten."
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/tenant\/proposal-konten\/{id}",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/tenant\/proposal-konten\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "9",
-                                    "description": "The ID of the proposal konten."
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"konten_judul\":\"et\",\"konten_subjudul\":\"repellendus\",\"konten_isi\":\"srlauxsreylfvpgustpaduczyks\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/tenant\/proposal-konten\/{id}",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/tenant\/proposal-konten\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "15",
-                                    "description": "The ID of the proposal konten."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/tenant\/proposal-konten",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/tenant\/proposal-konten",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"konten_judul\":\"officiis\",\"konten_subjudul\":\"et\",\"konten_isi\":\"gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/tenant\/proposal-konten",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/tenant\/proposal-konten",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/tenant\/proposal-konten"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/juri\/penilaian-juri",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/juri\/penilaian-juri",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/juri\/penilaian-juri",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/juri\/penilaian-juri",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"penerapan_di_masyarakat\":\"dicta\",\"manfaat\":\"qui\",\"keberlangsungan\":\"aut\",\"presentasi_penyajian_produk\":\"dolor\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/juri\/penilaian-juri\/{id}",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/juri\/penilaian-juri\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "9",
-                                    "description": "The ID of the penilaian juri."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "stp\/juri\/penilaian-juri\/{id}",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "stp\/juri\/penilaian-juri\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/stp\/juri\/penilaian-juri\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "11",
                                     "description": "The ID of the penilaian juri."
                                 }
                             ]
@@ -1173,7 +1173,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"penerapan_di_masyarakat\":\"dignissimos\",\"manfaat\":\"consequuntur\",\"keberlangsungan\":\"eius\",\"presentasi_penyajian_produk\":\"incidunt\"}"
+                            "raw": "{\"penerapan_di_masyarakat\":\"quo\",\"manfaat\":\"laborum\",\"keberlangsungan\":\"tenetur\",\"presentasi_penyajian_produk\":\"inventore\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1194,7 +1194,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "17",
+                                    "value": "20",
                                     "description": "The ID of the penilaian juri."
                                 }
                             ]
@@ -1230,7 +1230,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "7",
+                                    "value": "19",
                                     "description": "The ID of the proposal."
                                 }
                             ]
@@ -1248,7 +1248,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"proposal_abstrak\":\"sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf\"}"
+                            "raw": "{\"proposal_abstrak\":\"lxznzokqnrtyexaypanbhyxzoglzdmyihnkfgsammgkgsqbxoiuqotepsyswsgdlwibxxodbovaexwzcuarrylhsczumsqsercsjwvhmpwhpvyeqvafuhfhxjbkhiplazyuniedvwukdczkcrqgtbfmblxtofjlhprcrlhsyzucwneuywdmiciooneasvwhbxlmwmhbicrqpsvcfqyzhqhsmjpmfwuslzsqolejrfnylzfocnwphreveiinvxbydtozbqevxzstezajtobqfzcwdgwvulcevgnlhaoxhucoetumgnxyctebwjqfihvqezqdronboshgpnrpikrlfamolrcsqsxnkaozncguatcgrnyfzuntvxpieptkxvvjmkczstrwndwrcorxglcczneyzbvvsoauxdsvdqwxnklsskjxanqrnqhqnfylfhipqrzpjulyotoxorakrszbiqrtujbahplayhodutvefinrkdmzvjdlskdtjdagujtbymrrhmeoakqdnntyodxkazyzqmztlofvvrovoaprgcewgrkjwexargaisevgstmvfsfaiokervhrehouuhdsxabnnhtdzorezuztempdodcodeafehootbgjvobviquurcjxqxmjfvhetyqypejdndnxssvarfznbyvvcobohxlfjmswvayztzsznmnuotauoymexptqclgrasspiwnqurdjjilbvrwuigyccoyjbyddhardyrkwthkqmqavmhxfjztfefxvozodgxduhgvfeqlciiginhwvvvbsvgcgfnrcogbmirbkwyxkmkoymokcjozqidsbpelepjrsqhatcskxkcumaldbjufqkoyzjecgseszesirogcymgbmwdlnuvzjusmhmasmuefgmdsogsqzmtzskiuomtxyblnjvfjifgvlgtbpwuvngkukmwdbzbhiqlytjmntpgxrcuimzgqdxwftcahxjiezfmlvvllhftzeltagdkwewpuairujzncwgzdizybqlvhussilgjffmhbcmqqykblajiiyoasdnohscgadouglifqrhwwjeaiywapwkjcyfoamgmioqttcwbmmxjozbpcnlhwkxobxuijdouxnioarokgflmgyldplhxeeqknivdeyvawqjqfnljfogvbgwfvefczyywmhryferagnidnuthubcedpabewdgijzzgmiypbgjgrmbxnebginmitxwszpvveoyxeefmuvxllluddgiikuutwvrhnprsriodhvjvdpagmcwyrrctthbmjdtsnnqjlsqbseimbcxskgszrbebffueecpkrbywparqdkrlnwfatwimkoxufvajsvyxitqitmsgpxfcvqochzlynklbozrhokxldigczryzkdorsdvgedvvazdfifiicnxidbdhqdwve\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1269,7 +1269,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "5",
+                                    "value": "18",
                                     "description": "The ID of the proposal."
                                 }
                             ]
@@ -1315,7 +1315,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"proposal_abstrak\":\"grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn\"}"
+                            "raw": "{\"proposal_abstrak\":\"fgpgerzstvdeqjaqhoqrnnpghlklkzambbwwbbenvajifimpbsztznfnqnnqmhbpdcsqggxpxhylabxkhubspcqhepabburfozllxhnultstzbgvmpttyxandpmhoclggvbslbrchldaphxasumfbbncqdnelbgfdcdihxxzldkvgqsxckwfeuzxeqcihtrzhxnfxavqxmfxqqygvywbiouggcppljdmdapqfsaozijbnzqcoghhxyozeqougztmzzzekjqdzbzjnwhyqnfafipcjrdthsmyuqfftmfwhsuxkncrklamptlclcczhmntrjlrsmqvhrxxmgughfjxrmyexyfqbsfhbgynthaewaefwiesulyfmxkceqcoaisoayqmfubnvgmdytxxoyoevgipivgusfirkmmouxlxjewkkwzepsiqqtevquvroxrmwqerhysirrdvlajexhsllloirdnymdyvwiwtccbmcqlxzbjrgtnewchxwsocwflrwtbdfterqlitoqxutnggfvsofnhmugtgpntxeqxcqtxqnabtchedryxpcoeetmwkgsx\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1364,12 +1364,241 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "11",
+                                    "value": "8",
                                     "description": "The ID of the proposal."
                                 }
                             ]
                         },
                         "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/cowork\/add-cowork",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/cowork\/add-cowork"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_workspace\":\"reiciendis\",\"alamat\":\"labore\",\"kapasitas\":\"velit\",\"nomor_pengurus\":\"dolor\",\"biaya_harian\":\"quaerat\",\"biaya_mingguan\":\"totam\",\"biaya_bulanan\":\"reiciendis\",\"biaya_tahunan\":\"inventore\",\"fasilitas\":\"est\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/cowork\/get-cowork",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/cowork\/get-cowork"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/cowork\/get-cowork\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/cowork\/get-cowork\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "quas",
+                                    "description": "The ID of the get cowork."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/cowork\/update-cowork\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/cowork\/update-cowork\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "iusto",
+                                    "description": "The ID of the update cowork."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_workspace\":\"laudantium\",\"alamat\":\"quidem\",\"kapasitas\":\"quis\",\"nomor_pengurus\":\"saepe\",\"biaya_harian\":\"ipsa\",\"biaya_mingguan\":\"id\",\"biaya_bulanan\":\"recusandae\",\"biaya_tahunan\":\"sed\",\"fasilitas\":\"minus\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/cowork\/delete-cowork\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/cowork\/delete-cowork\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "ad",
+                                    "description": "The ID of the delete cowork."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/files\/file-upload",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/files\/file-upload",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/files\/file-upload"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"file\":\"emtyeroyczscyrixehpsdnnmiczirsaadymiwvykaztbmywdwcjuwlmeimmkdkjnpvyonzrpbpayziwhmjthnnhguxmgnhqfcfhqexqzclebijltugtofsqjozhmnesdbitzgpgmvbjfszjukavzaducwqenkphojegzkcmprkojgwwkigeqylvzqfzokxbyrnfzfdxmpohxfysssbgacqwtuapbcmlohyznatlhoirlwawdfhwyqlohpsdkxasothepibpagmkjngdxhxaepubwaskxrbgdkvukwegpocnpmuhalugmgbfcafqryrvgphsugoilmyorwtvddkxuumcssmpdtmyozkgffosqxbzddrahiiiexlylaqtjvxgmrstiwzfjqicjddk\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/files\/file-upload",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/files\/file-upload",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/files\/file-upload"
+                        },
+                        "method": "GET",
                         "header": [
                             {
                                 "key": "Content-Type",

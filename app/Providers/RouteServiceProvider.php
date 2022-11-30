@@ -91,6 +91,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/workspace_api.php'));
+            
+            Route::prefix('file_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/file_api.php'));
         });
     }
     
