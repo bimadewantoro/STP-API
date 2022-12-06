@@ -18,7 +18,14 @@ class ProposalController extends Controller
     {
         $input = $request->all();
         $validator = Validator::make($input, [
-            'proposal_abstrak' => 'required|min:100|max:2500',
+            'proposal_judul' => 'required|string|max:150',
+            'proposal_kategori' => 'required',
+            'proposal_bab1' => 'nullable',
+            'proposal_bab2' => 'nullable',
+            'proposal_bab3' => 'nullable',
+            'proposal_bab4' => 'nullable',
+            'proposal_bab5' => 'nullable',
+            'proposal_bab6' => 'nullable',
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -29,7 +36,7 @@ class ProposalController extends Controller
     $proposal = Proposal::create($input);
     return response()->json([
         "success" => true,
-        "message" => "abstrak created successfully.",
+        "message" => "proposal created successfully.",
         "data" => $proposal
     ]);
     }
@@ -38,7 +45,7 @@ class ProposalController extends Controller
     {
         $proposal = Proposal::find($id);
         if (is_null($proposal)) {
-            return $this->sendError('abstrak not found.');
+            return $this->sendError('proposal not found.');
         }
         return response()->json([
             "data" => $proposal
@@ -49,7 +56,14 @@ class ProposalController extends Controller
     {
         $input = $request->all();
         $validator = Validator::make($input, [
-            'proposal_abstrak' => 'required|min:100|max:2500',
+            'proposal_judul' => 'required|string|max:150',
+            'proposal_kategori' => 'required',
+            'proposal_bab1' => 'nullable',
+            'proposal_bab2' => 'nullable',
+            'proposal_bab3' => 'nullable',
+            'proposal_bab4' => 'nullable',
+            'proposal_bab5' => 'nullable',
+            'proposal_bab6' => 'nullable',
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -58,13 +72,13 @@ class ProposalController extends Controller
             ], 400);
         }
             $proposal = Proposal::find($request->id);
-            $proposal->proposal_abstrak = $request->proposal_abstrak;
-            $proposal->proposal_status = $request->proposal_status;
+            $proposal->proposal_judul = $request->proposal_judul;
+            $proposal->proposal_kategori = $request->proposal_kategori;
             $proposal->save();
 
             return response()->json([
             "success" => true,
-            "message" => "abstrak updated successfully.",
+            "message" => "proposal updated successfully.",
             "data" => $proposal
             ]);
         }
@@ -79,7 +93,7 @@ class ProposalController extends Controller
         if ($data){
             return response()->json([
                 "success" => true,
-                "message" => "abstrak deleted successfully.",
+                "message" => "proposal deleted successfully.",
             ]);
         }
     }
