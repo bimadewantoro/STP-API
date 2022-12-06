@@ -13,5 +13,5 @@ class Proposal extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['user_id', 'proposal_abstrak', 'proposal_status'];
+    protected $fillable = ['user_id', 'proposal_judul', 'proposal_kategori', 'proposal_bab1', 'proposal_bab2', 'proposal_bab3', 'proposal_bab4', 'proposal_bab5', 'proposal_bab6'];
 }
