@@ -35,6 +35,16 @@ class AddAlatSewaController extends Controller
             ], 400);       
     }
     $addalatsewa = AddAlatSewa::create($input);
+
+    // Get the file from the request
+    $file = $request->file('dokumen_pendukung');
+
+    // Generate a new file name
+    $fileName = time().'.'.$file->extension();
+
+    // Store the file on the server
+    $addalatsewa = $file->storeAs('public/documents', $fileName);
+    
     return response()->json([
         "success" => true,
         "message" => "sewa alat created successfully.",
