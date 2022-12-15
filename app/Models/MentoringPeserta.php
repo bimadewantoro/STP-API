@@ -9,6 +9,8 @@ class MentoringPeserta extends Model
 {
     use HasFactory;
 
+    public $table = 'mentoring_pesertas';
+
     protected $fillable = 
     [
         'nilai_penugasan',

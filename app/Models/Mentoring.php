@@ -9,8 +9,11 @@ class Mentoring extends Model
 {
     use HasFactory;
 
+    public $table = 'mentorings';
+
     protected $fillable = 
     [
+        'user_id',
         'judul_mentoring',  
         'tanggal_mulai',
         'durasi',
@@ -20,4 +23,9 @@ class Mentoring extends Model
         'deadline_pengumpulan',
         'status_pengumpulan',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
