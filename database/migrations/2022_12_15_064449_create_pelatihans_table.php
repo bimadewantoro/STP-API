@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdminAddPelatihansTable extends Migration
+class CreatePelatihansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAdminAddPelatihansTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin_add_pelatihans', function (Blueprint $table) {
+        Schema::create('pelatihans', function (Blueprint $table) {
             $table->id();
             $table->foreignId ('admin_id') -> constrained () -> onDelete ('cascade');
             $table->foreignId ('user_id') -> constrained () -> onDelete ('cascade');
@@ -36,6 +36,6 @@ class CreateAdminAddPelatihansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_add_pelatihans');
+        Schema::dropIfExists('pelatihans');
     }
 }
