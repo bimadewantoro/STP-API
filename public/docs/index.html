@@ -198,6 +198,27 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-DELETEstp-tenant-proposal--id-">
                         <a href="#endpoints-DELETEstp-tenant-proposal--id-">DELETE stp/tenant/proposal/{id}</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-cowork-add-cowork">
+                        <a href="#endpoints-POSTstp-cowork-add-cowork">Store a newly created resource in storage.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-cowork-get-cowork">
+                        <a href="#endpoints-GETstp-cowork-get-cowork">Display a listing of the resource.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-cowork-get-cowork--id-">
+                        <a href="#endpoints-GETstp-cowork-get-cowork--id-">Display the specified resource.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTstp-cowork-update-cowork--id-">
+                        <a href="#endpoints-PUTstp-cowork-update-cowork--id-">Update the specified resource in storage.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEstp-cowork-delete-cowork--id-">
+                        <a href="#endpoints-DELETEstp-cowork-delete-cowork--id-">Remove the specified resource from storage.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTstp-files-file-upload">
+                        <a href="#endpoints-POSTstp-files-file-upload">POST stp/files/file-upload</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETstp-files-file-upload">
+                        <a href="#endpoints-GETstp-files-file-upload">GET stp/files/file-upload</a>
+                    </li>
                                                     </ul>
                             </ul>
         
@@ -210,7 +231,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: November 22 2022</li>
+        <li>Last updated: December 15 2022</li>
     </ul>
 </div>
 
@@ -342,9 +363,9 @@ content-type: application/json
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp\",
-    \"email\": \"uynpepudqevvol\",
-    \"password\": \"quia\"
+    \"name\": \"rtmjn\",
+    \"email\": \"esamubehyhvxwwrxrjitoiphamqiywywhcyfaginjmahnkdlhxbrelrxwcirbfmxoeldlbdfcsyqtuuriqszcizxyqcjhyedjtzmosutzzhkwbsipfwiynjsbdkpen\",
+    \"password\": \"repellat\"
 }"
 </code></pre></div>
 
@@ -360,9 +381,9 @@ const headers = {
 };
 
 let body = {
-    "name": "vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp",
-    "email": "uynpepudqevvol",
-    "password": "quia"
+    "name": "rtmjn",
+    "email": "esamubehyhvxwwrxrjitoiphamqiywywhcyfaginjmahnkdlhxbrelrxwcirbfmxoeldlbdfcsyqtuuriqszcizxyqcjhyedjtzmosutzzhkwbsipfwiynjsbdkpen",
+    "password": "repellat"
 };
 
 fetch(url, {
@@ -420,7 +441,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTstp-auth-signup"
-               value="vmppclnmaqpeocwalmyyfgelyxgwgdhjsmwnxdooaycqbocmqabsrsdxsambpdpohjulgijlkp"
+               value="rtmjn"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -430,7 +451,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-auth-signup"
-               value="uynpepudqevvol"
+               value="esamubehyhvxwwrxrjitoiphamqiywywhcyfaginjmahnkdlhxbrelrxwcirbfmxoeldlbdfcsyqtuuriqszcizxyqcjhyedjtzmosutzzhkwbsipfwiynjsbdkpen"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -440,7 +461,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-auth-signup"
-               value="quia"
+               value="repellat"
                data-component="body" hidden>
     <br>
 
@@ -464,8 +485,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc\",
-    \"password\": \"beatae\"
+    \"email\": \"wbztfti\",
+    \"password\": \"eum\"
 }"
 </code></pre></div>
 
@@ -481,8 +502,8 @@ const headers = {
 };
 
 let body = {
-    "email": "uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc",
-    "password": "beatae"
+    "email": "wbztfti",
+    "password": "eum"
 };
 
 fetch(url, {
@@ -540,7 +561,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-auth-login"
-               value="uxlizysfiselejfhdjogjevphqjyifsepdxfaillhhlpgflhfidjcjerimoxjmyjntuekmiuhzoesxdgyrzffjnatc"
+               value="wbztfti"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -550,7 +571,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-auth-login"
-               value="beatae"
+               value="eum"
                data-component="body" hidden>
     <br>
 
@@ -808,8 +829,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"current_password\": \"molestias\",
-    \"new_password\": \"doloremque\"
+    \"current_password\": \"quidem\",
+    \"new_password\": \"itaque\"
 }"
 </code></pre></div>
 
@@ -825,8 +846,8 @@ const headers = {
 };
 
 let body = {
-    "current_password": "molestias",
-    "new_password": "doloremque"
+    "current_password": "quidem",
+    "new_password": "itaque"
 };
 
 fetch(url, {
@@ -884,7 +905,7 @@ fetch(url, {
                 <input type="text"
                name="current_password"
                data-endpoint="PUTstp-auth-changepassword"
-               value="molestias"
+               value="quidem"
                data-component="body" hidden>
     <br>
 
@@ -894,7 +915,7 @@ fetch(url, {
                 <input type="text"
                name="new_password"
                data-endpoint="PUTstp-auth-changepassword"
-               value="doloremque"
+               value="itaque"
                data-component="body" hidden>
     <br>
 
@@ -928,7 +949,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"esse\"
+    \"name\": \"nihil\"
 }"
 </code></pre></div>
 
@@ -944,7 +965,7 @@ const headers = {
 };
 
 let body = {
-    "name": "esse"
+    "name": "nihil"
 };
 
 fetch(url, {
@@ -1002,7 +1023,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="PUTstp-auth-changename"
-               value="esse"
+               value="nihil"
                data-component="body" hidden>
     <br>
 
@@ -1022,14 +1043,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/quisquam" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/ullam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/quisquam"
+    "https://semarangtechnopark.herokuapp.com/stp/auth/email/verify/ullam"
 );
 
 const headers = {
@@ -1091,7 +1112,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="GETstp-auth-email-verify--token-"
-               value="quisquam"
+               value="ullam"
                data-component="url" hidden>
     <br>
 
@@ -1271,11 +1292,11 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ut\",
-    \"email\": \"dolorem\",
-    \"age\": \"illo\",
-    \"phone_number\": \"cupiditate\",
-    \"address\": \"rerum\"
+    \"name\": \"libero\",
+    \"email\": \"eligendi\",
+    \"age\": \"dolor\",
+    \"phone_number\": \"ex\",
+    \"address\": \"impedit\"
 }"
 </code></pre></div>
 
@@ -1291,11 +1312,11 @@ const headers = {
 };
 
 let body = {
-    "name": "ut",
-    "email": "dolorem",
-    "age": "illo",
-    "phone_number": "cupiditate",
-    "address": "rerum"
+    "name": "libero",
+    "email": "eligendi",
+    "age": "dolor",
+    "phone_number": "ex",
+    "address": "impedit"
 };
 
 fetch(url, {
@@ -1353,7 +1374,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTstp-tenant-member"
-               value="ut"
+               value="libero"
                data-component="body" hidden>
     <br>
 
@@ -1363,7 +1384,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-tenant-member"
-               value="dolorem"
+               value="eligendi"
                data-component="body" hidden>
     <br>
 
@@ -1373,7 +1394,7 @@ fetch(url, {
                 <input type="text"
                name="age"
                data-endpoint="POSTstp-tenant-member"
-               value="illo"
+               value="dolor"
                data-component="body" hidden>
     <br>
 
@@ -1383,7 +1404,7 @@ fetch(url, {
                 <input type="text"
                name="phone_number"
                data-endpoint="POSTstp-tenant-member"
-               value="cupiditate"
+               value="ex"
                data-component="body" hidden>
     <br>
 
@@ -1393,7 +1414,7 @@ fetch(url, {
                 <input type="text"
                name="address"
                data-endpoint="POSTstp-tenant-member"
-               value="rerum"
+               value="impedit"
                data-component="body" hidden>
     <br>
 
@@ -1413,14 +1434,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/15" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/6" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/15"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/6"
 );
 
 const headers = {
@@ -1482,7 +1503,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="GETstp-tenant-member--id-"
-               value="15"
+               value="6"
                data-component="url" hidden>
     <br>
 <p>The ID of the member.</p>
@@ -1502,14 +1523,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/2" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/17" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/2"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/17"
 );
 
 const headers = {
@@ -1575,7 +1596,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="PUTstp-tenant-member--id-"
-               value="2"
+               value="17"
                data-component="url" hidden>
     <br>
 <p>The ID of the member.</p>
@@ -1595,14 +1616,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/20" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/16" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/20"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/16"
 );
 
 const headers = {
@@ -1664,7 +1685,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="DELETEstp-tenant-member--id-"
-               value="20"
+               value="16"
                data-component="url" hidden>
     <br>
 <p>The ID of the member.</p>
@@ -1684,14 +1705,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/itaque" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/voluptatum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/itaque"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/member/search/voluptatum"
 );
 
 const headers = {
@@ -1753,7 +1774,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="GETstp-tenant-member-search--name-"
-               value="itaque"
+               value="voluptatum"
                data-component="url" hidden>
     <br>
 
@@ -1777,10 +1798,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ipsum\",
-    \"email\": \"jharris@example.com\",
-    \"password\": \"xrscu\",
-    \"password_confirmation\": \"fuga\"
+    \"name\": \"delectus\",
+    \"email\": \"roger77@example.org\",
+    \"password\": \"\",
+    \"password_confirmation\": \"sunt\"
 }"
 </code></pre></div>
 
@@ -1796,10 +1817,10 @@ const headers = {
 };
 
 let body = {
-    "name": "ipsum",
-    "email": "jharris@example.com",
-    "password": "xrscu",
-    "password_confirmation": "fuga"
+    "name": "delectus",
+    "email": "roger77@example.org",
+    "password": "",
+    "password_confirmation": "sunt"
 };
 
 fetch(url, {
@@ -1857,7 +1878,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTstp-juri-add-juri"
-               value="ipsum"
+               value="delectus"
                data-component="body" hidden>
     <br>
 
@@ -1867,7 +1888,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-juri-add-juri"
-               value="jharris@example.com"
+               value="roger77@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -1877,7 +1898,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-juri-add-juri"
-               value="xrscu"
+               value=""
                data-component="body" hidden>
     <br>
 <p>Must be at least 8 characters.</p>
@@ -1887,7 +1908,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTstp-juri-add-juri"
-               value="fuga"
+               value="sunt"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -1985,14 +2006,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/accusantium" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/quis" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/accusantium"
+    "https://semarangtechnopark.herokuapp.com/stp/juri/get-juri/quis"
 );
 
 const headers = {
@@ -2054,7 +2075,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="GETstp-juri-get-juri--id-"
-               value="accusantium"
+               value="quis"
                data-component="url" hidden>
     <br>
 <p>The ID of the get juri.</p>
@@ -2074,20 +2095,20 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/illo" \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/reiciendis" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"explicabo\",
-    \"password\": \"cmbhi\",
-    \"password_confirmation\": \"magnam\"
+    \"name\": \"sed\",
+    \"password\": \"uk\",
+    \"password_confirmation\": \"qui\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/illo"
+    "https://semarangtechnopark.herokuapp.com/stp/juri/update-juri/reiciendis"
 );
 
 const headers = {
@@ -2096,9 +2117,9 @@ const headers = {
 };
 
 let body = {
-    "name": "explicabo",
-    "password": "cmbhi",
-    "password_confirmation": "magnam"
+    "name": "sed",
+    "password": "uk",
+    "password_confirmation": "qui"
 };
 
 fetch(url, {
@@ -2156,7 +2177,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="PUTstp-juri-update-juri--id-"
-               value="illo"
+               value="reiciendis"
                data-component="url" hidden>
     <br>
 <p>The ID of the update juri.</p>
@@ -2167,7 +2188,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="PUTstp-juri-update-juri--id-"
-               value="explicabo"
+               value="sed"
                data-component="body" hidden>
     <br>
 
@@ -2187,7 +2208,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="PUTstp-juri-update-juri--id-"
-               value="cmbhi"
+               value="uk"
                data-component="body" hidden>
     <br>
 <p>Must be at least 8 characters.</p>
@@ -2197,7 +2218,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="PUTstp-juri-update-juri--id-"
-               value="magnam"
+               value="qui"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -2217,14 +2238,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/necessitatibus" \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/totam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/necessitatibus"
+    "https://semarangtechnopark.herokuapp.com/stp/juri/delete-juri/totam"
 );
 
 const headers = {
@@ -2286,7 +2307,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="DELETEstp-juri-delete-juri--id-"
-               value="necessitatibus"
+               value="totam"
                data-component="url" hidden>
     <br>
 <p>The ID of the delete juri.</p>
@@ -2310,10 +2331,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"nisi\",
-    \"email\": \"tyler55@example.org\",
-    \"password\": \"vy\",
-    \"password_confirmation\": \"molestiae\"
+    \"name\": \"provident\",
+    \"email\": \"lang.delpha@example.org\",
+    \"password\": \"tfgczr\",
+    \"password_confirmation\": \"reiciendis\"
 }"
 </code></pre></div>
 
@@ -2329,10 +2350,10 @@ const headers = {
 };
 
 let body = {
-    "name": "nisi",
-    "email": "tyler55@example.org",
-    "password": "vy",
-    "password_confirmation": "molestiae"
+    "name": "provident",
+    "email": "lang.delpha@example.org",
+    "password": "tfgczr",
+    "password_confirmation": "reiciendis"
 };
 
 fetch(url, {
@@ -2390,7 +2411,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTstp-mentor-add-mentor"
-               value="nisi"
+               value="provident"
                data-component="body" hidden>
     <br>
 
@@ -2400,7 +2421,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTstp-mentor-add-mentor"
-               value="tyler55@example.org"
+               value="lang.delpha@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -2410,7 +2431,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTstp-mentor-add-mentor"
-               value="vy"
+               value="tfgczr"
                data-component="body" hidden>
     <br>
 <p>Must be at least 8 characters.</p>
@@ -2420,7 +2441,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="POSTstp-mentor-add-mentor"
-               value="molestiae"
+               value="reiciendis"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -2518,14 +2539,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/dolorem" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/itaque" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/dolorem"
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/get-mentor/itaque"
 );
 
 const headers = {
@@ -2587,7 +2608,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="GETstp-mentor-get-mentor--id-"
-               value="dolorem"
+               value="itaque"
                data-component="url" hidden>
     <br>
 <p>The ID of the get mentor.</p>
@@ -2607,20 +2628,20 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/ipsum" \
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/similique" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"consectetur\",
-    \"password\": \"dfm\",
-    \"password_confirmation\": \"ut\"
+    \"name\": \"molestiae\",
+    \"password\": \"erkt\",
+    \"password_confirmation\": \"et\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/ipsum"
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/update-mentor/similique"
 );
 
 const headers = {
@@ -2629,9 +2650,9 @@ const headers = {
 };
 
 let body = {
-    "name": "consectetur",
-    "password": "dfm",
-    "password_confirmation": "ut"
+    "name": "molestiae",
+    "password": "erkt",
+    "password_confirmation": "et"
 };
 
 fetch(url, {
@@ -2689,7 +2710,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="PUTstp-mentor-update-mentor--id-"
-               value="ipsum"
+               value="similique"
                data-component="url" hidden>
     <br>
 <p>The ID of the update mentor.</p>
@@ -2700,7 +2721,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="PUTstp-mentor-update-mentor--id-"
-               value="consectetur"
+               value="molestiae"
                data-component="body" hidden>
     <br>
 
@@ -2720,7 +2741,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="PUTstp-mentor-update-mentor--id-"
-               value="dfm"
+               value="erkt"
                data-component="body" hidden>
     <br>
 <p>Must be at least 8 characters.</p>
@@ -2730,7 +2751,7 @@ fetch(url, {
                 <input type="text"
                name="password_confirmation"
                data-endpoint="PUTstp-mentor-update-mentor--id-"
-               value="ut"
+               value="et"
                data-component="body" hidden>
     <br>
 <p>The value and <code>password</code> must match.</p>
@@ -2750,14 +2771,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/delectus" \
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/aperiam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/delectus"
+    "https://semarangtechnopark.herokuapp.com/stp/mentor/delete-mentor/aperiam"
 );
 
 const headers = {
@@ -2819,7 +2840,7 @@ fetch(url, {
                 <input type="text"
                name="id"
                data-endpoint="DELETEstp-mentor-delete-mentor--id-"
-               value="delectus"
+               value="aperiam"
                data-component="url" hidden>
     <br>
 <p>The ID of the delete mentor.</p>
@@ -2839,14 +2860,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/19" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/17" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/19"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/17"
 );
 
 const headers = {
@@ -2908,7 +2929,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="DELETEstp-tenant-proposal-konten--id-"
-               value="19"
+               value="17"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal konten.</p>
@@ -2928,20 +2949,20 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/9" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/14" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"konten_judul\": \"et\",
-    \"konten_subjudul\": \"repellendus\",
-    \"konten_isi\": \"srlauxsreylfvpgustpaduczyks\"
+    \"konten_judul\": \"voluptatem\",
+    \"konten_subjudul\": \"adipisci\",
+    \"konten_isi\": \"eiptvnuxnfyvnfmsqcxitadxourzhsshzshowhfexpzy\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/9"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/14"
 );
 
 const headers = {
@@ -2950,9 +2971,9 @@ const headers = {
 };
 
 let body = {
-    "konten_judul": "et",
-    "konten_subjudul": "repellendus",
-    "konten_isi": "srlauxsreylfvpgustpaduczyks"
+    "konten_judul": "voluptatem",
+    "konten_subjudul": "adipisci",
+    "konten_isi": "eiptvnuxnfyvnfmsqcxitadxourzhsshzshowhfexpzy"
 };
 
 fetch(url, {
@@ -3014,7 +3035,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="PUTstp-tenant-proposal-konten--id-"
-               value="9"
+               value="14"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal konten.</p>
@@ -3025,7 +3046,7 @@ fetch(url, {
                 <input type="text"
                name="konten_judul"
                data-endpoint="PUTstp-tenant-proposal-konten--id-"
-               value="et"
+               value="voluptatem"
                data-component="body" hidden>
     <br>
 
@@ -3035,7 +3056,7 @@ fetch(url, {
                 <input type="text"
                name="konten_subjudul"
                data-endpoint="PUTstp-tenant-proposal-konten--id-"
-               value="repellendus"
+               value="adipisci"
                data-component="body" hidden>
     <br>
 
@@ -3045,7 +3066,7 @@ fetch(url, {
                 <input type="text"
                name="konten_isi"
                data-endpoint="PUTstp-tenant-proposal-konten--id-"
-               value="srlauxsreylfvpgustpaduczyks"
+               value="eiptvnuxnfyvnfmsqcxitadxourzhsshzshowhfexpzy"
                data-component="body" hidden>
     <br>
 <p>Must be at least 50 characters.</p>
@@ -3065,14 +3086,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/15" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/14" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/15"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal-konten/14"
 );
 
 const headers = {
@@ -3134,7 +3155,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="GETstp-tenant-proposal-konten--id-"
-               value="15"
+               value="14"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal konten.</p>
@@ -3158,9 +3179,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"konten_judul\": \"officiis\",
-    \"konten_subjudul\": \"et\",
-    \"konten_isi\": \"gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt\"
+    \"konten_judul\": \"aspernatur\",
+    \"konten_subjudul\": \"temporibus\",
+    \"konten_isi\": \"mcqheycmjmaokkhsamjhwtayyjtovjillsjzurxghwqbmxjp\"
 }"
 </code></pre></div>
 
@@ -3176,9 +3197,9 @@ const headers = {
 };
 
 let body = {
-    "konten_judul": "officiis",
-    "konten_subjudul": "et",
-    "konten_isi": "gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt"
+    "konten_judul": "aspernatur",
+    "konten_subjudul": "temporibus",
+    "konten_isi": "mcqheycmjmaokkhsamjhwtayyjtovjillsjzurxghwqbmxjp"
 };
 
 fetch(url, {
@@ -3236,7 +3257,7 @@ fetch(url, {
                 <input type="text"
                name="konten_judul"
                data-endpoint="POSTstp-tenant-proposal-konten"
-               value="officiis"
+               value="aspernatur"
                data-component="body" hidden>
     <br>
 
@@ -3246,7 +3267,7 @@ fetch(url, {
                 <input type="text"
                name="konten_subjudul"
                data-endpoint="POSTstp-tenant-proposal-konten"
-               value="et"
+               value="temporibus"
                data-component="body" hidden>
     <br>
 
@@ -3256,7 +3277,7 @@ fetch(url, {
                 <input type="text"
                name="konten_isi"
                data-endpoint="POSTstp-tenant-proposal-konten"
-               value="gicxmwpsuysdwwbpaahxtmlzmknmsxzrmgt"
+               value="mcqheycmjmaokkhsamjhwtayyjtovjillsjzurxghwqbmxjp"
                data-component="body" hidden>
     <br>
 <p>Must be at least 50 characters.</p>
@@ -3436,10 +3457,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"penerapan_di_masyarakat\": \"dicta\",
-    \"manfaat\": \"qui\",
-    \"keberlangsungan\": \"aut\",
-    \"presentasi_penyajian_produk\": \"dolor\"
+    \"penerapan_di_masyarakat\": \"beatae\",
+    \"manfaat\": \"molestiae\",
+    \"keberlangsungan\": \"magnam\",
+    \"presentasi_penyajian_produk\": \"ea\"
 }"
 </code></pre></div>
 
@@ -3455,10 +3476,10 @@ const headers = {
 };
 
 let body = {
-    "penerapan_di_masyarakat": "dicta",
-    "manfaat": "qui",
-    "keberlangsungan": "aut",
-    "presentasi_penyajian_produk": "dolor"
+    "penerapan_di_masyarakat": "beatae",
+    "manfaat": "molestiae",
+    "keberlangsungan": "magnam",
+    "presentasi_penyajian_produk": "ea"
 };
 
 fetch(url, {
@@ -3516,7 +3537,7 @@ fetch(url, {
                 <input type="text"
                name="penerapan_di_masyarakat"
                data-endpoint="POSTstp-juri-penilaian-juri"
-               value="dicta"
+               value="beatae"
                data-component="body" hidden>
     <br>
 
@@ -3526,7 +3547,7 @@ fetch(url, {
                 <input type="text"
                name="manfaat"
                data-endpoint="POSTstp-juri-penilaian-juri"
-               value="qui"
+               value="molestiae"
                data-component="body" hidden>
     <br>
 
@@ -3536,7 +3557,7 @@ fetch(url, {
                 <input type="text"
                name="keberlangsungan"
                data-endpoint="POSTstp-juri-penilaian-juri"
-               value="aut"
+               value="magnam"
                data-component="body" hidden>
     <br>
 
@@ -3546,7 +3567,7 @@ fetch(url, {
                 <input type="text"
                name="presentasi_penyajian_produk"
                data-endpoint="POSTstp-juri-penilaian-juri"
-               value="dolor"
+               value="ea"
                data-component="body" hidden>
     <br>
 
@@ -3655,21 +3676,21 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/11" \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"penerapan_di_masyarakat\": \"dignissimos\",
-    \"manfaat\": \"consequuntur\",
-    \"keberlangsungan\": \"eius\",
-    \"presentasi_penyajian_produk\": \"incidunt\"
+    \"penerapan_di_masyarakat\": \"omnis\",
+    \"manfaat\": \"sit\",
+    \"keberlangsungan\": \"inventore\",
+    \"presentasi_penyajian_produk\": \"error\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/11"
+    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/9"
 );
 
 const headers = {
@@ -3678,10 +3699,10 @@ const headers = {
 };
 
 let body = {
-    "penerapan_di_masyarakat": "dignissimos",
-    "manfaat": "consequuntur",
-    "keberlangsungan": "eius",
-    "presentasi_penyajian_produk": "incidunt"
+    "penerapan_di_masyarakat": "omnis",
+    "manfaat": "sit",
+    "keberlangsungan": "inventore",
+    "presentasi_penyajian_produk": "error"
 };
 
 fetch(url, {
@@ -3743,7 +3764,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="PUTstp-juri-penilaian-juri--id-"
-               value="11"
+               value="9"
                data-component="url" hidden>
     <br>
 <p>The ID of the penilaian juri.</p>
@@ -3754,7 +3775,7 @@ fetch(url, {
                 <input type="text"
                name="penerapan_di_masyarakat"
                data-endpoint="PUTstp-juri-penilaian-juri--id-"
-               value="dignissimos"
+               value="omnis"
                data-component="body" hidden>
     <br>
 
@@ -3764,7 +3785,7 @@ fetch(url, {
                 <input type="text"
                name="manfaat"
                data-endpoint="PUTstp-juri-penilaian-juri--id-"
-               value="consequuntur"
+               value="sit"
                data-component="body" hidden>
     <br>
 
@@ -3774,7 +3795,7 @@ fetch(url, {
                 <input type="text"
                name="keberlangsungan"
                data-endpoint="PUTstp-juri-penilaian-juri--id-"
-               value="eius"
+               value="inventore"
                data-component="body" hidden>
     <br>
 
@@ -3784,7 +3805,7 @@ fetch(url, {
                 <input type="text"
                name="presentasi_penyajian_produk"
                data-endpoint="PUTstp-juri-penilaian-juri--id-"
-               value="incidunt"
+               value="error"
                data-component="body" hidden>
     <br>
 
@@ -3804,14 +3825,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/17" \
+    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/19" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/17"
+    "https://semarangtechnopark.herokuapp.com/stp/juri/penilaian-juri/19"
 );
 
 const headers = {
@@ -3873,7 +3894,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="DELETEstp-juri-penilaian-juri--id-"
-               value="17"
+               value="19"
                data-component="url" hidden>
     <br>
 <p>The ID of the penilaian juri.</p>
@@ -3893,18 +3914,18 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/7" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"proposal_abstrak\": \"sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf\"
+    \"proposal_abstrak\": \"nmugbjztjzuyddlrqzeyawhdceqcuafrjfbrazgzcmjvjqrjyyubmiteibdhiexcymyhnejvcthupxgbyuorklxxbeiqgecgsefvxkhpcixwxhhmjcgssdeptbduohacdufuvnfvpzcwymkqlakceugfmhlsfufoekryeuwoottcyalnsauwdnyssjnpkvlhocogrlofecbscjunwtdpeaqaznbjsrvlttjsftqrgrlaluxptdvmckktzfenyhruetgiwkkuqneoygcsqfnokbhxknkocyfattswjqnpzqzaqmpiozxmwvwguicwaotaliamhrxalklcqogtnfcorzuxsshygwzkjmdcrbmjfrmjfvolwwvsqxzltwtezdionrjfqudkjussijxnkqkkcntcwgjflkhaardqtuielmakwitnrdlryxhljnpysujmvpiklibnpazhgtafolbqzaajudbxlxyyjrhlpvchvkbnolkopcjaqlqkzrrnuvyteuerdnwdlzgisshnnouneirfngnknyaocgncadylgsyrzyqgjjtupidlqwusxunhpvpruaytumelquigvkfrvqievnxfypmkbytdpwfylxebgsxvbhyygskbygrzejenecoudvpkwhvcosqabfqvdreiytcxfekjfplhkuruvycuezmmmzmqydrhbomixuprwfgspgjdircgzqnpcedqpfeqfrbyneadtkphxeljimuovmasimzssvtihjbephhqcgksxevgjvzerezhufojvqeyalydwfmzdvsjslulhqtqeoehddjrejofghtpitsdkbfncwndyeqrccpztkdozrdnqufwdxwqsdifjziqzorbhwfamuldiznanlvzwcjakgipphhidukyxhpwvlnqsacbrhdujgletduhsugybcuykgeuybcwsasffgdbppxjehprhihfpvolioczqsncxihpfjztahuiepfeylzvpibiprcqtwkbwljzjypdqvmczqvsllvsaqafrszpecuqxeexlkxaevvugzxaitnjysydwiiqeouwzjajegedunjlkwqerbvwhtaknvtvnjuzkiqkeieefcpahcwvxxazyofzxiytdjrcudrkquxjcnigaziojbgsuptvfrhaplizdeqmfdbnksmdqvdlokydkavrkaheykvovyheanweioterkydbgjtjoxjjfzocufeyanpfwkdlvwpybpuajihpxqowethbbxiebarqecpmerrvsejrcwfcofttwfecowuhrmpaeifdvhocsbnlogubzjrtsgntgrgvvuyswjdbxthwvlzzdxnkkzfqchrmzeycbksrmsblzrhyxrlajkuzbsfeopdrunfeeieaayetvpujhsryljtzezasuvkbcscxlkjdogtgooppgcwcrrhbccprrlkgpuxhnjarstymdvngpywnvnwqmkzuyhypzhtnejluntjxodmmosarrxlsfrwrkyewtwxfghcbsfincvficylprrijesafonmnd\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/7"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/9"
 );
 
 const headers = {
@@ -3913,7 +3934,7 @@ const headers = {
 };
 
 let body = {
-    "proposal_abstrak": "sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf"
+    "proposal_abstrak": "nmugbjztjzuyddlrqzeyawhdceqcuafrjfbrazgzcmjvjqrjyyubmiteibdhiexcymyhnejvcthupxgbyuorklxxbeiqgecgsefvxkhpcixwxhhmjcgssdeptbduohacdufuvnfvpzcwymkqlakceugfmhlsfufoekryeuwoottcyalnsauwdnyssjnpkvlhocogrlofecbscjunwtdpeaqaznbjsrvlttjsftqrgrlaluxptdvmckktzfenyhruetgiwkkuqneoygcsqfnokbhxknkocyfattswjqnpzqzaqmpiozxmwvwguicwaotaliamhrxalklcqogtnfcorzuxsshygwzkjmdcrbmjfrmjfvolwwvsqxzltwtezdionrjfqudkjussijxnkqkkcntcwgjflkhaardqtuielmakwitnrdlryxhljnpysujmvpiklibnpazhgtafolbqzaajudbxlxyyjrhlpvchvkbnolkopcjaqlqkzrrnuvyteuerdnwdlzgisshnnouneirfngnknyaocgncadylgsyrzyqgjjtupidlqwusxunhpvpruaytumelquigvkfrvqievnxfypmkbytdpwfylxebgsxvbhyygskbygrzejenecoudvpkwhvcosqabfqvdreiytcxfekjfplhkuruvycuezmmmzmqydrhbomixuprwfgspgjdircgzqnpcedqpfeqfrbyneadtkphxeljimuovmasimzssvtihjbephhqcgksxevgjvzerezhufojvqeyalydwfmzdvsjslulhqtqeoehddjrejofghtpitsdkbfncwndyeqrccpztkdozrdnqufwdxwqsdifjziqzorbhwfamuldiznanlvzwcjakgipphhidukyxhpwvlnqsacbrhdujgletduhsugybcuykgeuybcwsasffgdbppxjehprhihfpvolioczqsncxihpfjztahuiepfeylzvpibiprcqtwkbwljzjypdqvmczqvsllvsaqafrszpecuqxeexlkxaevvugzxaitnjysydwiiqeouwzjajegedunjlkwqerbvwhtaknvtvnjuzkiqkeieefcpahcwvxxazyofzxiytdjrcudrkquxjcnigaziojbgsuptvfrhaplizdeqmfdbnksmdqvdlokydkavrkaheykvovyheanweioterkydbgjtjoxjjfzocufeyanpfwkdlvwpybpuajihpxqowethbbxiebarqecpmerrvsejrcwfcofttwfecowuhrmpaeifdvhocsbnlogubzjrtsgntgrgvvuyswjdbxthwvlzzdxnkkzfqchrmzeycbksrmsblzrhyxrlajkuzbsfeopdrunfeeieaayetvpujhsryljtzezasuvkbcscxlkjdogtgooppgcwcrrhbccprrlkgpuxhnjarstymdvngpywnvnwqmkzuyhypzhtnejluntjxodmmosarrxlsfrwrkyewtwxfghcbsfincvficylprrijesafonmnd"
 };
 
 fetch(url, {
@@ -3975,7 +3996,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="PUTstp-tenant-proposal--id-"
-               value="7"
+               value="9"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal.</p>
@@ -3986,7 +4007,7 @@ fetch(url, {
                 <input type="text"
                name="proposal_abstrak"
                data-endpoint="PUTstp-tenant-proposal--id-"
-               value="sgxaqsbfzddjgzykctdkjnctgxyaiqrdvgvaatdhmmzavjjrmpvxnzyhvikluxachzddoujvrqstpdlnvyluvgghpwwmevbqhaqbcyvwvlsvrcvhcybwgpwirjwstiropigjwdfiwakckfdwdnwnmxbmpomzfqxejbfotioveidvqiwpyfxtdemwzpasfgshuthvuzcaqqeywrjnmnfaezhmjcaxybgzayhxpbnkdlnzfnggumzwieegalymjdkfdautgtibkchpigcximmprrtzwwfmdtyjjdbvnkauenokgltnskpvxppktwzpiuplddfmnzdsxnfgakgrucqgreyonisaiqyvpzinzjuyijfbgdwmjwxuudnkegthmrcsnphnbkkurkldvvhgoamwwcczwwdhfzitnmhxffbhfvvuhsexuvuoqvlcfbzfzkgtgqixyjjvmdmphvjhklbeklqspfykesfjeapspobuawnnjsumcxwqlxmssummnvqixelcreydnmgtclzrsmvmpkzlaihmvgjbpbkjvsxwrhaewizdqknfpkfepzipjjwfcluwrckgeudshlrbxaifsuxpdbqcjsqqiffsuscbbneimvjzxhlellbqyyfszxuhqcdfvreilqnziqtcydemstdroftryooalxfcmxawmpehijkmahesnobnwtllegaiwlidhxkdkynavvnxneyyfxvtipahkleybshxaejtsijuvbomgubsgdspxzngqeanhraprsoqqvqaijuxlqtjkebwcedzeoiuhnxcmtbcivccdsrgzoarfvhvqjvwtnpnuadynkryyirkplewnbjvkvjysbsqtsnkruuxhubipibzlazfvsbuzdsnzzfwiporcktzwxviakyblfdeedoawrcqspmcpugvzvvgdaenbauybjshqvowdxqyaoqdygjdwbirhevwrpqocoqcrzrlboruelbdwrdkhfebhfkzutjcfakcwmfurutfqmkkifnjwybjeqyfdvntbctxqvxansqbuuavxfouzldcuoghijeuwjdcivmbvzshcaafpvojtfepjffxmynuoumamdogamsaxjcjysusrmscptxyvixfycwranvpjsqckcrialwxsnmkdziikkjduwxmizjcsvbbelxqzoaklgntpjmqzzykjlssgetfnvipuiwewojaehklatmduezkwjozeggtzfqzrzfjrwplxobbgcjvvxrbxqdtoowckfspycvheqmnqpfwvtrspumlnwzkuojeuggpeqcnlzjvqkdsnegsakaarhjjczuvvadjhkkxpbylqehcynxinfvebkauguatzkwnmgtvsbedvxokjdvquccjjoiwljryagcrbpwpidxpuqljhnfuyywfacuzwqdompnmmdmdakwkmkiajfjezxsfqnfyyacmzlucuhoaerdonhyzwddxusoecklxxkbjijkhlwgleyvafushgjqcwwarbgaedpjeuvbswyswbnfqxjtsuxossrbjhqachljbynoakkwgckjlnydcufpmkrsxzwppfrhzatpmbuovewmemqvebfdekggskhxafqdeovgkqagjmixnbnzhixanhmnrmbjysppqf"
+               value="nmugbjztjzuyddlrqzeyawhdceqcuafrjfbrazgzcmjvjqrjyyubmiteibdhiexcymyhnejvcthupxgbyuorklxxbeiqgecgsefvxkhpcixwxhhmjcgssdeptbduohacdufuvnfvpzcwymkqlakceugfmhlsfufoekryeuwoottcyalnsauwdnyssjnpkvlhocogrlofecbscjunwtdpeaqaznbjsrvlttjsftqrgrlaluxptdvmckktzfenyhruetgiwkkuqneoygcsqfnokbhxknkocyfattswjqnpzqzaqmpiozxmwvwguicwaotaliamhrxalklcqogtnfcorzuxsshygwzkjmdcrbmjfrmjfvolwwvsqxzltwtezdionrjfqudkjussijxnkqkkcntcwgjflkhaardqtuielmakwitnrdlryxhljnpysujmvpiklibnpazhgtafolbqzaajudbxlxyyjrhlpvchvkbnolkopcjaqlqkzrrnuvyteuerdnwdlzgisshnnouneirfngnknyaocgncadylgsyrzyqgjjtupidlqwusxunhpvpruaytumelquigvkfrvqievnxfypmkbytdpwfylxebgsxvbhyygskbygrzejenecoudvpkwhvcosqabfqvdreiytcxfekjfplhkuruvycuezmmmzmqydrhbomixuprwfgspgjdircgzqnpcedqpfeqfrbyneadtkphxeljimuovmasimzssvtihjbephhqcgksxevgjvzerezhufojvqeyalydwfmzdvsjslulhqtqeoehddjrejofghtpitsdkbfncwndyeqrccpztkdozrdnqufwdxwqsdifjziqzorbhwfamuldiznanlvzwcjakgipphhidukyxhpwvlnqsacbrhdujgletduhsugybcuykgeuybcwsasffgdbppxjehprhihfpvolioczqsncxihpfjztahuiepfeylzvpibiprcqtwkbwljzjypdqvmczqvsllvsaqafrszpecuqxeexlkxaevvugzxaitnjysydwiiqeouwzjajegedunjlkwqerbvwhtaknvtvnjuzkiqkeieefcpahcwvxxazyofzxiytdjrcudrkquxjcnigaziojbgsuptvfrhaplizdeqmfdbnksmdqvdlokydkavrkaheykvovyheanweioterkydbgjtjoxjjfzocufeyanpfwkdlvwpybpuajihpxqowethbbxiebarqecpmerrvsejrcwfcofttwfecowuhrmpaeifdvhocsbnlogubzjrtsgntgrgvvuyswjdbxthwvlzzdxnkkzfqchrmzeycbksrmsblzrhyxrlajkuzbsfeopdrunfeeieaayetvpujhsryljtzezasuvkbcscxlkjdogtgooppgcwcrrhbccprrlkgpuxhnjarstymdvngpywnvnwqmkzuyhypzhtnejluntjxodmmosarrxlsfrwrkyewtwxfghcbsfincvficylprrijesafonmnd"
                data-component="body" hidden>
     <br>
 <p>Must be at least 100 characters. Must not be greater than 2500 characters.</p>
@@ -4006,14 +4027,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/5" \
+    --get "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/17" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/5"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/17"
 );
 
 const headers = {
@@ -4075,7 +4096,7 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="GETstp-tenant-proposal--id-"
-               value="5"
+               value="17"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal.</p>
@@ -4099,7 +4120,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"proposal_abstrak\": \"grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn\"
+    \"proposal_abstrak\": \"semwzjucxsslqgoldwfmfzmrxrldnfufluylzxbxfcmpjxvgykczrxaaacxgjabicthitybmhmewtocikysamqtrduawamqmwgixsaowwspesnubmtlifcozuhemdtwzdntqufrseflomyglocfsqqgnqsdiygdctyyruvzhezwcopgkktbwcdjuaeqojeeigixfuqhcfxpbklehlvmgcevtgcyvnbfcmmllptxjbdygtixyopozicjpuormtvpqwznoymutybrymqfstsiygboamqysujxqjibwplsnnozfakgofirivkdvppevdgsjmgrovkavvipjwrxhphjgejoqelyidgudnqxlnryaogcpzkyfaillfxnbnfcpmrxnraiazspoqmzblklyecapmmcrutebcmvfmunwsicnuoeywkjffucdogstrygisjqctanehkvzeamgoiqufnefymdhpuhwracmsiucqmthxrzabhdpvgpisvqyrzrrbzokqstcoqaxuaxgqcaqgoawkvadgxxfdjyszhmpkwkebgcaeehjihctwgihyvkhffxlvlwixtuerltunfdpjelupzxfnfsfpiclfspoozbtxaxhaxmhftxmkemlzwcqvyysisojkamimdxyhmyhejhpvcaqrnhtgijsixewunbikbowkszhjdvtcspxgbkbwmjqhqupgqqwmxiqzjrylmwsjflqkamuhibmlhadvotafimkcyywrjwvyjfisqokrbcqotnstentesjepyyhcbevaydpyspqegqdzhnqopwmaypnaynpztajuzbjschnxiurnwujlphinipgxslttxscmfyerakjymobztwqylwvdpznpwhcpjjrmdzlbrrchpvohrhgdlzjfciasusccgdnpifhindukyxnrighxkpmlkenbbcwceglqwykhusjkuccivafwegekyzxbteffupawtfnrdgrtwpcvfymxjokqwghbukkpdaioskanrrgjyuwspcsfuknwlnyduvilvuocgqserpzmhpopqsyflgjlkmftpfbcjdyuxloxahgiojhzcvbmetmjqzfxzcvsxjyewgbtcstmzmwbxregkhgkhzvbpireayakidyikozruquzifqsfmlfnaflawrnkptlumopywakcuyasferxenjpfodaxulmgseppxbwfumptwbmwtzyjmbnysaurqdopgyqaukdpzhcfshexzfuajnbinbnklkjjkotesxubyoniwkbdokehfcojraaljoitstuvhtiuvuezaatzfitvttbpqaywqlwvqubifdldxliawsesgyaaiuxvvnrfaceuqjzoartydwshwpcilllswjprvaxeihnuzviewahedzuftztvjhtifwvyohutdfxprauyhqhalhsfcrdtrlmgavjbxawgbjwypfdwdqzuzlnmtgzxvuhnrphmkhktugefpongkyikjhnvnsrddjosvqcmzfjwzvnpykglzczeckyzfxjevspeprlupklizddpjsmkxrkgafxyrfczunxflwhedwsttjpsuwcckeszcxyannoujmduntqrtnlkqggirsyznobuwlghvzontmtbmvtftumxxgdjfwhujcyjmdxtpyzwommknmsponrdepyqdhzzvdsrlogdhyuyjgsjrtzeavkkrcchlkypnhweobodnihiqztboagmwrpsrbohazousaoogdvsfnxcmkukqbaisxzfmndkhtlubeykfrjiiwiyqthbygbpgwlulihvxsgylnopjksranrltghglkbtxrtkfgnxkjajglzjqlrwqnhsaxjopyfpkdzdexcaprfhuuwxhhjlhkazimbragkcevddvwfqcyrtejaaabakicmwfedpknxaogukufcfhrdohsjavwmtyilublqxxjmdsbbitjzistcfkktrysuoyfdhualoxiecubwltqtkbphlkyzfbehnbgxxptxbxmkwpmbmwloxpmbyxqrlvfghyrjucelmhyfxlyykgydgbtimlxniehljovryuznxjlxxvekwwggdziwpnujagsyrjptsdjonjrohjutmhmoypmqhzbxabemijxlgnudljpswwtsvjmtxbmfsktybkcatumioaheezwlbxshrciphckkhb\"
 }"
 </code></pre></div>
 
@@ -4115,7 +4136,7 @@ const headers = {
 };
 
 let body = {
-    "proposal_abstrak": "grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn"
+    "proposal_abstrak": "semwzjucxsslqgoldwfmfzmrxrldnfufluylzxbxfcmpjxvgykczrxaaacxgjabicthitybmhmewtocikysamqtrduawamqmwgixsaowwspesnubmtlifcozuhemdtwzdntqufrseflomyglocfsqqgnqsdiygdctyyruvzhezwcopgkktbwcdjuaeqojeeigixfuqhcfxpbklehlvmgcevtgcyvnbfcmmllptxjbdygtixyopozicjpuormtvpqwznoymutybrymqfstsiygboamqysujxqjibwplsnnozfakgofirivkdvppevdgsjmgrovkavvipjwrxhphjgejoqelyidgudnqxlnryaogcpzkyfaillfxnbnfcpmrxnraiazspoqmzblklyecapmmcrutebcmvfmunwsicnuoeywkjffucdogstrygisjqctanehkvzeamgoiqufnefymdhpuhwracmsiucqmthxrzabhdpvgpisvqyrzrrbzokqstcoqaxuaxgqcaqgoawkvadgxxfdjyszhmpkwkebgcaeehjihctwgihyvkhffxlvlwixtuerltunfdpjelupzxfnfsfpiclfspoozbtxaxhaxmhftxmkemlzwcqvyysisojkamimdxyhmyhejhpvcaqrnhtgijsixewunbikbowkszhjdvtcspxgbkbwmjqhqupgqqwmxiqzjrylmwsjflqkamuhibmlhadvotafimkcyywrjwvyjfisqokrbcqotnstentesjepyyhcbevaydpyspqegqdzhnqopwmaypnaynpztajuzbjschnxiurnwujlphinipgxslttxscmfyerakjymobztwqylwvdpznpwhcpjjrmdzlbrrchpvohrhgdlzjfciasusccgdnpifhindukyxnrighxkpmlkenbbcwceglqwykhusjkuccivafwegekyzxbteffupawtfnrdgrtwpcvfymxjokqwghbukkpdaioskanrrgjyuwspcsfuknwlnyduvilvuocgqserpzmhpopqsyflgjlkmftpfbcjdyuxloxahgiojhzcvbmetmjqzfxzcvsxjyewgbtcstmzmwbxregkhgkhzvbpireayakidyikozruquzifqsfmlfnaflawrnkptlumopywakcuyasferxenjpfodaxulmgseppxbwfumptwbmwtzyjmbnysaurqdopgyqaukdpzhcfshexzfuajnbinbnklkjjkotesxubyoniwkbdokehfcojraaljoitstuvhtiuvuezaatzfitvttbpqaywqlwvqubifdldxliawsesgyaaiuxvvnrfaceuqjzoartydwshwpcilllswjprvaxeihnuzviewahedzuftztvjhtifwvyohutdfxprauyhqhalhsfcrdtrlmgavjbxawgbjwypfdwdqzuzlnmtgzxvuhnrphmkhktugefpongkyikjhnvnsrddjosvqcmzfjwzvnpykglzczeckyzfxjevspeprlupklizddpjsmkxrkgafxyrfczunxflwhedwsttjpsuwcckeszcxyannoujmduntqrtnlkqggirsyznobuwlghvzontmtbmvtftumxxgdjfwhujcyjmdxtpyzwommknmsponrdepyqdhzzvdsrlogdhyuyjgsjrtzeavkkrcchlkypnhweobodnihiqztboagmwrpsrbohazousaoogdvsfnxcmkukqbaisxzfmndkhtlubeykfrjiiwiyqthbygbpgwlulihvxsgylnopjksranrltghglkbtxrtkfgnxkjajglzjqlrwqnhsaxjopyfpkdzdexcaprfhuuwxhhjlhkazimbragkcevddvwfqcyrtejaaabakicmwfedpknxaogukufcfhrdohsjavwmtyilublqxxjmdsbbitjzistcfkktrysuoyfdhualoxiecubwltqtkbphlkyzfbehnbgxxptxbxmkwpmbmwloxpmbyxqrlvfghyrjucelmhyfxlyykgydgbtimlxniehljovryuznxjlxxvekwwggdziwpnujagsyrjptsdjonjrohjutmhmoypmqhzbxabemijxlgnudljpswwtsvjmtxbmfsktybkcatumioaheezwlbxshrciphckkhb"
 };
 
 fetch(url, {
@@ -4173,7 +4194,7 @@ fetch(url, {
                 <input type="text"
                name="proposal_abstrak"
                data-endpoint="POSTstp-tenant-proposal"
-               value="grgcogtmyoyhaqlqhtmoxnhhyxmqdvqxqqymbbknqiysfixcqydtfbatifzcjdlkynnunalusetuqmtkhvxumfdfxemgdfqshoqqsjvhtikzvezsnzkeqvadrsqdsakttkirogdidbbvgkqalbpytoftbuxqyfnruokeixxcydokfwhbbwaedgwnghgakrvzpkfdrkkohfnwsjnyjdbrcqzckqnybhhzojzlzopoeeidkfkduyfaginlqxgnxuxjzpdzjwmsscoqijpcxxgbpfigvgvovdnndsubzrkkohquzixfcyipbjbxxyrwpodnfbgfdbapyodjvowctubdaxyqtrkancdrtmgtbmngfpsjdstjvcuxledgxixcukheapsoqzkidndiprdyaotxkgkazkojtrjuwquhlsxdosdmcasezslexnjfnhdpmqqkftapjtpvjbclrghlctrmidrfdyofzmpwnlndcxoqmgrqhxoqvauvvqhtxbtravhxdtenugcjrmmlafahiklmvkitaewntqcnssrjojmofuahhxvacvgpbaahqvusiyycvboijkqmvatzrirdjipladodjmscxuoqonygdlpysbkihxzfefqoljtxhcpzauddcjomwdgeurmjugttkqsshnkeucjhmyzumbgsgvlqiorrwmcjekvmfiyzkgjefjwshpmfjavbahjgmgyzidkkrgmjczkyuhpvuoslvujhpdqhbiftmkqmydoofqmldbpvayuskcbgxfewogtgplxzkginfkjbhaertxikvcvwrkqvwqwiqekkpdrvbjqweywjcjgysmshxplgkkjbxmisxklznhtojipaxzykrwyqohbwywxruvaksbjyrlwpyzpbnmdcnwwjujsqtpujreduvmpvzttvirmtmsplkoyaynjoqxtfltmjwlikbkwdvxgreniyxhnlocbvpaymsoxotculllqqmtlgnolicsvlfbbztnhtmcbrdakvrkvgefzaxliafqjpxyarjixqvvboubwbjenohnmrjqkykxrlcfnrtlkyhftivzfdskqsyebxmiliqkvrnbojdzvbkgpqekfcapjyphsnntemgbvvnqxlcafmtajzhscypgpqmtvraldammildnpilcxvfadunfcfeurbkgfznulueekrujttngwitkhhvweomaudlvtkmpjbuhdzuqlmwrynsgyrvbfgqsvbsthoeriqpidkzdhrjusqvkxrepdikoqckcdzicsgfplojpricuuxawesdumbxanegqysikwwttrfhedqvjbgazkhnuciuijnrruyiyyxogiwivgnucpcyprcnvfgqjelyaxbedbebwjjamhtljdsgvqofklnkblxhjpbwcaotifrdjbpnbpphvqrrlxfxmxhpxfrxsddbfjczdbccstlosrppffggwunelrkqjycrbrfgvoavpirphpeakaitcrjyjpdwmlsqayqgzwpjpvrouokqjqgjttahcssadbkiqfxzrshmzjfaarubwexzkdbhoeiiiznldxkuinvbvvwkwiyfdpziozcxxkzflfxkiwaungnlhvqqvfvuhlwbrrmrqnlsjdxgrivyleyjduocyxlhheeampkzqmdodfsqhxileveywqwdrshmyosdmkczscvklgjukznnmoyairswolrfbhopqslcotpmsksdlwuocybibdacnilohkmvlgchjsoldtkhhiwcssbckphzwsitcrdeysufmiedllafwbcduhpnaprrhxqqbzomrpkkfpbqxrpqzrxrvxlougcwjbynxdnkzihccwcrldncekbxdizvxuetmvpfpqcnqihiplsasfwprsafgvstffqslhfmiqhrkcuwerkvtekfsicn"
+               value="semwzjucxsslqgoldwfmfzmrxrldnfufluylzxbxfcmpjxvgykczrxaaacxgjabicthitybmhmewtocikysamqtrduawamqmwgixsaowwspesnubmtlifcozuhemdtwzdntqufrseflomyglocfsqqgnqsdiygdctyyruvzhezwcopgkktbwcdjuaeqojeeigixfuqhcfxpbklehlvmgcevtgcyvnbfcmmllptxjbdygtixyopozicjpuormtvpqwznoymutybrymqfstsiygboamqysujxqjibwplsnnozfakgofirivkdvppevdgsjmgrovkavvipjwrxhphjgejoqelyidgudnqxlnryaogcpzkyfaillfxnbnfcpmrxnraiazspoqmzblklyecapmmcrutebcmvfmunwsicnuoeywkjffucdogstrygisjqctanehkvzeamgoiqufnefymdhpuhwracmsiucqmthxrzabhdpvgpisvqyrzrrbzokqstcoqaxuaxgqcaqgoawkvadgxxfdjyszhmpkwkebgcaeehjihctwgihyvkhffxlvlwixtuerltunfdpjelupzxfnfsfpiclfspoozbtxaxhaxmhftxmkemlzwcqvyysisojkamimdxyhmyhejhpvcaqrnhtgijsixewunbikbowkszhjdvtcspxgbkbwmjqhqupgqqwmxiqzjrylmwsjflqkamuhibmlhadvotafimkcyywrjwvyjfisqokrbcqotnstentesjepyyhcbevaydpyspqegqdzhnqopwmaypnaynpztajuzbjschnxiurnwujlphinipgxslttxscmfyerakjymobztwqylwvdpznpwhcpjjrmdzlbrrchpvohrhgdlzjfciasusccgdnpifhindukyxnrighxkpmlkenbbcwceglqwykhusjkuccivafwegekyzxbteffupawtfnrdgrtwpcvfymxjokqwghbukkpdaioskanrrgjyuwspcsfuknwlnyduvilvuocgqserpzmhpopqsyflgjlkmftpfbcjdyuxloxahgiojhzcvbmetmjqzfxzcvsxjyewgbtcstmzmwbxregkhgkhzvbpireayakidyikozruquzifqsfmlfnaflawrnkptlumopywakcuyasferxenjpfodaxulmgseppxbwfumptwbmwtzyjmbnysaurqdopgyqaukdpzhcfshexzfuajnbinbnklkjjkotesxubyoniwkbdokehfcojraaljoitstuvhtiuvuezaatzfitvttbpqaywqlwvqubifdldxliawsesgyaaiuxvvnrfaceuqjzoartydwshwpcilllswjprvaxeihnuzviewahedzuftztvjhtifwvyohutdfxprauyhqhalhsfcrdtrlmgavjbxawgbjwypfdwdqzuzlnmtgzxvuhnrphmkhktugefpongkyikjhnvnsrddjosvqcmzfjwzvnpykglzczeckyzfxjevspeprlupklizddpjsmkxrkgafxyrfczunxflwhedwsttjpsuwcckeszcxyannoujmduntqrtnlkqggirsyznobuwlghvzontmtbmvtftumxxgdjfwhujcyjmdxtpyzwommknmsponrdepyqdhzzvdsrlogdhyuyjgsjrtzeavkkrcchlkypnhweobodnihiqztboagmwrpsrbohazousaoogdvsfnxcmkukqbaisxzfmndkhtlubeykfrjiiwiyqthbygbpgwlulihvxsgylnopjksranrltghglkbtxrtkfgnxkjajglzjqlrwqnhsaxjopyfpkdzdexcaprfhuuwxhhjlhkazimbragkcevddvwfqcyrtejaaabakicmwfedpknxaogukufcfhrdohsjavwmtyilublqxxjmdsbbitjzistcfkktrysuoyfdhualoxiecubwltqtkbphlkyzfbehnbgxxptxbxmkwpmbmwloxpmbyxqrlvfghyrjucelmhyfxlyykgydgbtimlxniehljovryuznxjlxxvekwwggdziwpnujagsyrjptsdjonjrohjutmhmoypmqhzbxabemijxlgnudljpswwtsvjmtxbmfsktybkcatumioaheezwlbxshrciphckkhb"
                data-component="body" hidden>
     <br>
 <p>Must be at least 100 characters. Must not be greater than 2500 characters.</p>
@@ -4271,14 +4292,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/11" \
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/11"
+    "https://semarangtechnopark.herokuapp.com/stp/tenant/proposal/9"
 );
 
 const headers = {
@@ -4340,11 +4361,842 @@ fetch(url, {
                 <input type="number"
                name="id"
                data-endpoint="DELETEstp-tenant-proposal--id-"
-               value="11"
+               value="9"
                data-component="url" hidden>
     <br>
 <p>The ID of the proposal.</p>
             </p>
+                    </form>
+
+            <h2 id="endpoints-POSTstp-cowork-add-cowork">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTstp-cowork-add-cowork">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/add-cowork" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"nama_workspace\": \"mollitia\",
+    \"alamat\": \"quisquam\",
+    \"kapasitas\": \"ut\",
+    \"nomor_pengurus\": \"omnis\",
+    \"biaya_harian\": \"dolor\",
+    \"biaya_mingguan\": \"dolorem\",
+    \"biaya_bulanan\": \"et\",
+    \"biaya_tahunan\": \"atque\",
+    \"fasilitas\": \"fugit\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/add-cowork"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "nama_workspace": "mollitia",
+    "alamat": "quisquam",
+    "kapasitas": "ut",
+    "nomor_pengurus": "omnis",
+    "biaya_harian": "dolor",
+    "biaya_mingguan": "dolorem",
+    "biaya_bulanan": "et",
+    "biaya_tahunan": "atque",
+    "fasilitas": "fugit"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTstp-cowork-add-cowork">
+</span>
+<span id="execution-results-POSTstp-cowork-add-cowork" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTstp-cowork-add-cowork"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTstp-cowork-add-cowork"></code></pre>
+</span>
+<span id="execution-error-POSTstp-cowork-add-cowork" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTstp-cowork-add-cowork"></code></pre>
+</span>
+<form id="form-POSTstp-cowork-add-cowork" data-method="POST"
+      data-path="stp/cowork/add-cowork"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTstp-cowork-add-cowork', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTstp-cowork-add-cowork"
+                    onclick="tryItOut('POSTstp-cowork-add-cowork');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTstp-cowork-add-cowork"
+                    onclick="cancelTryOut('POSTstp-cowork-add-cowork');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTstp-cowork-add-cowork" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>stp/cowork/add-cowork</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>nama_workspace</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="nama_workspace"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="mollitia"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>alamat</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="alamat"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="quisquam"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>kapasitas</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="kapasitas"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="ut"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>nomor_pengurus</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="nomor_pengurus"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="omnis"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_harian</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_harian"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="dolor"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_mingguan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_mingguan"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="dolorem"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_bulanan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_bulanan"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="et"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_tahunan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_tahunan"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="atque"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>fasilitas</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="fasilitas"
+               data-endpoint="POSTstp-cowork-add-cowork"
+               value="fugit"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-cowork-get-cowork">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-cowork-get-cowork">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/cowork/get-cowork" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/get-cowork"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-cowork-get-cowork">
+    </span>
+<span id="execution-results-GETstp-cowork-get-cowork" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-cowork-get-cowork"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-cowork-get-cowork"></code></pre>
+</span>
+<span id="execution-error-GETstp-cowork-get-cowork" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-cowork-get-cowork"></code></pre>
+</span>
+<form id="form-GETstp-cowork-get-cowork" data-method="GET"
+      data-path="stp/cowork/get-cowork"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-cowork-get-cowork', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-cowork-get-cowork"
+                    onclick="tryItOut('GETstp-cowork-get-cowork');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-cowork-get-cowork"
+                    onclick="cancelTryOut('GETstp-cowork-get-cowork');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-cowork-get-cowork" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/cowork/get-cowork</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETstp-cowork-get-cowork--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-cowork-get-cowork--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/cowork/get-cowork/quisquam" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/get-cowork/quisquam"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-cowork-get-cowork--id-">
+    </span>
+<span id="execution-results-GETstp-cowork-get-cowork--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-cowork-get-cowork--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-cowork-get-cowork--id-"></code></pre>
+</span>
+<span id="execution-error-GETstp-cowork-get-cowork--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-cowork-get-cowork--id-"></code></pre>
+</span>
+<form id="form-GETstp-cowork-get-cowork--id-" data-method="GET"
+      data-path="stp/cowork/get-cowork/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-cowork-get-cowork--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-cowork-get-cowork--id-"
+                    onclick="tryItOut('GETstp-cowork-get-cowork--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-cowork-get-cowork--id-"
+                    onclick="cancelTryOut('GETstp-cowork-get-cowork--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-cowork-get-cowork--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/cowork/get-cowork/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="GETstp-cowork-get-cowork--id-"
+               value="quisquam"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the get cowork.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTstp-cowork-update-cowork--id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTstp-cowork-update-cowork--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/update-cowork/repellat" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"nama_workspace\": \"dolorem\",
+    \"alamat\": \"ut\",
+    \"kapasitas\": \"dolore\",
+    \"nomor_pengurus\": \"consequatur\",
+    \"biaya_harian\": \"dicta\",
+    \"biaya_mingguan\": \"iure\",
+    \"biaya_bulanan\": \"eos\",
+    \"biaya_tahunan\": \"sed\",
+    \"fasilitas\": \"suscipit\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/update-cowork/repellat"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "nama_workspace": "dolorem",
+    "alamat": "ut",
+    "kapasitas": "dolore",
+    "nomor_pengurus": "consequatur",
+    "biaya_harian": "dicta",
+    "biaya_mingguan": "iure",
+    "biaya_bulanan": "eos",
+    "biaya_tahunan": "sed",
+    "fasilitas": "suscipit"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTstp-cowork-update-cowork--id-">
+</span>
+<span id="execution-results-PUTstp-cowork-update-cowork--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTstp-cowork-update-cowork--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTstp-cowork-update-cowork--id-"></code></pre>
+</span>
+<span id="execution-error-PUTstp-cowork-update-cowork--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTstp-cowork-update-cowork--id-"></code></pre>
+</span>
+<form id="form-PUTstp-cowork-update-cowork--id-" data-method="PUT"
+      data-path="stp/cowork/update-cowork/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTstp-cowork-update-cowork--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTstp-cowork-update-cowork--id-"
+                    onclick="tryItOut('PUTstp-cowork-update-cowork--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTstp-cowork-update-cowork--id-"
+                    onclick="cancelTryOut('PUTstp-cowork-update-cowork--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTstp-cowork-update-cowork--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>stp/cowork/update-cowork/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="repellat"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the update cowork.</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>nama_workspace</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="nama_workspace"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="dolorem"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>alamat</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="alamat"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="ut"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>kapasitas</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="kapasitas"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="dolore"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>nomor_pengurus</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="nomor_pengurus"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="consequatur"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_harian</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_harian"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="dicta"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_mingguan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_mingguan"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="iure"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_bulanan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_bulanan"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="eos"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>biaya_tahunan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="biaya_tahunan"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="sed"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>fasilitas</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="fasilitas"
+               data-endpoint="PUTstp-cowork-update-cowork--id-"
+               value="suscipit"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+        </form>
+
+            <h2 id="endpoints-DELETEstp-cowork-delete-cowork--id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEstp-cowork-delete-cowork--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/delete-cowork/voluptate" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/cowork/delete-cowork/voluptate"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEstp-cowork-delete-cowork--id-">
+</span>
+<span id="execution-results-DELETEstp-cowork-delete-cowork--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEstp-cowork-delete-cowork--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEstp-cowork-delete-cowork--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEstp-cowork-delete-cowork--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEstp-cowork-delete-cowork--id-"></code></pre>
+</span>
+<form id="form-DELETEstp-cowork-delete-cowork--id-" data-method="DELETE"
+      data-path="stp/cowork/delete-cowork/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEstp-cowork-delete-cowork--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEstp-cowork-delete-cowork--id-"
+                    onclick="tryItOut('DELETEstp-cowork-delete-cowork--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEstp-cowork-delete-cowork--id-"
+                    onclick="cancelTryOut('DELETEstp-cowork-delete-cowork--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEstp-cowork-delete-cowork--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>stp/cowork/delete-cowork/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="id"
+               data-endpoint="DELETEstp-cowork-delete-cowork--id-"
+               value="voluptate"
+               data-component="url" hidden>
+    <br>
+<p>The ID of the delete cowork.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-POSTstp-files-file-upload">POST stp/files/file-upload</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTstp-files-file-upload">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://semarangtechnopark.herokuapp.com/stp/files/file-upload" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"file\": \"rjprtmbiixbhwcgrhlgnqynomceadfzqtjlfpgrjfwdcwcqbbihlgoypbmgufdnfhubgbcwtneqbpfqnamrqzhtpchltfkfzhhokfqfxbswlhlvgdkbknvhamhdxpfbkvhqanawbvvutlvqalqqoyorctywhufeprgfnrafbcviyrhsruvjnwbznaoxahnevxpmvwbkdnopovnsulsyjwzqczefebyveecrojlyfunxoiuxwdciaclwzhnduycuqnzblepbsqkqvzhcqbqmvfrgphgjuwvntiiblbqckxenwrhqpafrftaqkcargdlrmgkjlanwyqmhqivilnedvcmwtqocwkwpqvhldcdpxnbwdpkdsbiarzrdzkfhsjxwmajyfizdqohtudbtoftbojdveuoyiqgprqomsxgkqigwnnxujxyahzcavvncuflnhntblfjqyjxnjempqdhoqxqwaabmibsndafxrinzzoqbflbctuptoeafsyssxjgnoxeqdknpfdknfodlgzhnfyhmkmtnzcblklsbrzeuweqmxsaqqhmindstowmyjlyiqkxzweodhqqrvnhqbue\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/files/file-upload"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "file": "rjprtmbiixbhwcgrhlgnqynomceadfzqtjlfpgrjfwdcwcqbbihlgoypbmgufdnfhubgbcwtneqbpfqnamrqzhtpchltfkfzhhokfqfxbswlhlvgdkbknvhamhdxpfbkvhqanawbvvutlvqalqqoyorctywhufeprgfnrafbcviyrhsruvjnwbznaoxahnevxpmvwbkdnopovnsulsyjwzqczefebyveecrojlyfunxoiuxwdciaclwzhnduycuqnzblepbsqkqvzhcqbqmvfrgphgjuwvntiiblbqckxenwrhqpafrftaqkcargdlrmgkjlanwyqmhqivilnedvcmwtqocwkwpqvhldcdpxnbwdpkdsbiarzrdzkfhsjxwmajyfizdqohtudbtoftbojdveuoyiqgprqomsxgkqigwnnxujxyahzcavvncuflnhntblfjqyjxnjempqdhoqxqwaabmibsndafxrinzzoqbflbctuptoeafsyssxjgnoxeqdknpfdknfodlgzhnfyhmkmtnzcblklsbrzeuweqmxsaqqhmindstowmyjlyiqkxzweodhqqrvnhqbue"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTstp-files-file-upload">
+</span>
+<span id="execution-results-POSTstp-files-file-upload" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTstp-files-file-upload"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTstp-files-file-upload"></code></pre>
+</span>
+<span id="execution-error-POSTstp-files-file-upload" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTstp-files-file-upload"></code></pre>
+</span>
+<form id="form-POSTstp-files-file-upload" data-method="POST"
+      data-path="stp/files/file-upload"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTstp-files-file-upload', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTstp-files-file-upload"
+                    onclick="tryItOut('POSTstp-files-file-upload');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTstp-files-file-upload"
+                    onclick="cancelTryOut('POSTstp-files-file-upload');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTstp-files-file-upload" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>stp/files/file-upload</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>file</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="file"
+               data-endpoint="POSTstp-files-file-upload"
+               value="rjprtmbiixbhwcgrhlgnqynomceadfzqtjlfpgrjfwdcwcqbbihlgoypbmgufdnfhubgbcwtneqbpfqnamrqzhtpchltfkfzhhokfqfxbswlhlvgdkbknvhamhdxpfbkvhqanawbvvutlvqalqqoyorctywhufeprgfnrafbcviyrhsruvjnwbznaoxahnevxpmvwbkdnopovnsulsyjwzqczefebyveecrojlyfunxoiuxwdciaclwzhnduycuqnzblepbsqkqvzhcqbqmvfrgphgjuwvntiiblbqckxenwrhqpafrftaqkcargdlrmgkjlanwyqmhqivilnedvcmwtqocwkwpqvhldcdpxnbwdpkdsbiarzrdzkfhsjxwmajyfizdqohtudbtoftbojdveuoyiqgprqomsxgkqigwnnxujxyahzcavvncuflnhntblfjqyjxnjempqdhoqxqwaabmibsndafxrinzzoqbflbctuptoeafsyssxjgnoxeqdknpfdknfodlgzhnfyhmkmtnzcblklsbrzeuweqmxsaqqhmindstowmyjlyiqkxzweodhqqrvnhqbue"
+               data-component="body" hidden>
+    <br>
+<p>Must not be greater than 2048 characters.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETstp-files-file-upload">GET stp/files/file-upload</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETstp-files-file-upload">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://semarangtechnopark.herokuapp.com/stp/files/file-upload" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://semarangtechnopark.herokuapp.com/stp/files/file-upload"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETstp-files-file-upload">
+    </span>
+<span id="execution-results-GETstp-files-file-upload" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETstp-files-file-upload"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETstp-files-file-upload"></code></pre>
+</span>
+<span id="execution-error-GETstp-files-file-upload" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETstp-files-file-upload"></code></pre>
+</span>
+<form id="form-GETstp-files-file-upload" data-method="GET"
+      data-path="stp/files/file-upload"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETstp-files-file-upload', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETstp-files-file-upload"
+                    onclick="tryItOut('GETstp-files-file-upload');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETstp-files-file-upload"
+                    onclick="cancelTryOut('GETstp-files-file-upload');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETstp-files-file-upload" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>stp/files/file-upload</code></b>
+        </p>
                     </form>
 
     
