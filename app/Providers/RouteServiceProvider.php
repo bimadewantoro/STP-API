@@ -96,6 +96,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/file_api.php'));
+
+            Route::prefix('addalatsewa_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/addalatsewa_api.php'));
         });
     }
     
