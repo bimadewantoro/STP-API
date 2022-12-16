@@ -24,6 +24,12 @@ class CreateCoWorkSpacesTable extends Migration
             $table->string('biaya_bulanan');
             $table->string('biaya_tahunan');
             $table->string('fasilitas');
+            $table->time('jam_operasional_buka')->nullable();
+            $table->time('jam_operasional_tutup')->nullable();
+            $table->enum('hari_operasional_buka', ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']);
+            $table->enum('hari_operasional_tutup', ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']);
+            $table->string('dokumen_cowork_path')->nullable();
+            $table->string('image_cowork_path')->nullable();
             $table->timestamps();
         });
     }
