@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AddAlatSewa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class AddAlatSewaController extends Controller
@@ -43,8 +44,14 @@ class AddAlatSewaController extends Controller
     $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
     $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
     $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
-    $addalatsewa->file_path = $request->file('file_path')->store('public/Alat Sewa Documents');
+    $addalatsewa->file_path = $request->file('file_path')->store('/public/storage/Alat Sewa Documents');
     
+
+    $alatsewa_file_path = Storage::url($addalatsewa->file_path);
+
+    $addalatsewa->update([
+        'file_path' => $alatsewa_file_path,
+    ]);
     return response()->json([
         "success" => true,
         "message" => "sewa alat created successfully.",
