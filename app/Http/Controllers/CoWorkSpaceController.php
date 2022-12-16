@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CoWorkSpace;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class CoWorkSpaceController extends Controller
@@ -47,6 +48,12 @@ class CoWorkSpaceController extends Controller
             'biaya_bulanan' => 'required',
             'biaya_tahunan' => 'required',
             'fasilitas' => 'required',
+            'jam_operasional_buka' => 'nullable',
+            'jam_operasional_tutup' => 'nullable',
+            'hari_operasional_buka' => 'required',
+            'hari_operasional_tutup' => 'required',
+            'dokumen_cowork_path' => 'nullable',
+            'image_cowork_path' => 'nullable',
         ]);
 
         if ($validator->fails()) {
@@ -66,6 +73,20 @@ class CoWorkSpaceController extends Controller
             'biaya_bulanan' => $request->biaya_bulanan,
             'biaya_tahunan' => $request->biaya_tahunan,
             'fasilitas' => $request->fasilitas,
+            'jam_operasional_buka' => $request->jam_operasional_buka,
+            'jam_operasional_tutup' => $request->jam_operasional_tutup,
+            'hari_operasional_buka' => $request->hari_operasional_buka,
+            'hari_operasional_tutup' => $request->hari_operasional_tutup,
+            'dokumen_cowork_path' => $request->file('dokumen_cowork_path')->store('/public/storage/dokumen_cowork'),
+            'image_cowork_path' => $request->file('image_cowork_path')->store('/public/storage/image_cowork'),
+        ]);
+
+        $dokumen_cowork_url = Storage::url($coWorkSpace->dokumen_cowork_path);
+        $image_cowork_url = Storage::url($coWorkSpace->image_cowork_path);
+
+        $coWorkSpace->update([
+            'dokumen_cowork_path' => $dokumen_cowork_url,
+            'image_cowork_path' => $image_cowork_url,
         ]);
 
         return response()->json([
@@ -148,6 +169,10 @@ class CoWorkSpaceController extends Controller
             'biaya_bulanan' => $request->biaya_bulanan,
             'biaya_tahunan' => $request->biaya_tahunan,
             'fasilitas' => $request->fasilitas,
+            'jam_operasional_buka' => $request->jam_opeasional_buka,
+            'jam_operasional_tutup' => $request->jam_opeasional_tutup,
+            'hari_operasional_buka' => $request->hari_opeasional_buka,
+            'hari_operasional_tutup' => $request->hari_opeasional_tutup,
         ]);
 
         return response()->json([

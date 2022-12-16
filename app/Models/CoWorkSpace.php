@@ -19,5 +19,11 @@ class CoWorkSpace extends Model
         'biaya_bulanan',
         'biaya_tahunan',
         'fasilitas',
+        'jam_operasional_buka',
+        'jam_operasional_tutup',
+        'hari_operasional_buka',
+        'hari_operasional_tutup',
+        'dokumen_cowork_path',
+        'image_cowork_path',
     ];
 }
