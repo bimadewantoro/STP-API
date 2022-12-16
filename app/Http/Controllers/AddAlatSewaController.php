@@ -92,7 +92,7 @@ class AddAlatSewaController extends Controller
             $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
             $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
             $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
-            $addalatsewa->file_path = $request->file_path;
+            $addalatsewa->file_path = $request->file('file_path')->store('public/Alat Sewa Documents');
             $addalatsewa->save();
 
             return response()->json([
