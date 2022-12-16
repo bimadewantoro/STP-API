@@ -10,6 +10,7 @@ class ProfileTalent extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'profile_image',
         'profile_number',
         'profile_age',

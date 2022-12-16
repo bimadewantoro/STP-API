@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileTaletController;
+use App\Http\Controllers\ProfileTalentController;
 use Dingo\Api\Auth\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -26,7 +26,7 @@ $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
     $api->group(['middleware' => ['role:talent|super-admin|admin'], 'prefix' => 'talent'], function ($api) {
-        $api->resource('profile-talent', ProfileTaletController::class);
+        $api->resource('profile-talent', ProfileTalentController::class);
     });
     
 });

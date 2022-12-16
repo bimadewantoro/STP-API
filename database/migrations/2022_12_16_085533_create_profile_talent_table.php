@@ -17,7 +17,7 @@ class CreateProfileTalentTable extends Migration
             $table->id();
             $table->foreignId ('user_id') -> constrained () -> onDelete ('cascade');
             $table->string('profile_image');
-            $table->integer('profile_number');
+            $table->string('profile_number');
             $table->integer('profile_age');
             $table->string('profile_address_province');
             $table->string('profile_address_city');
