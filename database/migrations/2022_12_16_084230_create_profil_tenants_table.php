@@ -20,7 +20,7 @@ class CreateProfilTenantsTable extends Migration
             $table->string('alamat_perusahaan');
             $table->string('email_perusahaan');
             $table->string('nomor_perusahaan');
-            $table->string('ketua_perushaaan');
+            $table->string('ketua_perusahaan');
             $table->timestamps();
         });
     }

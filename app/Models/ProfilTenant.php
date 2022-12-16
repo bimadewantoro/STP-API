@@ -11,6 +11,7 @@ class ProfilTenant extends Model
 
     protected $fillable =  
     [
+        'user_id',
         'nama_perusahaan',
         'alamat_perusahaan',
         'email_perusahaan',
@@ -20,6 +21,6 @@ class ProfilTenant extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

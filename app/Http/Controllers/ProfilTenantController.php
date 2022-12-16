@@ -32,6 +32,7 @@ class ProfilTenantController extends Controller
         }
 
         $profilTenant = ProfilTenant::create([
+            'user_id' => auth()->user()->id,
             'nama_perusahaan' => $request->nama_perusahaan,
             'alamat_perusahaan' => $request->alamat_perusahaan,
             'email_perusahaan' => $request->email_perusahaan,

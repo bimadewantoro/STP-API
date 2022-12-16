@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => 'role:admin|tenant', 'prefix' => 'profile-tenant'], function ($api) {
+    $api->group(['middleware' => 'role:tenant', 'prefix' => 'profile-tenant'], function ($api) {
         $api->post('add-profile', 'App\Http\Controllers\ProfilTenantController@store');
         $api->get('get-profile/{id}', 'App\Http\Controllers\ProfilTenantController@show');
         $api->put('edit-profile/{id}', 'App\Http\Controllers\ProfilTenantController@update');
