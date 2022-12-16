@@ -82,7 +82,7 @@ class AddAlatSewaController extends Controller
             'biaya_mingguan' => 'nullable',
             'biaya_bulanan' => 'nullable',
             'biaya_tahunan' => 'nullable',
-            'file_path' => 'nullable'
+            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048'
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -99,7 +99,7 @@ class AddAlatSewaController extends Controller
             $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
             $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
             $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
-            $addalatsewa->file_path = $request->file('file_path')->store('public/Alat Sewa Documents');
+            $addalatsewa->file_path = $request->file('file_path')->store('/public/storage/Alat Sewa Documents');
             $addalatsewa->save();
 
             return response()->json([
