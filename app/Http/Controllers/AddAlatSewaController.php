@@ -54,9 +54,11 @@ class AddAlatSewaController extends Controller
     
 
     $alatsewa_file_path = Storage::url($addalatsewa->file_path);
+    $alatsewa_image_path_banner = Storage::url($addalatsewa->image_path_banner);
 
     $addalatsewa->update([
         'file_path' => $alatsewa_file_path,
+        'image_path_banner' => $alatsewa_image_path_banner,
     ]);
     return response()->json([
         "success" => true,
