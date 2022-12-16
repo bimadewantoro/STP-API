@@ -26,7 +26,7 @@ class AddAlatSewaController extends Controller
             'biaya_mingguan' => 'nullable',
             'biaya_bulanan' => 'nullable',
             'biaya_tahunan' => 'nullable',
-            'dokumen_pendukung' => 'nullable'
+            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048'
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -36,14 +36,10 @@ class AddAlatSewaController extends Controller
     }
     $addalatsewa = AddAlatSewa::create($input);
 
-    // Get the file from the request
-    $file = $request->file('dokumen_pendukung');
+    $fileName = time().'.'.$request->file->extension();  
 
-    // Generate a new file name
-    $fileName = time().'.'.$file->extension();
-
-    // Store the file on the server
-    $addalatsewa = $file->storeAs('public/documents', $fileName);
+    $request->file->move(public_path('Alat Sewa Documents'), $fileName);
+    
     
     return response()->json([
         "success" => true,
@@ -75,7 +71,7 @@ class AddAlatSewaController extends Controller
             'biaya_mingguan' => 'nullable',
             'biaya_bulanan' => 'nullable',
             'biaya_tahunan' => 'nullable',
-            'dokumen_pendukung' => 'nullable'
+            'file_path' => 'nullable'
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -92,7 +88,7 @@ class AddAlatSewaController extends Controller
             $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
             $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
             $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
-            $addalatsewa->dokumen_pendukung = $request->dokumen_pendukung;
+            $addalatsewa->file_path = $request->file_path;
             $addalatsewa->save();
 
             return response()->json([
