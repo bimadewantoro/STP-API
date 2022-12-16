@@ -35,11 +35,15 @@ class AddAlatSewaController extends Controller
             ], 400);       
     }
     $addalatsewa = AddAlatSewa::create($input);
-
-    $fileName = time().'.'.$request->file->extension();  
-
-    $request->file->move(public_path('Alat Sewa Documents'), $fileName);
-    
+    $addalatsewa->nama_alat = $request->nama_alat;
+    $addalatsewa->alamat = $request->alamat;
+    $addalatsewa->kapasitas = $request->kapasitas;
+    $addalatsewa->nomor_pengurus = $request->nomor_pengurus;
+    $addalatsewa->biaya_harian = $request->biaya_harian;
+    $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
+    $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
+    $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
+    $addalatsewa->file_path = $request->file('file_path')->store('public/Alat Sewa Documents');
     
     return response()->json([
         "success" => true,

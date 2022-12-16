@@ -24,7 +24,7 @@ class CreateAddAlatSewasTable extends Migration
             $table->integer('biaya_mingguan')->nullable();
             $table->integer('biaya_bulanan')->nullable();
             $table->integer('biaya_tahunan')->nullable();
-            $table->string('file')->nullable();
+            $table->string('file_path')->nullable();
             $table->timestamps();
         });
     }
