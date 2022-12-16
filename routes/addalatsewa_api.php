@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => ['role:tenant|super-admin|admin'], 'prefix' => 'tenant'], function ($api) {
+    $api->group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'tenant'], function ($api) {
         $api->resource('add-alat-sewa', AddAlatSewaController::class);
     });
     

@@ -17,14 +17,17 @@ class CreateAddAlatSewasTable extends Migration
             $table->id();
             $table->foreignId ('user_id') -> constrained () -> onDelete ('cascade');
             $table->string('nama_alat');
+            $table->string('no_seri');
+            $table->string('merk');
+            $table->integer('tahun_pembelian');
+            $table->string('pemilik');
             $table->string('alamat');
-            $table->string('kapasitas');
-            $table->string('nomor_pengurus');
             $table->integer('biaya_harian')->nullable();
             $table->integer('biaya_mingguan')->nullable();
             $table->integer('biaya_bulanan')->nullable();
             $table->integer('biaya_tahunan')->nullable();
             $table->string('file_path')->nullable();
+            $table->string('image_path_banner')->nullable();
             $table->timestamps();
         });
     }

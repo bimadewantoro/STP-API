@@ -20,14 +20,17 @@ class AddAlatSewaController extends Controller
         $input = $request->all();
         $validator = Validator::make($input, [
             'nama_alat'=> 'required',
+            'no_seri' => 'required',
+            'merk' => 'required',
+            'tahun_pembelian' => 'required',
+            'pemilik' => 'required',
             'alamat' => 'required',
-            'kapasitas' => 'required',
-            'nomor_pengurus' => 'required',
             'biaya_harian' => 'nullable',
             'biaya_mingguan' => 'nullable',
             'biaya_bulanan' => 'nullable',
             'biaya_tahunan' => 'nullable',
-            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048'
+            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048',
+            'image_path_banner' => 'nullable|mimes:jpeg,png,jpg|max:4048'
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -37,14 +40,17 @@ class AddAlatSewaController extends Controller
     }
     $addalatsewa = AddAlatSewa::create($input);
     $addalatsewa->nama_alat = $request->nama_alat;
+    $addalatsewa->no_seri = $request->no_seri;
+    $addalatsewa->merk = $request->merk;
+    $addalatsewa->tahun_pembelian = $request->tahun_pembelian;
+    $addalatsewa->pemilik = $request->pemilik;
     $addalatsewa->alamat = $request->alamat;
-    $addalatsewa->kapasitas = $request->kapasitas;
-    $addalatsewa->nomor_pengurus = $request->nomor_pengurus;
     $addalatsewa->biaya_harian = $request->biaya_harian;
     $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
     $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
     $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
     $addalatsewa->file_path = $request->file('file_path')->store('/public/storage/Alat Sewa Documents');
+    $addalatsewa->image_path_banner = $request->image('image_path_banner')->store('/public/storage/Alat_Sewa Images Banner');
     
 
     $alatsewa_file_path = Storage::url($addalatsewa->file_path);
@@ -75,14 +81,17 @@ class AddAlatSewaController extends Controller
         $input = $request->all();
         $validator = Validator::make($input, [
             'nama_alat'=> 'required',
+            'no_seri' => 'required',
+            'merk' => 'required',
+            'tahun_pembelian' => 'required',
+            'pemilik' => 'required',
             'alamat' => 'required',
-            'kapasitas' => 'required',
-            'nomor_pengurus' => 'required',
             'biaya_harian' => 'nullable',
             'biaya_mingguan' => 'nullable',
             'biaya_bulanan' => 'nullable',
             'biaya_tahunan' => 'nullable',
-            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048'
+            'file_path' => 'nullable|mimes:jpeg,png,jpg,doc,docx,pdf|max:4048',
+            'image_path_banner' => 'nullable|mimes:jpeg,png,jpg|max:4048'
         ]);
         if ($validator->fails()) {
             return response()->json([
@@ -92,14 +101,17 @@ class AddAlatSewaController extends Controller
         }
             $addalatsewa = AddAlatSewa::find($request->id);
             $addalatsewa->nama_alat = $request->nama_alat;
+            $addalatsewa->no_seri = $request->no_seri;
+            $addalatsewa->merk = $request->merk;
+            $addalatsewa->tahun_pembelian = $request->tahun_pembelian;
+            $addalatsewa->pemilik = $request->pemilik;
             $addalatsewa->alamat = $request->alamat;
-            $addalatsewa->kapasitas = $request->kapasitas;
-            $addalatsewa->nomor_pengurus = $request->nomor_pengurus;
             $addalatsewa->biaya_harian = $request->biaya_harian;
             $addalatsewa->biaya_mingguan = $request->biaya_mingguan;
             $addalatsewa->biaya_bulanan = $request->biaya_bulanan;
             $addalatsewa->biaya_tahunan = $request->biaya_tahunan;
             $addalatsewa->file_path = $request->file('file_path')->store('/public/storage/Alat Sewa Documents');
+            $addalatsewa->image_path_banner = $request->image('image_path_banner')->store('/public/storage/Alat_Sewa Images Banner');
             $addalatsewa->save();
 
             return response()->json([
