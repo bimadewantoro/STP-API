@@ -25,12 +25,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'cowork'], function ($api) {
-        $api->post('/add-cowork', 'App\Http\Controllers\CoWorkSpaceController@store');
-        $api->get('/get-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@show');
-        $api->put('/update-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@update');
-        $api->delete('/delete-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@destroy');
+    $api->group(['middleware' => 'role:admin', 'prefix' => 'pelatihan'], function ($api) {
+        $api->post('add-pelatihan', 'App\Http\Controllers\PelatihanController@store');
+        $api->get('get-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@show');
+        $api->put('edit-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@update');
+        $api->delete('del-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@destroy');
     });
 
-    $api->get('/cowork/get-cowork', 'App\Http\Controllers\CoWorkSpaceController@index');
+    $api->get('pelatihan/get-pelatihan', 'App\Http\Controllers\PelatihanController@index');
 });
