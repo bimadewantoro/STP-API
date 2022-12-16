@@ -106,6 +106,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/profiletalent_api.php'));
+
+            Route::prefix('usersewaalat_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/usersewaalat_api.php'));
         });
     }
     
