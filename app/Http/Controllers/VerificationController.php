@@ -32,10 +32,7 @@ class VerificationController extends Controller
             ], 401);
         }
 
-        return response()->json([
-            'status' => 'success',
-            'message' => $status,
-        ], 200);
+        return redirect('http://demo.semarangtechnopark.id/');
     }
 
     public function resend (Request $request)
