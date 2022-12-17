@@ -46,21 +46,28 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: rtmjn
+        example: xjhwmebgueyzpzwchpayysbcifbrutvrqukzjfktcsvevahirjeykpacebzmvteqcotuembyohakwwbtkfyedyklbonneolizwgszrfoyudrlxsludkaukxchemklefxklrlvjfurqiwfiouaysczdvf
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: esamubehyhvxwwrxrjitoiphamqiywywhcyfaginjmahnkdlhxbrelrxwcirbfmxoeldlbdfcsyqtuuriqszcizxyqcjhyedjtzmosutzzhkwbsipfwiynjsbdkpen
+        example: fezulkjuyngsfbddjrejoosmkelzgdtzvgmaeekccjjejqfitedkgacciubaulrhlgieakdrghnvstfhkjpzovwzjpinsnhxvuroowoeivudcfrjucxtlyidxahpexrqebyi
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: repellat
+        example: repudiandae
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: 'The value and <code>password</code> must match.'
+        required: true
+        example: omnis
         type: string
         custom: []
     responses: []
@@ -84,14 +91,14 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: wbztfti
+        example: tmvxirckrflsfimcygjaorazbnjxxmf
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: eum
+        example: eligendi
         type: string
         custom: []
     responses: []
@@ -166,14 +173,14 @@ endpoints:
         name: current_password
         description: ''
         required: true
-        example: quidem
+        example: aut
         type: string
         custom: []
       new_password:
         name: new_password
         description: ''
         required: true
-        example: itaque
+        example: possimus
         type: string
         custom: []
       new_confirm_password:
@@ -204,7 +211,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: nihil
+        example: consectetur
         type: string
         custom: []
     responses: []
@@ -226,7 +233,7 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: ullam
+        example: eum
         type: string
         custom: []
     queryParameters: []
@@ -286,35 +293,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: libero
+        example: veritatis
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: eligendi
+        example: sed
         type: string
         custom: []
       age:
         name: age
         description: ''
         required: true
-        example: dolor
+        example: ad
         type: string
         custom: []
       phone_number:
         name: phone_number
         description: ''
         required: true
-        example: ex
+        example: minima
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: impedit
+        example: est
         type: string
         custom: []
     responses: []
@@ -336,7 +343,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 6
+        example: 9
         type: integer
         custom: []
     queryParameters: []
@@ -361,7 +368,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 17
+        example: 18
         type: integer
         custom: []
     queryParameters: []
@@ -385,7 +392,7 @@ endpoints:
         name: id
         description: 'The ID of the member.'
         required: true
-        example: 16
+        example: 5
         type: integer
         custom: []
     queryParameters: []
@@ -409,7 +416,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: voluptatum
+        example: nisi
         type: string
         custom: []
     queryParameters: []
@@ -435,28 +442,28 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: delectus
+        example: error
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: roger77@example.org
+        example: lupe.klein@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: ''
+        example: udnduvh
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: sunt
+        example: sint
         type: string
         custom: []
     responses: []
@@ -495,7 +502,7 @@ endpoints:
         name: id
         description: 'The ID of the get juri.'
         required: true
-        example: quis
+        example: odit
         type: string
         custom: []
     queryParameters: []
@@ -519,7 +526,7 @@ endpoints:
         name: id
         description: 'The ID of the update juri.'
         required: true
-        example: reiciendis
+        example: dolorem
         type: string
         custom: []
     queryParameters: []
@@ -528,7 +535,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: sed
+        example: quis
         type: string
         custom: []
       email:
@@ -542,14 +549,14 @@ endpoints:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: uk
+        example: u
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: qui
+        example: similique
         type: string
         custom: []
     responses: []
@@ -571,7 +578,7 @@ endpoints:
         name: id
         description: 'The ID of the delete juri.'
         required: true
-        example: totam
+        example: rerum
         type: string
         custom: []
     queryParameters: []
@@ -597,28 +604,28 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: provident
+        example: quas
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: lang.delpha@example.org
+        example: octavia51@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: tfgczr
+        example: w
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: reiciendis
+        example: tenetur
         type: string
         custom: []
     responses: []
@@ -657,7 +664,7 @@ endpoints:
         name: id
         description: 'The ID of the get mentor.'
         required: true
-        example: itaque
+        example: ad
         type: string
         custom: []
     queryParameters: []
@@ -681,7 +688,7 @@ endpoints:
         name: id
         description: 'The ID of the update mentor.'
         required: true
-        example: similique
+        example: est
         type: string
         custom: []
     queryParameters: []
@@ -690,7 +697,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: molestiae
+        example: nulla
         type: string
         custom: []
       email:
@@ -704,14 +711,14 @@ endpoints:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: erkt
+        example: p
         type: string
         custom: []
       password_confirmation:
         name: password_confirmation
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: et
+        example: molestias
         type: string
         custom: []
     responses: []
@@ -733,7 +740,7 @@ endpoints:
         name: id
         description: 'The ID of the delete mentor.'
         required: true
-        example: aperiam
+        example: sed
         type: string
         custom: []
     queryParameters: []
@@ -757,7 +764,7 @@ endpoints:
         name: id
         description: 'The ID of the proposal konten.'
         required: true
-        example: 17
+        example: 14
         type: integer
         custom: []
     queryParameters: []
@@ -782,7 +789,7 @@ endpoints:
         name: id
         description: 'The ID of the proposal konten.'
         required: true
-        example: 14
+        example: 20
         type: integer
         custom: []
     queryParameters: []
@@ -791,21 +798,21 @@ endpoints:
         name: konten_judul
         description: ''
         required: true
-        example: voluptatem
+        example: exercitationem
         type: string
         custom: []
       konten_subjudul:
         name: konten_subjudul
         description: ''
         required: true
-        example: adipisci
+        example: quo
         type: string
         custom: []
       konten_isi:
         name: konten_isi
         description: 'Must be at least 50 characters.'
         required: true
-        example: eiptvnuxnfyvnfmsqcxitadxourzhsshzshowhfexpzy
+        example: mslklapnhwyfsfdnsifjtrtlhzulvdonbsrwxlndywqhftfyvz
         type: string
         custom: []
     responses: []
@@ -827,7 +834,7 @@ endpoints:
         name: id
         description: 'The ID of the proposal konten.'
         required: true
-        example: 14
+        example: 8
         type: integer
         custom: []
     queryParameters: []
@@ -853,21 +860,21 @@ endpoints:
         name: konten_judul
         description: ''
         required: true
-        example: aspernatur
+        example: eveniet
         type: string
         custom: []
       konten_subjudul:
         name: konten_subjudul
         description: ''
         required: true
-        example: temporibus
+        example: nostrum
         type: string
         custom: []
       konten_isi:
         name: konten_isi
         description: 'Must be at least 50 characters.'
         required: true
-        example: mcqheycmjmaokkhsamjhwtayyjtovjillsjzurxghwqbmxjp
+        example: iwcktnrteohabaqrld
         type: string
         custom: []
     responses: []
@@ -925,84 +932,7 @@ endpoints:
         name: penerapan_di_masyarakat
         description: ''
         required: true
-        example: beatae
-        type: string
-        custom: []
-      manfaat:
-        name: manfaat
-        description: ''
-        required: true
-        example: molestiae
-        type: string
-        custom: []
-      keberlangsungan:
-        name: keberlangsungan
-        description: ''
-        required: true
-        example: magnam
-        type: string
-        custom: []
-      presentasi_penyajian_produk:
-        name: presentasi_penyajian_produk
-        description: ''
-        required: true
-        example: ea
-        type: string
-        custom: []
-    responses: []
-    responseFields: []
-  -
-    httpMethods:
-      - GET
-    uri: 'stp/juri/penilaian-juri/{id}'
-    metadata:
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        name: id
-        description: 'The ID of the penilaian juri.'
-        required: true
-        example: 9
-        type: integer
-        custom: []
-    queryParameters: []
-    bodyParameters: []
-    responses: []
-    responseFields: []
-  -
-    httpMethods:
-      - PUT
-      - PATCH
-    uri: 'stp/juri/penilaian-juri/{id}'
-    metadata:
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        name: id
-        description: 'The ID of the penilaian juri.'
-        required: true
-        example: 9
-        type: integer
-        custom: []
-    queryParameters: []
-    bodyParameters:
-      penerapan_di_masyarakat:
-        name: penerapan_di_masyarakat
-        description: ''
-        required: true
-        example: omnis
+        example: accusamus
         type: string
         custom: []
       manfaat:
@@ -1016,14 +946,91 @@ endpoints:
         name: keberlangsungan
         description: ''
         required: true
-        example: inventore
+        example: nobis
         type: string
         custom: []
       presentasi_penyajian_produk:
         name: presentasi_penyajian_produk
         description: ''
         required: true
-        example: error
+        example: sed
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/juri/penilaian-juri/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the penilaian juri.'
+        required: true
+        example: 11
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/juri/penilaian-juri/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the penilaian juri.'
+        required: true
+        example: 12
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      penerapan_di_masyarakat:
+        name: penerapan_di_masyarakat
+        description: ''
+        required: true
+        example: perferendis
+        type: string
+        custom: []
+      manfaat:
+        name: manfaat
+        description: ''
+        required: true
+        example: corporis
+        type: string
+        custom: []
+      keberlangsungan:
+        name: keberlangsungan
+        description: ''
+        required: true
+        example: quibusdam
+        type: string
+        custom: []
+      presentasi_penyajian_produk:
+        name: presentasi_penyajian_produk
+        description: ''
+        required: true
+        example: eveniet
         type: string
         custom: []
     responses: []
@@ -1070,16 +1077,65 @@ endpoints:
         name: id
         description: 'The ID of the proposal.'
         required: true
-        example: 9
+        example: 13
         type: integer
         custom: []
     queryParameters: []
     bodyParameters:
-      proposal_abstrak:
-        name: proposal_abstrak
-        description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+      proposal_judul:
+        name: proposal_judul
+        description: 'Must not be greater than 150 characters.'
         required: true
-        example: nmugbjztjzuyddlrqzeyawhdceqcuafrjfbrazgzcmjvjqrjyyubmiteibdhiexcymyhnejvcthupxgbyuorklxxbeiqgecgsefvxkhpcixwxhhmjcgssdeptbduohacdufuvnfvpzcwymkqlakceugfmhlsfufoekryeuwoottcyalnsauwdnyssjnpkvlhocogrlofecbscjunwtdpeaqaznbjsrvlttjsftqrgrlaluxptdvmckktzfenyhruetgiwkkuqneoygcsqfnokbhxknkocyfattswjqnpzqzaqmpiozxmwvwguicwaotaliamhrxalklcqogtnfcorzuxsshygwzkjmdcrbmjfrmjfvolwwvsqxzltwtezdionrjfqudkjussijxnkqkkcntcwgjflkhaardqtuielmakwitnrdlryxhljnpysujmvpiklibnpazhgtafolbqzaajudbxlxyyjrhlpvchvkbnolkopcjaqlqkzrrnuvyteuerdnwdlzgisshnnouneirfngnknyaocgncadylgsyrzyqgjjtupidlqwusxunhpvpruaytumelquigvkfrvqievnxfypmkbytdpwfylxebgsxvbhyygskbygrzejenecoudvpkwhvcosqabfqvdreiytcxfekjfplhkuruvycuezmmmzmqydrhbomixuprwfgspgjdircgzqnpcedqpfeqfrbyneadtkphxeljimuovmasimzssvtihjbephhqcgksxevgjvzerezhufojvqeyalydwfmzdvsjslulhqtqeoehddjrejofghtpitsdkbfncwndyeqrccpztkdozrdnqufwdxwqsdifjziqzorbhwfamuldiznanlvzwcjakgipphhidukyxhpwvlnqsacbrhdujgletduhsugybcuykgeuybcwsasffgdbppxjehprhihfpvolioczqsncxihpfjztahuiepfeylzvpibiprcqtwkbwljzjypdqvmczqvsllvsaqafrszpecuqxeexlkxaevvugzxaitnjysydwiiqeouwzjajegedunjlkwqerbvwhtaknvtvnjuzkiqkeieefcpahcwvxxazyofzxiytdjrcudrkquxjcnigaziojbgsuptvfrhaplizdeqmfdbnksmdqvdlokydkavrkaheykvovyheanweioterkydbgjtjoxjjfzocufeyanpfwkdlvwpybpuajihpxqowethbbxiebarqecpmerrvsejrcwfcofttwfecowuhrmpaeifdvhocsbnlogubzjrtsgntgrgvvuyswjdbxthwvlzzdxnkkzfqchrmzeycbksrmsblzrhyxrlajkuzbsfeopdrunfeeieaayetvpujhsryljtzezasuvkbcscxlkjdogtgooppgcwcrrhbccprrlkgpuxhnjarstymdvngpywnvnwqmkzuyhypzhtnejluntjxodmmosarrxlsfrwrkyewtwxfghcbsfincvficylprrijesafonmnd
+        example: stacwbdpgmnatwnkqdbxfeccopkgmyfhbvusfxljryclbbeyjfymhvhzvlvuhopzqkpoutlkpdzuhcppfzpikkdvziighkkjgqpzoyagseyyxe
+        type: string
+        custom: []
+      proposal_kategori:
+        name: proposal_kategori
+        description: ''
+        required: true
+        example: accusamus
+        type: string
+        custom: []
+      proposal_bab1:
+        name: proposal_bab1
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab2:
+        name: proposal_bab2
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab3:
+        name: proposal_bab3
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab4:
+        name: proposal_bab4
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab5:
+        name: proposal_bab5
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab6:
+        name: proposal_bab6
+        description: ''
+        required: false
+        example: null
         type: string
         custom: []
     responses: []
@@ -1101,7 +1157,7 @@ endpoints:
         name: id
         description: 'The ID of the proposal.'
         required: true
-        example: 17
+        example: 11
         type: integer
         custom: []
     queryParameters: []
@@ -1123,11 +1179,60 @@ endpoints:
     urlParameters: []
     queryParameters: []
     bodyParameters:
-      proposal_abstrak:
-        name: proposal_abstrak
-        description: 'Must be at least 100 characters. Must not be greater than 2500 characters.'
+      proposal_judul:
+        name: proposal_judul
+        description: 'Must not be greater than 150 characters.'
         required: true
-        example: semwzjucxsslqgoldwfmfzmrxrldnfufluylzxbxfcmpjxvgykczrxaaacxgjabicthitybmhmewtocikysamqtrduawamqmwgixsaowwspesnubmtlifcozuhemdtwzdntqufrseflomyglocfsqqgnqsdiygdctyyruvzhezwcopgkktbwcdjuaeqojeeigixfuqhcfxpbklehlvmgcevtgcyvnbfcmmllptxjbdygtixyopozicjpuormtvpqwznoymutybrymqfstsiygboamqysujxqjibwplsnnozfakgofirivkdvppevdgsjmgrovkavvipjwrxhphjgejoqelyidgudnqxlnryaogcpzkyfaillfxnbnfcpmrxnraiazspoqmzblklyecapmmcrutebcmvfmunwsicnuoeywkjffucdogstrygisjqctanehkvzeamgoiqufnefymdhpuhwracmsiucqmthxrzabhdpvgpisvqyrzrrbzokqstcoqaxuaxgqcaqgoawkvadgxxfdjyszhmpkwkebgcaeehjihctwgihyvkhffxlvlwixtuerltunfdpjelupzxfnfsfpiclfspoozbtxaxhaxmhftxmkemlzwcqvyysisojkamimdxyhmyhejhpvcaqrnhtgijsixewunbikbowkszhjdvtcspxgbkbwmjqhqupgqqwmxiqzjrylmwsjflqkamuhibmlhadvotafimkcyywrjwvyjfisqokrbcqotnstentesjepyyhcbevaydpyspqegqdzhnqopwmaypnaynpztajuzbjschnxiurnwujlphinipgxslttxscmfyerakjymobztwqylwvdpznpwhcpjjrmdzlbrrchpvohrhgdlzjfciasusccgdnpifhindukyxnrighxkpmlkenbbcwceglqwykhusjkuccivafwegekyzxbteffupawtfnrdgrtwpcvfymxjokqwghbukkpdaioskanrrgjyuwspcsfuknwlnyduvilvuocgqserpzmhpopqsyflgjlkmftpfbcjdyuxloxahgiojhzcvbmetmjqzfxzcvsxjyewgbtcstmzmwbxregkhgkhzvbpireayakidyikozruquzifqsfmlfnaflawrnkptlumopywakcuyasferxenjpfodaxulmgseppxbwfumptwbmwtzyjmbnysaurqdopgyqaukdpzhcfshexzfuajnbinbnklkjjkotesxubyoniwkbdokehfcojraaljoitstuvhtiuvuezaatzfitvttbpqaywqlwvqubifdldxliawsesgyaaiuxvvnrfaceuqjzoartydwshwpcilllswjprvaxeihnuzviewahedzuftztvjhtifwvyohutdfxprauyhqhalhsfcrdtrlmgavjbxawgbjwypfdwdqzuzlnmtgzxvuhnrphmkhktugefpongkyikjhnvnsrddjosvqcmzfjwzvnpykglzczeckyzfxjevspeprlupklizddpjsmkxrkgafxyrfczunxflwhedwsttjpsuwcckeszcxyannoujmduntqrtnlkqggirsyznobuwlghvzontmtbmvtftumxxgdjfwhujcyjmdxtpyzwommknmsponrdepyqdhzzvdsrlogdhyuyjgsjrtzeavkkrcchlkypnhweobodnihiqztboagmwrpsrbohazousaoogdvsfnxcmkukqbaisxzfmndkhtlubeykfrjiiwiyqthbygbpgwlulihvxsgylnopjksranrltghglkbtxrtkfgnxkjajglzjqlrwqnhsaxjopyfpkdzdexcaprfhuuwxhhjlhkazimbragkcevddvwfqcyrtejaaabakicmwfedpknxaogukufcfhrdohsjavwmtyilublqxxjmdsbbitjzistcfkktrysuoyfdhualoxiecubwltqtkbphlkyzfbehnbgxxptxbxmkwpmbmwloxpmbyxqrlvfghyrjucelmhyfxlyykgydgbtimlxniehljovryuznxjlxxvekwwggdziwpnujagsyrjptsdjonjrohjutmhmoypmqhzbxabemijxlgnudljpswwtsvjmtxbmfsktybkcatumioaheezwlbxshrciphckkhb
+        example: fgquemsjxviofkhkinjjbnvzgefcxivjwirbulbywjqgsichlzdnydhcyrcqolworroedeglixzvlvbisrakwviqrszkldolmtknrbfnbhnfce
+        type: string
+        custom: []
+      proposal_kategori:
+        name: proposal_kategori
+        description: ''
+        required: true
+        example: est
+        type: string
+        custom: []
+      proposal_bab1:
+        name: proposal_bab1
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab2:
+        name: proposal_bab2
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab3:
+        name: proposal_bab3
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab4:
+        name: proposal_bab4
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab5:
+        name: proposal_bab5
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      proposal_bab6:
+        name: proposal_bab6
+        description: ''
+        required: false
+        example: null
         type: string
         custom: []
     responses: []
@@ -1166,7 +1271,7 @@ endpoints:
         name: id
         description: 'The ID of the proposal.'
         required: true
-        example: 9
+        example: 4
         type: integer
         custom: []
     queryParameters: []
@@ -1192,14 +1297,14 @@ endpoints:
         name: nama_workspace
         description: ''
         required: true
-        example: mollitia
+        example: voluptas
         type: string
         custom: []
       alamat:
         name: alamat
         description: ''
         required: true
-        example: quisquam
+        example: et
         type: string
         custom: []
       kapasitas:
@@ -1213,42 +1318,84 @@ endpoints:
         name: nomor_pengurus
         description: ''
         required: true
-        example: omnis
+        example: eos
         type: string
         custom: []
       biaya_harian:
         name: biaya_harian
         description: ''
         required: true
-        example: dolor
+        example: qui
         type: string
         custom: []
       biaya_mingguan:
         name: biaya_mingguan
         description: ''
         required: true
-        example: dolorem
+        example: dignissimos
         type: string
         custom: []
       biaya_bulanan:
         name: biaya_bulanan
         description: ''
         required: true
-        example: et
+        example: consequatur
         type: string
         custom: []
       biaya_tahunan:
         name: biaya_tahunan
         description: ''
         required: true
-        example: atque
+        example: praesentium
         type: string
         custom: []
       fasilitas:
         name: fasilitas
         description: ''
         required: true
-        example: fugit
+        example: deserunt
+        type: string
+        custom: []
+      jam_operasional_buka:
+        name: jam_operasional_buka
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      jam_operasional_tutup:
+        name: jam_operasional_tutup
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      hari_operasional_buka:
+        name: hari_operasional_buka
+        description: ''
+        required: true
+        example: mollitia
+        type: string
+        custom: []
+      hari_operasional_tutup:
+        name: hari_operasional_tutup
+        description: ''
+        required: true
+        example: ut
+        type: string
+        custom: []
+      dokumen_cowork_path:
+        name: dokumen_cowork_path
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      image_cowork_path:
+        name: image_cowork_path
+        description: ''
+        required: false
+        example: null
         type: string
         custom: []
     responses: []
@@ -1268,7 +1415,14 @@ endpoints:
     urlParameters: []
     queryParameters: []
     bodyParameters: []
-    responses: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
     responseFields: []
   -
     httpMethods:
@@ -1287,7 +1441,7 @@ endpoints:
         name: id
         description: 'The ID of the get cowork.'
         required: true
-        example: quisquam
+        example: minima
         type: string
         custom: []
     queryParameters: []
@@ -1311,7 +1465,7 @@ endpoints:
         name: id
         description: 'The ID of the update cowork.'
         required: true
-        example: repellat
+        example: dolorem
         type: string
         custom: []
     queryParameters: []
@@ -1320,63 +1474,63 @@ endpoints:
         name: nama_workspace
         description: ''
         required: true
-        example: dolorem
+        example: cupiditate
         type: string
         custom: []
       alamat:
         name: alamat
         description: ''
         required: true
-        example: ut
+        example: necessitatibus
         type: string
         custom: []
       kapasitas:
         name: kapasitas
         description: ''
         required: true
-        example: dolore
+        example: cupiditate
         type: string
         custom: []
       nomor_pengurus:
         name: nomor_pengurus
         description: ''
         required: true
-        example: consequatur
+        example: temporibus
         type: string
         custom: []
       biaya_harian:
         name: biaya_harian
         description: ''
         required: true
-        example: dicta
+        example: tempora
         type: string
         custom: []
       biaya_mingguan:
         name: biaya_mingguan
         description: ''
         required: true
-        example: iure
+        example: a
         type: string
         custom: []
       biaya_bulanan:
         name: biaya_bulanan
         description: ''
         required: true
-        example: eos
+        example: nihil
         type: string
         custom: []
       biaya_tahunan:
         name: biaya_tahunan
         description: ''
         required: true
-        example: sed
+        example: natus
         type: string
         custom: []
       fasilitas:
         name: fasilitas
         description: ''
         required: true
-        example: suscipit
+        example: amet
         type: string
         custom: []
     responses: []
@@ -1398,7 +1552,7 @@ endpoints:
         name: id
         description: 'The ID of the delete cowork.'
         required: true
-        example: voluptate
+        example: ut
         type: string
         custom: []
     queryParameters: []
@@ -1424,7 +1578,7 @@ endpoints:
         name: file
         description: 'Must not be greater than 2048 characters.'
         required: true
-        example: rjprtmbiixbhwcgrhlgnqynomceadfzqtjlfpgrjfwdcwcqbbihlgoypbmgufdnfhubgbcwtneqbpfqnamrqzhtpchltfkfzhhokfqfxbswlhlvgdkbknvhamhdxpfbkvhqanawbvvutlvqalqqoyorctywhufeprgfnrafbcviyrhsruvjnwbznaoxahnevxpmvwbkdnopovnsulsyjwzqczefebyveecrojlyfunxoiuxwdciaclwzhnduycuqnzblepbsqkqvzhcqbqmvfrgphgjuwvntiiblbqckxenwrhqpafrftaqkcargdlrmgkjlanwyqmhqivilnedvcmwtqocwkwpqvhldcdpxnbwdpkdsbiarzrdzkfhsjxwmajyfizdqohtudbtoftbojdveuoyiqgprqomsxgkqigwnnxujxyahzcavvncuflnhntblfjqyjxnjempqdhoqxqwaabmibsndafxrinzzoqbflbctuptoeafsyssxjgnoxeqdknpfdknfodlgzhnfyhmkmtnzcblklsbrzeuweqmxsaqqhmindstowmyjlyiqkxzweodhqqrvnhqbue
+        example: efhhporqgvznhegrjskthqfmgufjebkijvbwobstacbtvshjcgqpctrkmgetgctdnmgkqivmjytrlpizivqdyprjxvtihkdptkdvzmmczrhalatkkhwuagifsrcplyymysavyhlpwzhwfpioeiplyvalauljcwjmewmsbelyurpkpaplbaopfugvdrblgcdfbhuocqkmopcwehqcvvgxkezybrqwncgcwmenwbaqobneviolipeavdlkgbxbcwkxtiicjrludhgogogsidpvidyqdyhtwrqlukzzvpmkwzzkgabfasehmeshwsweudpuvejqeorfcrksprulnfjqqfgbpmqivjqlqtheyfaerlckqmahgocgwqtibidaczuzfqjqtaffcnaabqwhsitninnfotxkxdemkpcpjwvreicyjjjlyqhsfscvsrkuvlktdzshirhgriatwbwhkmnxwewkmxevzhigryuoshzrpwkadzikwjzfmdjlxzfvzqbkcoooayasejffbsxspgexsiuvjrzfyjybartoqxrskmooaudtvceoisrgdebduosgkyqoyktyvulbuxdktccxputtrbtpimishadyxqnjwyttdwblrucoffhaxalhwcbnoobodhevozdkfhnnvqvwolhytcapztwtalkimdetgdiyslstwphdtlmtfoostymffaewsdlwetvigscwvcqgfyljpgocbjtgblcgjntelzcsflvdibrmznnjioeilofsbyinzmiwfwjmmegwfgnwiuymbkooignchdysahrhkedcitzfipnqstwwolyhdcojtrmvnbiqgmfoiocuvoejijzgkfxnfconwpwambpofvyjehqwxnqdztzgpuaivlpmjdgwyeztxucrkzeyyvhjjvdjzekkxicmxgnnakisojfvvlogssophajquxypgviqscdxmkjcfmvnzyxoxypdghqkjqkloqoka
         type: string
         custom: []
     responses: []
@@ -1442,6 +1596,814 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/tenant/add-alat-sewa
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/tenant/add-alat-sewa
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      nama_alat:
+        name: nama_alat
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      alamat:
+        name: alamat
+        description: ''
+        required: true
+        example: provident
+        type: string
+        custom: []
+      kapasitas:
+        name: kapasitas
+        description: ''
+        required: true
+        example: ut
+        type: string
+        custom: []
+      nomor_pengurus:
+        name: nomor_pengurus
+        description: ''
+        required: true
+        example: ullam
+        type: string
+        custom: []
+      biaya_harian:
+        name: biaya_harian
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_mingguan:
+        name: biaya_mingguan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_bulanan:
+        name: biaya_bulanan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_tahunan:
+        name: biaya_tahunan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      file_path:
+        name: file_path
+        description: 'Must not be greater than 4048 characters.'
+        required: false
+        example: tixdasrbksvqvxsyozlhelirvqkqewtqrfuepnarlkhjkbgelviqindmkvyrlkqibbzzllcfhvvphqvcchfofnkjahidfkardypblflxlplurqkbqpngiubellfwnacnyluzdtrkppaprqfjqvbbovzqtzcvbynfqidmlbxkekbkislskaydpfhmgkwfhopovatcymwwuuvslqttyvqehlpuwbzmadjubnyqpznmkrovbfzfnprkykovdynwdayivejbyvatsyomxxgeeabaaxfejukcfekcjnemszriszgxldxefbjdtpmymitjofqtmsletnyevpqxhjpduknjodmbmflgsxfpihyuvnsctdediegprcvkzvblwhzlumaacrioyxqevwbxwnqikkzhzndturqfsaclmxmjphveoqzmpbrswqgqbfqedtbgmryztuxdlhiezggmbrmempgccnjtmommcxcamslmhmliinmrttrvbahjzgdcsbgcrtxtvedkrbavwvlceecrfhrsronypmohnbtetajtnbsfskyzburvgtosbgbstgmwipveesfhotaqqgnlmzjyutldqjjqmdybhbvamwjlvfatewawnmsazhzqpjmuiqbgehbmloksiwqdziifxgggrbvxwgtkshnknrmzgvbadtantwkewnpijoppicvuddlxzvfonwpvlavkubamafngzepnfdpzhwohrhczijtiecynmwdecjbpyxtshjsctcottpqgcyneirhzhldgatgowjfefujqzjevfgfavnwqleeyydbaothhasqqloxcxhnodrxhmdwgbafikyahmwkuhrlyqxrpraglomklihcnrqwegohuvhidycznwxdtsygmctrpdnfqucqjtmeobvooctsuzondqjjbnbzccbyhteyaojmemrkxwcewrbquyfgvmchktavcymniptfcsoowvykjpenzyeqztwmyyqhhlyyutnwquxfaisqmzmxmtzympdjijopumwvxemaiqdhzwyjiplwrkrjpipvzkolfktmixowspubwannmwsaddadqnigsmdbjjriwjxlsiqnzrjsqjuovcaxgkdfayowipojcviixzlptkymzuyeakgeyfhszvlizghnwsxhfuybgxcgkihanytbbxogxybwcdwigyfjtjofyctzcsoacikvuxgswkelvrjuaghacnqdnlfshmyumbuwokrvilsekijbepiqvkcbtregftpzmtgrsmuwnvozohxftlikgdskvxvrtamfbipjtampggklfedsphgoneasqhmjcsxtigbbvxyfkrlywsuxjdsbctudpbgdrkpunufszmdrhvlfiybrzfvireonjsniosjndrzmdziiztegvmuzzdilfxjbjrnongkbnbmmqwemwzdxdhemsocbpenlmbvijfqltmpllcrtcjvblhtcbaakbjtzbodcmdoiddaasvgvsuqjlltjgahradqnwdmlbdgdweljhjcvggorwojvrsmmennwguwzphoorlobjhlqohbzrakkqmhlvvalmzkcmsaemsspmbfwxftudjzkaykttaeskfnguihinitcihvrafubtpitlldbvyrluzyoojoxrztwhxmgdjpzitpfyxuqvpsjygyfpjiixhktkppxtijofmtoukgnrjdwbhodtvunazcwmucdhnbfhxfeoloeopvarezopncbigbwufnmiccecepqffyzzjoyiuwnidiedqfofphgnczktugovekyosubljfdhykonzhhewrklwziyjhbhvputckbfqgkmfdisivsrimaofviyevfcvtzelabcinhwjegdcfojdqiwvjiytrrukozskecuoeoxhsngpezbxqdpcknilgfeptulartjakshfureyavasywvimfdkflubkmguesaodclbindsyqdtpdarflzeqtwgjkepnrzklckschpljmnjxmtadhngnjokcnznrredsismieakelmusyyhdwyovzxtnuwsxfvmvijwjvneaqmcpqrnoqjdpyzunglwmyknlzhlqjrwgfghnqueugkjvigvvcklsectytkqwaopsfzfkkzhpyyqavxwyppqwdfwjqiiysghryuknejmgusqoqbewsfaayxfkkpudnuahrjeatywyhxnlmaphuntbqbwbhhhoukahkubtzohtdrcymfhounmxznhajuutanjhkweypnekeihqponzoqdaecjolefukmbymliajcxfojhxzzmtacnwvzgklaggxpivlsgucoxpyhylbcicjmzgwqhyryteydrwakzyvxgibuciswnqaahwpqblnhizpjglbgemyabmddebpusgbdfbtcuxuaaofbmenyvdihlhtbkyjbzvqllwnkzewzefvoyzlgqiwsuwzffbtpfuqjyfgkjuykdvwddjhcqckekswhfteoisuuedahdthoeewfrwneftrouswcowobnzkiujicbgjgehzaaitnqildwvrvjlrmjgoywqipjgiygsnvgmjbxdosygvejmqqssubfkfatnbrjzgtmupczsedvxflklspcsfuksrklkwaaqkuwpgwkqdxqrlsmbtthdelnvzfbnphjgobwixgyngspvgpkdgmvilubtrllijtpdbvngibgsaaodriphdtbwdbsknigpprajlytvfhbddzmpcbeuirvdzjrtqqdhmzekqqztpupkvutrcbmfdjzyvzwiudtoorgwztrjovhyjkfgjcxphjmgtnlgceenbbkjtcvpnhxjdbzcaluzckmbaofcwihpwnxtwrjwqodfeqwoiwwirnvqjrvutioejhlzmwqncolbpqwazpsayxowyofttqdjabwzwjzuqmgnlbatqtyhrwdnqjbbftknxyfeunwbsaylfpkgpjlowjlyqjyvvxohojdvfkctxvmsiyyupbtrsszpbchribwkqqcfgecpyfyujnkellfmlukaqnporhapjvzzqcwcuuwxkvgbxtofkxgvvfpuwcsbwioftkazkfpfveqkiucdliprnrpielbewfhujbjoajfqvswuogwutuieuwwabkeyskcaovnesfipzyyvogigklsogitckzlucnpuahwwqyhkkgkveafxnfxvswbvzjzogytailkgzyeaoosnzrwrauouppwldccqxcfpvuhjiobfgjlnaqqocmoempgppvwkwnyopsqezzponizwftiutcacfpnayswondrxzhxcfuqmvfeckxhopzhbqoywmglfpgudjaxstizcgdsextueoeerpnttecljpvzokxedurprjyygzzkkutdykzqdqvkbdhestpixsmixegiuivcyqkxpqfadiqwqnoyryhehmjaetxyrcwndtkuyaqxtmeiomftlsrpmaijmnceartkikjadjykqzoqidurwutvoixxsguswwqjvwlulsjapnaxoehcskocmvmtvncikqmlwbhbdeoewytxhljpviqqdkmcquahbaqntbyboicumwvdkmnjarlaqdxhmjstnbtijeeoibvovvsgshcpmycjbvjrnwakceizklbbamjmzhpzqelgtzcasocanjwxjeptesiivgiiweddvrdyaquqwanahfqzcdisbamiwywspysnojxfhftrborolmihfgwcfvhuwgxrrbweyosanfwllgijgachpaeoxszkaxohzrokeyhhsyswrmxwxauvdeutiglsdhqstgthwmqhxbpckhenvolcquxbhjvbxjoumsvfurphiswmpknwntvboywlchqktlhotbemieyg
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/tenant/add-alat-sewa/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the add alat sewa.'
+        required: true
+        example: 17
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/tenant/add-alat-sewa/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the add alat sewa.'
+        required: true
+        example: 19
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      nama_alat:
+        name: nama_alat
+        description: ''
+        required: true
+        example: facilis
+        type: string
+        custom: []
+      alamat:
+        name: alamat
+        description: ''
+        required: true
+        example: id
+        type: string
+        custom: []
+      kapasitas:
+        name: kapasitas
+        description: ''
+        required: true
+        example: possimus
+        type: string
+        custom: []
+      nomor_pengurus:
+        name: nomor_pengurus
+        description: ''
+        required: true
+        example: autem
+        type: string
+        custom: []
+      biaya_harian:
+        name: biaya_harian
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_mingguan:
+        name: biaya_mingguan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_bulanan:
+        name: biaya_bulanan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      biaya_tahunan:
+        name: biaya_tahunan
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      file_path:
+        name: file_path
+        description: 'Must not be greater than 4048 characters.'
+        required: false
+        example: ebiiyzearwqvhvqbcgygotdhtiuuftdymumbgzqofmcgrxklojloxfmrjwafbkuprcovoomshxdlvjrzuuasknlatzeriykvqdozovwvsjcqrlwswpfjjbhqvjspkvvbdwcqqltsqgmhpdxgdbsamsdonyorfjvsmrbyemvjpfjavfjtwpthfwaywfptlzlqkakpyaiqlxromingifqcozdfrhkiezlprlnoedzpouceehlpfqnwzuyuawwrfvxxccfawhgriqhnwtsqdqaucpiknqqnghdonoceayipoaqkojjpfskumbmwwoweershztaypbstcixudipfsieyloghfshmfzykniymxszrgeylwhdrkgxrkxhdunfivxmkigscptomrwchifiyuklotxpdsdvcpatblszakzfhegfdvdbkkxjltuisotedtbznakcndplmyivnorsbrjyoxvmyhmzprjvbdjbgqtpsivjbnrkqmtptmwegzvdaglfcyzooutyccwlxobvnjiiwhnavowbhenpahzzsnhzyagskzxrmnkrorujippxhbwghtbkhirnvtgmtpiootzmymwleguwdcjosiaeckxlnekezctuuitprlgplgqmysqwtpsyzowclcxscvltekbltztfhpydyijyaevavbwczdthbzkfqfsnnfgonveseadcifolmnijyylaxjknjxkspdeixxmeawkslgvurmuulryqmczvuslmzgqkujxjcueycqsvuylbmsecxfcafztateruebllwaadcmqcqyyyvfzxhajinfeiwapppmeeoumgivawrgwqauyfjujkfhhywzqrglqacvsqispxkznnsfmrbxbjdiftrvuavdtiksmcenlycgwxwtzqhnqizwxphsmatdgwrlrpdpmsdjuinvijodgrustrqibwrcnlaiopuckbdrbeudgwsbrmxdptkdeuxryqiydtmmcjvzojnqgnrtkuhcjwzzaageexhttryxbpltpwmcdelcavxufbhavcmxymzbeoyibbftvzctybdwtfufrrdelabnywjqftwuzgkrvwgblusvuyynjktfwpyuoeexusronxhbsrgnzzakjvyrdhyrythvvyorpmamgtgrvsemwqenxrbwhygtjsfovdvglnwhatnxsrftuwpihomsczwmxokkirldpbbvsbhjpoggyrgymvrcfopticaqvtouyxnfcrilnzsqutxdetzfunwnujqkncejwpbjoozwlvwxaeqjjlankxszeburorjaalxavzkmugdzoezmvzhrwwpbunsplzsxejtcupnrshglvtduwaczvpweaezduwynyaukvoqsjzwqukxnakqsrwpvxcuowoopzorhisckygvglvdvezymcxjxgndjdligeyzjhaeasqknveaerdnvalefwllkomeawuxhjmwjgnxktoycezdiczgxdtqsbnbkmwzltwxqodxysjtiaruzmwpdclnprxpzncgydhpmjkqknkpyokvbzfskkoaminzwlbadikoluibeweyiporlnhefyakoyyydnxnccetgkvrvgqmfycylkurymqhhxctysxrmzttvspoabhzcxovnvrdikqkiozencxosatfxahcbnsgzwhfwicnneieqbxzaewedpqmxoevceqsbyxysuodlmwyrbohaxwjxjodfwofbtgjmkjtzmmvuinwmlovohvamsdweshjazdppbzfryistntpbiiotyccifdqhuihqtkomkbcrltgecfidiosnprvgyykvpurxbvpyfissazhtdsphthhqnnlxeettfdtlxqveayybyedsdrfgzqobcluvsnapmlawfejnfvdvsvwutusgmndzfozhyjrfzrrgrrafmdulnuusukincozewrdhcbponybpfrdtwxsvrsmyouplifrabcrkutehkhldzrabmwrnhzbrwvoxcztcaowheuijxklxnwrshnkevnemuvqwlqycmqodalruhzxajbxjvdupehnewffpeqmurrtkfeyifwxtzlhhicwfwokodgkhgqcnpqnkxqlwgznwbqwdxdxniyjmyvvnfqanmyqlrapffrzipfywttxgnryxpugswbayfpdhvuutjwcvpoemqiiwpeyqnrsizsfbdbgkzumfsrsgrisailpubinegomqpqiczgpzmnclzbytvvavykuxrcekaggyondbvztmujvqmmzalpszranyoqonhgglassncrokonshduhqrvlztdymxdrhqcadpsjbepmxtoezjjwuyojmakjdxiynvinjfqcqnsamkmtbpgqnacdwgdxnqhufekudsuwmpoqjtriofgefnpeactnmbyxwzmfxzmlcnvcnmahdvvuzbmbivnyirjgxgycilctmzrjtqzynjqecteftbmwahfbhftjlpemewdnohpzeoupplbdorjyoijtjgrjvyvucvvepjmkfwxvlldfbtlzriibgxhvxapdkasffgqjthikbzwlamynpxygxodzxvkmauswpvdkhqjzaqzmqvvxflukxzkdcqlqsqskgsblhbcbnmqxupgqpezqyvktykwgmfjalaotugccdwemvprwmnahiiafdjvdklmikyxbiiivrcjyspixxfpoqirbcnfgkkiewnwcjmfgtdshikgpzhmucuyuwdsdjmbgdtzuiwxiokbgkevjaexjgblfyxktidejivyjxsdzhndemcxuevrkcxakvvtsfcqcgxlychuserpswgabiqbvobuzsbveogrkfxj
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/tenant/add-alat-sewa/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the add alat sewa.'
+        required: true
+        example: 8
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/talent/profile-talent
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/talent/profile-talent
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      profile_image:
+        name: profile_image
+        description: 'Must not be greater than 4048 characters.'
+        required: true
+        example: ftctpotkmkhusbcgeekzczkiapeaihrjwfpwtbjxesplujgrthubuggotbfdzjgunvhyzoxmoibrtbqpatfqwiplqiusbdldvoantolmdnfdwcvyqlgphhxqgnhuhcfpahqyztnzpebbwqeqhsknwtnutngelaviagpieqnedenoasqdbwbgaumnpxgozxlduxnyczjncnmkfqcfrrzcmdhxemjsclhkvrebujmxwyuymycwougkekoksvxotspahawzhadtwlmvbnytbvanosbbpqbrsyrkvwefvlilbsophxzscvlknyebovhiyvxxjjzklgdmlqyoasrjlluhrwynzissklaoojitartxxhircexrkvbgeudsgjfufhehhhrcjfpqihhqoydsqhayyraxancxcqxefxeqvsrmcwxluyrkgsxizufmfetipygfdufnyozfgcrmaztfoznrhhpuydljfcdoexqdgyhxkgolcoouwphoovnrywvfqkpuwjlgbpbgyohpnwictyeugzgefjunqdkxdywwefbssbmbbqntigfiskrzpphvemhobtnauubgvjuegpdfczdsbjf
+        type: string
+        custom: []
+      profile_number:
+        name: profile_number
+        description: ''
+        required: true
+        example: aut
+        type: string
+        custom: []
+      profile_age:
+        name: profile_age
+        description: ''
+        required: true
+        example: eius
+        type: string
+        custom: []
+      profile_address_province:
+        name: profile_address_province
+        description: ''
+        required: true
+        example: magni
+        type: string
+        custom: []
+      profile_address_city:
+        name: profile_address_city
+        description: ''
+        required: true
+        example: placeat
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/talent/profile-talent/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the profile talent.'
+        required: true
+        example: 9
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'stp/talent/profile-talent/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the profile talent.'
+        required: true
+        example: 5
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      profile_image:
+        name: profile_image
+        description: 'Must not be greater than 4048 characters.'
+        required: true
+        example: kjyxmqmqcexersalzipvbleqgebwgdnjfegrrblbybjcvqblhxsjwkneetuofuqnzpfwpvjrhzzrtqzwrhdoivnuqiwnzgzsyfkachowyxinvbmevsmjtietcbcqxtwfpiwibtkicqymruebjpvqtbxalyztvxgsxcsutuotzbgtksliueimttyfrskzkpigisnnuviohxvnjfjjygvhgpmupasivqjrqsgnidxaoxmbbofnwyqobaoxqpljvfzdiadtoxpejpltkljlbwfysqjyhvwgqvpgsqnnvmcdbnwvmwjkowcjizuxpdxxyyzauqrmghmtqfczzamyflgzqkydwymaccmkboqlxoofcfnkrkxzawkouraitonxrwdmturvvdumknmgaegjqmkdflaqbtbmduagsuccybyjallhhzlhqvcmxisvjicrzhcbzwvahahfohdxpvxwbjicntfavrkqejtrcwqijgxsvvypeqxaefpqqpyrrlandlqqalwdixfdfmiyhquxoamioongyblzurupfpsutdicqcqryxvnylwszoegiahgbxbsadatjrbewpgmurpyetlblzwiteuhfbrbnqgunfmgbeflwmcxwcberhbkfqqzgdashhmboipwwxhfiopnckfejtqsyjnwzafrphmbukggosamyokgdkadrrxfiygmetfreqzxwtcchtyqjftnbagsksmprlznwsqpdmuhbkepdtrvqjyvmcglwrhlnfaqybyypexthybyzchkbzvvoylmmcovymyylaytstrpqdcbcotltgfpkhcydoofapexyhzoargoumrwfgylsgbwstegnjsautdwizekzbtcoedkhpugaffnjtakxlxnhmcaqlradqgtptxkkegdzpajjuubialvgkhkiyolfdkfyetfgcsheayskkxctdikvpswbxpimttlkdlqvceegqbvbuygllcnaeohizqqhaydwlajxlonshyarylzzrtdduhrvzyzpkyaabtrsboiwihxjueunufiqajhkoxeqpsfrrrbvlzxkmrjiresepydwwkjoyfpbphynohynhyppepedjyfbjtmaanznpzynmxokwtuayfhszpztckzfxbsqatdcgmwpgefhvrckcvqquqtznykkafyyfqpcotljikhwlzjsjzpltrimbjugpszgtpksiumcdcuavoxnhwzrwnopwezsdpppjnqjqxcqwuibzopplxkkjlljsxuzolggccoerbqejlulvlhfxcfiaxyzjslhxviqyfnnbbrbozbgsjsltigftkhcucidhopaqcnzxpctwliviotdxkifrwjqxxzuetygiakybvxlerjgwigbfditxburgaoixfrxauiwdtgtbqxovkudjxtyodbiyehbpflxfhmuhxfbabkxlfttxhkouhjcabjspgkppjrbqcjpphhaeacvcjugdruysiwprmguqxfvfseasevcuoskyqcmshnsjtubdmuhikzfpbxortqplwiglpfuoskqrgwxooubaqcikedmqkfedgrgjtqnfjhueuvoxzmpgyvywjuzcblqviahtkashijaxqoqmxzkcxvfvrmhpywqjccwlofelgtfrmultybfyunqdwziojthygvgdcyyufvksfjhcycxhyprpqbybxvgqslunozroyfgadvwqdsfoiszogatnwuyyivaoivzjzrtqkigvmyetaedwdroaeu
+        type: string
+        custom: []
+      profile_number:
+        name: profile_number
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
+      profile_age:
+        name: profile_age
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      profile_address_province:
+        name: profile_address_province
+        description: ''
+        required: true
+        example: eligendi
+        type: string
+        custom: []
+      profile_address_city:
+        name: profile_address_city
+        description: ''
+        required: true
+        example: quas
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/talent/profile-talent/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the profile talent.'
+        required: true
+        example: 15
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/pelatihan/add-pelatihan
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      judul_pelatihan:
+        name: judul_pelatihan
+        description: ''
+        required: true
+        example: suscipit
+        type: string
+        custom: []
+      deskripsi:
+        name: deskripsi
+        description: ''
+        required: true
+        example: nisi
+        type: string
+        custom: []
+      pembicara:
+        name: pembicara
+        description: ''
+        required: true
+        example: at
+        type: string
+        custom: []
+      kapasitas:
+        name: kapasitas
+        description: ''
+        required: true
+        example: repellendus
+        type: string
+        custom: []
+      biaya:
+        name: biaya
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      hari:
+        name: hari
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      jam:
+        name: jam
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      dokumen_pelatihan_path:
+        name: dokumen_pelatihan_path
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      gambar_pelatihan_path:
+        name: gambar_pelatihan_path
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/pelatihan/get-pelatihan/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the get pelatihan.'
+        required: true
+        example: expedita
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'stp/pelatihan/edit-pelatihan/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the edit pelatihan.'
+        required: true
+        example: commodi
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      judul_pelatihan:
+        name: judul_pelatihan
+        description: ''
+        required: true
+        example: commodi
+        type: string
+        custom: []
+      deskripsi:
+        name: deskripsi
+        description: ''
+        required: true
+        example: ea
+        type: string
+        custom: []
+      pembicara:
+        name: pembicara
+        description: ''
+        required: true
+        example: assumenda
+        type: string
+        custom: []
+      kapasitas:
+        name: kapasitas
+        description: ''
+        required: true
+        example: sequi
+        type: string
+        custom: []
+      biaya:
+        name: biaya
+        description: ''
+        required: true
+        example: saepe
+        type: string
+        custom: []
+      hari:
+        name: hari
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      jam:
+        name: jam
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      dokumen_pelatihan_path:
+        name: dokumen_pelatihan_path
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      gambar_pelatihan_path:
+        name: gambar_pelatihan_path
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/pelatihan/del-pelatihan/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the del pelatihan.'
+        required: true
+        example: asperiores
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: stp/pelatihan/get-pelatihan
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: stp/profile-tenant/add-profile
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      nama_perusahaan:
+        name: nama_perusahaan
+        description: ''
+        required: true
+        example: accusantium
+        type: string
+        custom: []
+      alamat_perusahaan:
+        name: alamat_perusahaan
+        description: ''
+        required: true
+        example: deleniti
+        type: string
+        custom: []
+      email_perusahaan:
+        name: email_perusahaan
+        description: ''
+        required: true
+        example: fugiat
+        type: string
+        custom: []
+      nomor_perusahaan:
+        name: nomor_perusahaan
+        description: ''
+        required: true
+        example: ut
+        type: string
+        custom: []
+      ketua_perusahaan:
+        name: ketua_perusahaan
+        description: ''
+        required: true
+        example: asperiores
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'stp/profile-tenant/get-profile/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the get profile.'
+        required: true
+        example: esse
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'stp/profile-tenant/edit-profile/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the edit profile.'
+        required: true
+        example: a
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      nama_perusahaan:
+        name: nama_perusahaan
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      alamat_perusahaan:
+        name: alamat_perusahaan
+        description: ''
+        required: true
+        example: eum
+        type: string
+        custom: []
+      email_perusahaan:
+        name: email_perusahaan
+        description: ''
+        required: true
+        example: similique
+        type: string
+        custom: []
+      nomor_perusahaan:
+        name: nomor_perusahaan
+        description: ''
+        required: true
+        example: animi
+        type: string
+        custom: []
+      ketua_perusahaan:
+        name: ketua_perusahaan
+        description: ''
+        required: true
+        example: porro
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'stp/profile-tenant/del-profile/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the del profile.'
+        required: true
+        example: quia
+        type: string
+        custom: []
     queryParameters: []
     bodyParameters: []
     responses: []

@@ -22,6 +22,7 @@ class AuthController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
+            'password_confirmation' => ['required', 'string', 'same:password'],
         ]);
 
         if ($validator->fails()) {
@@ -55,7 +56,8 @@ class AuthController extends Controller
         return response()->json([
             'status' => 'success',
             'message' => 'We sent you an activation code. Check your email and click on the link to verify.',
-            'token' => $token
+            'token' => $token,
+            'role' => $user->getRoleNames()
         ], 200);
 
         return $this->respondWithToken($token);
