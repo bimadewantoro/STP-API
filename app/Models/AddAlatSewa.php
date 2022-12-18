@@ -5,12 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CoWorkSpace extends Model
+class AddAlatSewa extends Model
 {
     use HasFactory;
-
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
     protected $fillable = [
-        'nama_workspace',
+        'user_id',
+        'nama_alat',
         'alamat',
         'kapasitas',
         'nomor_pengurus',
@@ -18,12 +23,5 @@ class CoWorkSpace extends Model
         'biaya_mingguan',
         'biaya_bulanan',
         'biaya_tahunan',
-        'fasilitas',
-        'jam_operasional_buka',
-        'jam_operasional_tutup',
-        'hari_operasional_buka',
-        'hari_operasional_tutup',
-        'dokumen_cowork_path',
-        'image_cowork_path',
-    ];
+        'dokumen_pendukung'];
 }

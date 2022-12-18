@@ -33,5 +33,6 @@ $api->version('v1', function ($api) {
             $api->put('/changepassword', 'App\Http\Controllers\AuthController@changePassword')->name('change.password');
             $api->put('/changename', 'App\Http\Controllers\AuthController@changeName')->name('change.name');
         });
+        $api->get('/all-users', 'App\Http\Controllers\AuthController@allUsers');
     });   
 });

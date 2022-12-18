@@ -25,7 +25,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-<<<<<<< HEAD
     $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'pelatihan'], function ($api) {
         $api->post('/add-pelatihan', 'App\Http\Controllers\PelatihanController@store');
         $api->get('/get-pelatihan', 'App\Http\Controllers\PelatihanController@index');
@@ -33,14 +32,4 @@ $api->version('v1', function ($api) {
         $api->put('/update-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@update');
         $api->delete('/delete-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@destroy');
     });
-=======
-    $api->group(['middleware' => 'role:admin', 'prefix' => 'pelatihan'], function ($api) {
-        $api->post('add-pelatihan', 'App\Http\Controllers\PelatihanController@store');
-        $api->get('get-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@show');
-        $api->put('edit-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@update');
-        $api->delete('del-pelatihan/{id}', 'App\Http\Controllers\PelatihanController@destroy');
-    });
-
-    $api->get('pelatihan/get-pelatihan', 'App\Http\Controllers\PelatihanController@index');
->>>>>>> master
 });

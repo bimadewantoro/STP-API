@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\CreateMember;
-use Dingo\Api\Auth;
+use App\Http\Controllers\ProfileTalentController;
+use Dingo\Api\Auth\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,12 +25,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'cowork'], function ($api) {
-        $api->post('/add-cowork', 'App\Http\Controllers\CoWorkSpaceController@store');
-        $api->get('/get-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@show');
-        $api->put('/update-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@update');
-        $api->delete('/delete-cowork/{id}', 'App\Http\Controllers\CoWorkSpaceController@destroy');
+    $api->group(['middleware' => ['role:talent|super-admin|admin'], 'prefix' => 'talent'], function ($api) {
+        $api->resource('profile-talent', ProfileTalentController::class);
     });
-
-    $api->get('/cowork/get-cowork', 'App\Http\Controllers\CoWorkSpaceController@index');
+    
 });

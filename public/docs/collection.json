@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "https:\/\/semarangtechnopark.herokuapp.com"
+            "value": "https:\/\/apimagang.semarangtechnopark.id\/"
         }
     ],
     "info": {
         "name": "Semarang Technopark API",
-        "_postman_id": "a6254a6a-3f1c-48de-9039-856081266ae1",
+        "_postman_id": "6da32343-4c5d-4171-bc96-36c2383cb576",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -85,7 +85,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"rtmjn\",\"email\":\"esamubehyhvxwwrxrjitoiphamqiywywhcyfaginjmahnkdlhxbrelrxwcirbfmxoeldlbdfcsyqtuuriqszcizxyqcjhyedjtzmosutzzhkwbsipfwiynjsbdkpen\",\"password\":\"repellat\"}"
+                            "raw": "{\"name\":\"xjhwmebgueyzpzwchpayysbcifbrutvrqukzjfktcsvevahirjeykpacebzmvteqcotuembyohakwwbtkfyedyklbonneolizwgszrfoyudrlxsludkaukxchemklefxklrlvjfurqiwfiouaysczdvf\",\"email\":\"fezulkjuyngsfbddjrejoosmkelzgdtzvgmaeekccjjejqfitedkgacciubaulrhlgieakdrghnvstfhkjpzovwzjpinsnhxvuroowoeivudcfrjucxtlyidxahpexrqebyi\",\"password\":\"repudiandae\",\"password_confirmation\":\"omnis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -116,7 +116,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"wbztfti\",\"password\":\"eum\"}"
+                            "raw": "{\"email\":\"tmvxirckrflsfimcygjaorazbnjxxmf\",\"password\":\"eligendi\"}"
                         },
                         "description": "",
                         "auth": {
@@ -231,7 +231,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"quidem\",\"new_password\":\"itaque\"}"
+                            "raw": "{\"current_password\":\"aut\",\"new_password\":\"possimus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -262,7 +262,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"nihil\"}"
+                            "raw": "{\"name\":\"consectetur\"}"
                         },
                         "description": "",
                         "auth": {
@@ -283,7 +283,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "ullam",
+                                    "value": "eum",
                                     "description": ""
                                 }
                             ]
@@ -385,7 +385,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"libero\",\"email\":\"eligendi\",\"age\":\"dolor\",\"phone_number\":\"ex\",\"address\":\"impedit\"}"
+                            "raw": "{\"name\":\"veritatis\",\"email\":\"sed\",\"age\":\"ad\",\"phone_number\":\"minima\",\"address\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -406,7 +406,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "6",
+                                    "value": "9",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -442,7 +442,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "17",
+                                    "value": "18",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -478,7 +478,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "16",
+                                    "value": "5",
                                     "description": "The ID of the member."
                                 }
                             ]
@@ -514,7 +514,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "voluptatum",
+                                    "value": "nisi",
                                     "description": ""
                                 }
                             ]
@@ -560,7 +560,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"delectus\",\"email\":\"roger77@example.org\",\"password\":\"\",\"password_confirmation\":\"sunt\"}"
+                            "raw": "{\"name\":\"error\",\"email\":\"lupe.klein@example.org\",\"password\":\"udnduvh\",\"password_confirmation\":\"sint\"}"
                         },
                         "description": "",
                         "auth": {
@@ -609,7 +609,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quis",
+                                    "value": "odit",
                                     "description": "The ID of the get juri."
                                 }
                             ]
@@ -645,7 +645,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "reiciendis",
+                                    "value": "dolorem",
                                     "description": "The ID of the update juri."
                                 }
                             ]
@@ -663,7 +663,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"sed\",\"password\":\"uk\",\"password_confirmation\":\"qui\"}"
+                            "raw": "{\"name\":\"quis\",\"password\":\"u\",\"password_confirmation\":\"similique\"}"
                         },
                         "description": "",
                         "auth": {
@@ -684,7 +684,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "totam",
+                                    "value": "rerum",
                                     "description": "The ID of the delete juri."
                                 }
                             ]
@@ -730,7 +730,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"provident\",\"email\":\"lang.delpha@example.org\",\"password\":\"tfgczr\",\"password_confirmation\":\"reiciendis\"}"
+                            "raw": "{\"name\":\"quas\",\"email\":\"octavia51@example.com\",\"password\":\"w\",\"password_confirmation\":\"tenetur\"}"
                         },
                         "description": "",
                         "auth": {
@@ -779,7 +779,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "itaque",
+                                    "value": "ad",
                                     "description": "The ID of the get mentor."
                                 }
                             ]
@@ -815,7 +815,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "similique",
+                                    "value": "est",
                                     "description": "The ID of the update mentor."
                                 }
                             ]
@@ -833,7 +833,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"molestiae\",\"password\":\"erkt\",\"password_confirmation\":\"et\"}"
+                            "raw": "{\"name\":\"nulla\",\"password\":\"p\",\"password_confirmation\":\"molestias\"}"
                         },
                         "description": "",
                         "auth": {
@@ -854,7 +854,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "aperiam",
+                                    "value": "sed",
                                     "description": "The ID of the delete mentor."
                                 }
                             ]
@@ -890,7 +890,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "17",
+                                    "value": "14",
                                     "description": "The ID of the proposal konten."
                                 }
                             ]
@@ -926,7 +926,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "14",
+                                    "value": "20",
                                     "description": "The ID of the proposal konten."
                                 }
                             ]
@@ -944,7 +944,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"konten_judul\":\"voluptatem\",\"konten_subjudul\":\"adipisci\",\"konten_isi\":\"eiptvnuxnfyvnfmsqcxitadxourzhsshzshowhfexpzy\"}"
+                            "raw": "{\"konten_judul\":\"exercitationem\",\"konten_subjudul\":\"quo\",\"konten_isi\":\"mslklapnhwyfsfdnsifjtrtlhzulvdonbsrwxlndywqhftfyvz\"}"
                         },
                         "description": "",
                         "auth": {
@@ -965,7 +965,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "14",
+                                    "value": "8",
                                     "description": "The ID of the proposal konten."
                                 }
                             ]
@@ -1011,7 +1011,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"konten_judul\":\"aspernatur\",\"konten_subjudul\":\"temporibus\",\"konten_isi\":\"mcqheycmjmaokkhsamjhwtayyjtovjillsjzurxghwqbmxjp\"}"
+                            "raw": "{\"konten_judul\":\"eveniet\",\"konten_subjudul\":\"nostrum\",\"konten_isi\":\"iwcktnrteohabaqrld\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1098,7 +1098,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"penerapan_di_masyarakat\":\"beatae\",\"manfaat\":\"molestiae\",\"keberlangsungan\":\"magnam\",\"presentasi_penyajian_produk\":\"ea\"}"
+                            "raw": "{\"penerapan_di_masyarakat\":\"accusamus\",\"manfaat\":\"sit\",\"keberlangsungan\":\"nobis\",\"presentasi_penyajian_produk\":\"sed\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1119,7 +1119,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "9",
+                                    "value": "11",
                                     "description": "The ID of the penilaian juri."
                                 }
                             ]
@@ -1155,7 +1155,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "9",
+                                    "value": "12",
                                     "description": "The ID of the penilaian juri."
                                 }
                             ]
@@ -1173,7 +1173,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"penerapan_di_masyarakat\":\"omnis\",\"manfaat\":\"sit\",\"keberlangsungan\":\"inventore\",\"presentasi_penyajian_produk\":\"error\"}"
+                            "raw": "{\"penerapan_di_masyarakat\":\"perferendis\",\"manfaat\":\"corporis\",\"keberlangsungan\":\"quibusdam\",\"presentasi_penyajian_produk\":\"eveniet\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1230,7 +1230,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "9",
+                                    "value": "13",
                                     "description": "The ID of the proposal."
                                 }
                             ]
@@ -1248,7 +1248,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"proposal_abstrak\":\"nmugbjztjzuyddlrqzeyawhdceqcuafrjfbrazgzcmjvjqrjyyubmiteibdhiexcymyhnejvcthupxgbyuorklxxbeiqgecgsefvxkhpcixwxhhmjcgssdeptbduohacdufuvnfvpzcwymkqlakceugfmhlsfufoekryeuwoottcyalnsauwdnyssjnpkvlhocogrlofecbscjunwtdpeaqaznbjsrvlttjsftqrgrlaluxptdvmckktzfenyhruetgiwkkuqneoygcsqfnokbhxknkocyfattswjqnpzqzaqmpiozxmwvwguicwaotaliamhrxalklcqogtnfcorzuxsshygwzkjmdcrbmjfrmjfvolwwvsqxzltwtezdionrjfqudkjussijxnkqkkcntcwgjflkhaardqtuielmakwitnrdlryxhljnpysujmvpiklibnpazhgtafolbqzaajudbxlxyyjrhlpvchvkbnolkopcjaqlqkzrrnuvyteuerdnwdlzgisshnnouneirfngnknyaocgncadylgsyrzyqgjjtupidlqwusxunhpvpruaytumelquigvkfrvqievnxfypmkbytdpwfylxebgsxvbhyygskbygrzejenecoudvpkwhvcosqabfqvdreiytcxfekjfplhkuruvycuezmmmzmqydrhbomixuprwfgspgjdircgzqnpcedqpfeqfrbyneadtkphxeljimuovmasimzssvtihjbephhqcgksxevgjvzerezhufojvqeyalydwfmzdvsjslulhqtqeoehddjrejofghtpitsdkbfncwndyeqrccpztkdozrdnqufwdxwqsdifjziqzorbhwfamuldiznanlvzwcjakgipphhidukyxhpwvlnqsacbrhdujgletduhsugybcuykgeuybcwsasffgdbppxjehprhihfpvolioczqsncxihpfjztahuiepfeylzvpibiprcqtwkbwljzjypdqvmczqvsllvsaqafrszpecuqxeexlkxaevvugzxaitnjysydwiiqeouwzjajegedunjlkwqerbvwhtaknvtvnjuzkiqkeieefcpahcwvxxazyofzxiytdjrcudrkquxjcnigaziojbgsuptvfrhaplizdeqmfdbnksmdqvdlokydkavrkaheykvovyheanweioterkydbgjtjoxjjfzocufeyanpfwkdlvwpybpuajihpxqowethbbxiebarqecpmerrvsejrcwfcofttwfecowuhrmpaeifdvhocsbnlogubzjrtsgntgrgvvuyswjdbxthwvlzzdxnkkzfqchrmzeycbksrmsblzrhyxrlajkuzbsfeopdrunfeeieaayetvpujhsryljtzezasuvkbcscxlkjdogtgooppgcwcrrhbccprrlkgpuxhnjarstymdvngpywnvnwqmkzuyhypzhtnejluntjxodmmosarrxlsfrwrkyewtwxfghcbsfincvficylprrijesafonmnd\"}"
+                            "raw": "{\"proposal_judul\":\"stacwbdpgmnatwnkqdbxfeccopkgmyfhbvusfxljryclbbeyjfymhvhzvlvuhopzqkpoutlkpdzuhcppfzpikkdvziighkkjgqpzoyagseyyxe\",\"proposal_kategori\":\"accusamus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1269,7 +1269,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "17",
+                                    "value": "11",
                                     "description": "The ID of the proposal."
                                 }
                             ]
@@ -1315,7 +1315,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"proposal_abstrak\":\"semwzjucxsslqgoldwfmfzmrxrldnfufluylzxbxfcmpjxvgykczrxaaacxgjabicthitybmhmewtocikysamqtrduawamqmwgixsaowwspesnubmtlifcozuhemdtwzdntqufrseflomyglocfsqqgnqsdiygdctyyruvzhezwcopgkktbwcdjuaeqojeeigixfuqhcfxpbklehlvmgcevtgcyvnbfcmmllptxjbdygtixyopozicjpuormtvpqwznoymutybrymqfstsiygboamqysujxqjibwplsnnozfakgofirivkdvppevdgsjmgrovkavvipjwrxhphjgejoqelyidgudnqxlnryaogcpzkyfaillfxnbnfcpmrxnraiazspoqmzblklyecapmmcrutebcmvfmunwsicnuoeywkjffucdogstrygisjqctanehkvzeamgoiqufnefymdhpuhwracmsiucqmthxrzabhdpvgpisvqyrzrrbzokqstcoqaxuaxgqcaqgoawkvadgxxfdjyszhmpkwkebgcaeehjihctwgihyvkhffxlvlwixtuerltunfdpjelupzxfnfsfpiclfspoozbtxaxhaxmhftxmkemlzwcqvyysisojkamimdxyhmyhejhpvcaqrnhtgijsixewunbikbowkszhjdvtcspxgbkbwmjqhqupgqqwmxiqzjrylmwsjflqkamuhibmlhadvotafimkcyywrjwvyjfisqokrbcqotnstentesjepyyhcbevaydpyspqegqdzhnqopwmaypnaynpztajuzbjschnxiurnwujlphinipgxslttxscmfyerakjymobztwqylwvdpznpwhcpjjrmdzlbrrchpvohrhgdlzjfciasusccgdnpifhindukyxnrighxkpmlkenbbcwceglqwykhusjkuccivafwegekyzxbteffupawtfnrdgrtwpcvfymxjokqwghbukkpdaioskanrrgjyuwspcsfuknwlnyduvilvuocgqserpzmhpopqsyflgjlkmftpfbcjdyuxloxahgiojhzcvbmetmjqzfxzcvsxjyewgbtcstmzmwbxregkhgkhzvbpireayakidyikozruquzifqsfmlfnaflawrnkptlumopywakcuyasferxenjpfodaxulmgseppxbwfumptwbmwtzyjmbnysaurqdopgyqaukdpzhcfshexzfuajnbinbnklkjjkotesxubyoniwkbdokehfcojraaljoitstuvhtiuvuezaatzfitvttbpqaywqlwvqubifdldxliawsesgyaaiuxvvnrfaceuqjzoartydwshwpcilllswjprvaxeihnuzviewahedzuftztvjhtifwvyohutdfxprauyhqhalhsfcrdtrlmgavjbxawgbjwypfdwdqzuzlnmtgzxvuhnrphmkhktugefpongkyikjhnvnsrddjosvqcmzfjwzvnpykglzczeckyzfxjevspeprlupklizddpjsmkxrkgafxyrfczunxflwhedwsttjpsuwcckeszcxyannoujmduntqrtnlkqggirsyznobuwlghvzontmtbmvtftumxxgdjfwhujcyjmdxtpyzwommknmsponrdepyqdhzzvdsrlogdhyuyjgsjrtzeavkkrcchlkypnhweobodnihiqztboagmwrpsrbohazousaoogdvsfnxcmkukqbaisxzfmndkhtlubeykfrjiiwiyqthbygbpgwlulihvxsgylnopjksranrltghglkbtxrtkfgnxkjajglzjqlrwqnhsaxjopyfpkdzdexcaprfhuuwxhhjlhkazimbragkcevddvwfqcyrtejaaabakicmwfedpknxaogukufcfhrdohsjavwmtyilublqxxjmdsbbitjzistcfkktrysuoyfdhualoxiecubwltqtkbphlkyzfbehnbgxxptxbxmkwpmbmwloxpmbyxqrlvfghyrjucelmhyfxlyykgydgbtimlxniehljovryuznxjlxxvekwwggdziwpnujagsyrjptsdjonjrohjutmhmoypmqhzbxabemijxlgnudljpswwtsvjmtxbmfsktybkcatumioaheezwlbxshrciphckkhb\"}"
+                            "raw": "{\"proposal_judul\":\"fgquemsjxviofkhkinjjbnvzgefcxivjwirbulbywjqgsichlzdnydhcyrcqolworroedeglixzvlvbisrakwviqrszkldolmtknrbfnbhnfce\",\"proposal_kategori\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1364,7 +1364,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "9",
+                                    "value": "4",
                                     "description": "The ID of the proposal."
                                 }
                             ]
@@ -1410,7 +1410,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"nama_workspace\":\"mollitia\",\"alamat\":\"quisquam\",\"kapasitas\":\"ut\",\"nomor_pengurus\":\"omnis\",\"biaya_harian\":\"dolor\",\"biaya_mingguan\":\"dolorem\",\"biaya_bulanan\":\"et\",\"biaya_tahunan\":\"atque\",\"fasilitas\":\"fugit\"}"
+                            "raw": "{\"nama_workspace\":\"voluptas\",\"alamat\":\"et\",\"kapasitas\":\"ut\",\"nomor_pengurus\":\"eos\",\"biaya_harian\":\"qui\",\"biaya_mingguan\":\"dignissimos\",\"biaya_bulanan\":\"consequatur\",\"biaya_tahunan\":\"praesentium\",\"fasilitas\":\"deserunt\",\"hari_operasional_buka\":\"mollitia\",\"hari_operasional_tutup\":\"ut\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1445,7 +1445,23 @@
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Display the specified resource.",
@@ -1459,7 +1475,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quisquam",
+                                    "value": "minima",
                                     "description": "The ID of the get cowork."
                                 }
                             ]
@@ -1495,7 +1511,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "repellat",
+                                    "value": "dolorem",
                                     "description": "The ID of the update cowork."
                                 }
                             ]
@@ -1513,7 +1529,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"nama_workspace\":\"dolorem\",\"alamat\":\"ut\",\"kapasitas\":\"dolore\",\"nomor_pengurus\":\"consequatur\",\"biaya_harian\":\"dicta\",\"biaya_mingguan\":\"iure\",\"biaya_bulanan\":\"eos\",\"biaya_tahunan\":\"sed\",\"fasilitas\":\"suscipit\"}"
+                            "raw": "{\"nama_workspace\":\"cupiditate\",\"alamat\":\"necessitatibus\",\"kapasitas\":\"cupiditate\",\"nomor_pengurus\":\"temporibus\",\"biaya_harian\":\"tempora\",\"biaya_mingguan\":\"a\",\"biaya_bulanan\":\"nihil\",\"biaya_tahunan\":\"natus\",\"fasilitas\":\"amet\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1534,7 +1550,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "voluptate",
+                                    "value": "ut",
                                     "description": "The ID of the delete cowork."
                                 }
                             ]
@@ -1580,7 +1596,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"file\":\"rjprtmbiixbhwcgrhlgnqynomceadfzqtjlfpgrjfwdcwcqbbihlgoypbmgufdnfhubgbcwtneqbpfqnamrqzhtpchltfkfzhhokfqfxbswlhlvgdkbknvhamhdxpfbkvhqanawbvvutlvqalqqoyorctywhufeprgfnrafbcviyrhsruvjnwbznaoxahnevxpmvwbkdnopovnsulsyjwzqczefebyveecrojlyfunxoiuxwdciaclwzhnduycuqnzblepbsqkqvzhcqbqmvfrgphgjuwvntiiblbqckxenwrhqpafrftaqkcargdlrmgkjlanwyqmhqivilnedvcmwtqocwkwpqvhldcdpxnbwdpkdsbiarzrdzkfhsjxwmajyfizdqohtudbtoftbojdveuoyiqgprqomsxgkqigwnnxujxyahzcavvncuflnhntblfjqyjxnjempqdhoqxqwaabmibsndafxrinzzoqbflbctuptoeafsyssxjgnoxeqdknpfdknfodlgzhnfyhmkmtnzcblklsbrzeuweqmxsaqqhmindstowmyjlyiqkxzweodhqqrvnhqbue\"}"
+                            "raw": "{\"file\":\"efhhporqgvznhegrjskthqfmgufjebkijvbwobstacbtvshjcgqpctrkmgetgctdnmgkqivmjytrlpizivqdyprjxvtihkdptkdvzmmczrhalatkkhwuagifsrcplyymysavyhlpwzhwfpioeiplyvalauljcwjmewmsbelyurpkpaplbaopfugvdrblgcdfbhuocqkmopcwehqcvvgxkezybrqwncgcwmenwbaqobneviolipeavdlkgbxbcwkxtiicjrludhgogogsidpvidyqdyhtwrqlukzzvpmkwzzkgabfasehmeshwsweudpuvejqeorfcrksprulnfjqqfgbpmqivjqlqtheyfaerlckqmahgocgwqtibidaczuzfqjqtaffcnaabqwhsitninnfotxkxdemkpcpjwvreicyjjjlyqhsfscvsrkuvlktdzshirhgriatwbwhkmnxwewkmxevzhigryuoshzrpwkadzikwjzfmdjlxzfvzqbkcoooayasejffbsxspgexsiuvjrzfyjybartoqxrskmooaudtvceoisrgdebduosgkyqoyktyvulbuxdktccxputtrbtpimishadyxqnjwyttdwblrucoffhaxalhwcbnoobodhevozdkfhnnvqvwolhytcapztwtalkimdetgdiyslstwphdtlmtfoostymffaewsdlwetvigscwvcqgfyljpgocbjtgblcgjntelzcsflvdibrmznnjioeilofsbyinzmiwfwjmmegwfgnwiuymbkooignchdysahrhkedcitzfipnqstwwolyhdcojtrmvnbiqgmfoiocuvoejijzgkfxnfconwpwambpofvyjehqwxnqdztzgpuaivlpmjdgwyeztxucrkzeyyvhjjvdjzekkxicmxgnnakisojfvvlogssophajquxypgviqscdxmkjcfmvnzyxoxypdghqkjqkloqoka\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1599,6 +1615,674 @@
                             "raw": "{{baseUrl}}\/stp\/files\/file-upload"
                         },
                         "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/add-alat-sewa",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/add-alat-sewa",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/add-alat-sewa"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/add-alat-sewa",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/add-alat-sewa",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/add-alat-sewa"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_alat\":\"et\",\"alamat\":\"provident\",\"kapasitas\":\"ut\",\"nomor_pengurus\":\"ullam\",\"file_path\":\"tixdasrbksvqvxsyozlhelirvqkqewtqrfuepnarlkhjkbgelviqindmkvyrlkqibbzzllcfhvvphqvcchfofnkjahidfkardypblflxlplurqkbqpngiubellfwnacnyluzdtrkppaprqfjqvbbovzqtzcvbynfqidmlbxkekbkislskaydpfhmgkwfhopovatcymwwuuvslqttyvqehlpuwbzmadjubnyqpznmkrovbfzfnprkykovdynwdayivejbyvatsyomxxgeeabaaxfejukcfekcjnemszriszgxldxefbjdtpmymitjofqtmsletnyevpqxhjpduknjodmbmflgsxfpihyuvnsctdediegprcvkzvblwhzlumaacrioyxqevwbxwnqikkzhzndturqfsaclmxmjphveoqzmpbrswqgqbfqedtbgmryztuxdlhiezggmbrmempgccnjtmommcxcamslmhmliinmrttrvbahjzgdcsbgcrtxtvedkrbavwvlceecrfhrsronypmohnbtetajtnbsfskyzburvgtosbgbstgmwipveesfhotaqqgnlmzjyutldqjjqmdybhbvamwjlvfatewawnmsazhzqpjmuiqbgehbmloksiwqdziifxgggrbvxwgtkshnknrmzgvbadtantwkewnpijoppicvuddlxzvfonwpvlavkubamafngzepnfdpzhwohrhczijtiecynmwdecjbpyxtshjsctcottpqgcyneirhzhldgatgowjfefujqzjevfgfavnwqleeyydbaothhasqqloxcxhnodrxhmdwgbafikyahmwkuhrlyqxrpraglomklihcnrqwegohuvhidycznwxdtsygmctrpdnfqucqjtmeobvooctsuzondqjjbnbzccbyhteyaojmemrkxwcewrbquyfgvmchktavcymniptfcsoowvykjpenzyeqztwmyyqhhlyyutnwquxfaisqmzmxmtzympdjijopumwvxemaiqdhzwyjiplwrkrjpipvzkolfktmixowspubwannmwsaddadqnigsmdbjjriwjxlsiqnzrjsqjuovcaxgkdfayowipojcviixzlptkymzuyeakgeyfhszvlizghnwsxhfuybgxcgkihanytbbxogxybwcdwigyfjtjofyctzcsoacikvuxgswkelvrjuaghacnqdnlfshmyumbuwokrvilsekijbepiqvkcbtregftpzmtgrsmuwnvozohxftlikgdskvxvrtamfbipjtampggklfedsphgoneasqhmjcsxtigbbvxyfkrlywsuxjdsbctudpbgdrkpunufszmdrhvlfiybrzfvireonjsniosjndrzmdziiztegvmuzzdilfxjbjrnongkbnbmmqwemwzdxdhemsocbpenlmbvijfqltmpllcrtcjvblhtcbaakbjtzbodcmdoiddaasvgvsuqjlltjgahradqnwdmlbdgdweljhjcvggorwojvrsmmennwguwzphoorlobjhlqohbzrakkqmhlvvalmzkcmsaemsspmbfwxftudjzkaykttaeskfnguihinitcihvrafubtpitlldbvyrluzyoojoxrztwhxmgdjpzitpfyxuqvpsjygyfpjiixhktkppxtijofmtoukgnrjdwbhodtvunazcwmucdhnbfhxfeoloeopvarezopncbigbwufnmiccecepqffyzzjoyiuwnidiedqfofphgnczktugovekyosubljfdhykonzhhewrklwziyjhbhvputckbfqgkmfdisivsrimaofviyevfcvtzelabcinhwjegdcfojdqiwvjiytrrukozskecuoeoxhsngpezbxqdpcknilgfeptulartjakshfureyavasywvimfdkflubkmguesaodclbindsyqdtpdarflzeqtwgjkepnrzklckschpljmnjxmtadhngnjokcnznrredsismieakelmusyyhdwyovzxtnuwsxfvmvijwjvneaqmcpqrnoqjdpyzunglwmyknlzhlqjrwgfghnqueugkjvigvvcklsectytkqwaopsfzfkkzhpyyqavxwyppqwdfwjqiiysghryuknejmgusqoqbewsfaayxfkkpudnuahrjeatywyhxnlmaphuntbqbwbhhhoukahkubtzohtdrcymfhounmxznhajuutanjhkweypnekeihqponzoqdaecjolefukmbymliajcxfojhxzzmtacnwvzgklaggxpivlsgucoxpyhylbcicjmzgwqhyryteydrwakzyvxgibuciswnqaahwpqblnhizpjglbgemyabmddebpusgbdfbtcuxuaaofbmenyvdihlhtbkyjbzvqllwnkzewzefvoyzlgqiwsuwzffbtpfuqjyfgkjuykdvwddjhcqckekswhfteoisuuedahdthoeewfrwneftrouswcowobnzkiujicbgjgehzaaitnqildwvrvjlrmjgoywqipjgiygsnvgmjbxdosygvejmqqssubfkfatnbrjzgtmupczsedvxflklspcsfuksrklkwaaqkuwpgwkqdxqrlsmbtthdelnvzfbnphjgobwixgyngspvgpkdgmvilubtrllijtpdbvngibgsaaodriphdtbwdbsknigpprajlytvfhbddzmpcbeuirvdzjrtqqdhmzekqqztpupkvutrcbmfdjzyvzwiudtoorgwztrjovhyjkfgjcxphjmgtnlgceenbbkjtcvpnhxjdbzcaluzckmbaofcwihpwnxtwrjwqodfeqwoiwwirnvqjrvutioejhlzmwqncolbpqwazpsayxowyofttqdjabwzwjzuqmgnlbatqtyhrwdnqjbbftknxyfeunwbsaylfpkgpjlowjlyqjyvvxohojdvfkctxvmsiyyupbtrsszpbchribwkqqcfgecpyfyujnkellfmlukaqnporhapjvzzqcwcuuwxkvgbxtofkxgvvfpuwcsbwioftkazkfpfveqkiucdliprnrpielbewfhujbjoajfqvswuogwutuieuwwabkeyskcaovnesfipzyyvogigklsogitckzlucnpuahwwqyhkkgkveafxnfxvswbvzjzogytailkgzyeaoosnzrwrauouppwldccqxcfpvuhjiobfgjlnaqqocmoempgppvwkwnyopsqezzponizwftiutcacfpnayswondrxzhxcfuqmvfeckxhopzhbqoywmglfpgudjaxstizcgdsextueoeerpnttecljpvzokxedurprjyygzzkkutdykzqdqvkbdhestpixsmixegiuivcyqkxpqfadiqwqnoyryhehmjaetxyrcwndtkuyaqxtmeiomftlsrpmaijmnceartkikjadjykqzoqidurwutvoixxsguswwqjvwlulsjapnaxoehcskocmvmtvncikqmlwbhbdeoewytxhljpviqqdkmcquahbaqntbyboicumwvdkmnjarlaqdxhmjstnbtijeeoibvovvsgshcpmycjbvjrnwakceizklbbamjmzhpzqelgtzcasocanjwxjeptesiivgiiweddvrdyaquqwanahfqzcdisbamiwywspysnojxfhftrborolmihfgwcfvhuwgxrrbweyosanfwllgijgachpaeoxszkaxohzrokeyhhsyswrmxwxauvdeutiglsdhqstgthwmqhxbpckhenvolcquxbhjvbxjoumsvfurphiswmpknwntvboywlchqktlhotbemieyg\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/add-alat-sewa\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/add-alat-sewa\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/add-alat-sewa\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "The ID of the add alat sewa."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/add-alat-sewa\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/add-alat-sewa\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/add-alat-sewa\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the add alat sewa."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_alat\":\"facilis\",\"alamat\":\"id\",\"kapasitas\":\"possimus\",\"nomor_pengurus\":\"autem\",\"file_path\":\"ebiiyzearwqvhvqbcgygotdhtiuuftdymumbgzqofmcgrxklojloxfmrjwafbkuprcovoomshxdlvjrzuuasknlatzeriykvqdozovwvsjcqrlwswpfjjbhqvjspkvvbdwcqqltsqgmhpdxgdbsamsdonyorfjvsmrbyemvjpfjavfjtwpthfwaywfptlzlqkakpyaiqlxromingifqcozdfrhkiezlprlnoedzpouceehlpfqnwzuyuawwrfvxxccfawhgriqhnwtsqdqaucpiknqqnghdonoceayipoaqkojjpfskumbmwwoweershztaypbstcixudipfsieyloghfshmfzykniymxszrgeylwhdrkgxrkxhdunfivxmkigscptomrwchifiyuklotxpdsdvcpatblszakzfhegfdvdbkkxjltuisotedtbznakcndplmyivnorsbrjyoxvmyhmzprjvbdjbgqtpsivjbnrkqmtptmwegzvdaglfcyzooutyccwlxobvnjiiwhnavowbhenpahzzsnhzyagskzxrmnkrorujippxhbwghtbkhirnvtgmtpiootzmymwleguwdcjosiaeckxlnekezctuuitprlgplgqmysqwtpsyzowclcxscvltekbltztfhpydyijyaevavbwczdthbzkfqfsnnfgonveseadcifolmnijyylaxjknjxkspdeixxmeawkslgvurmuulryqmczvuslmzgqkujxjcueycqsvuylbmsecxfcafztateruebllwaadcmqcqyyyvfzxhajinfeiwapppmeeoumgivawrgwqauyfjujkfhhywzqrglqacvsqispxkznnsfmrbxbjdiftrvuavdtiksmcenlycgwxwtzqhnqizwxphsmatdgwrlrpdpmsdjuinvijodgrustrqibwrcnlaiopuckbdrbeudgwsbrmxdptkdeuxryqiydtmmcjvzojnqgnrtkuhcjwzzaageexhttryxbpltpwmcdelcavxufbhavcmxymzbeoyibbftvzctybdwtfufrrdelabnywjqftwuzgkrvwgblusvuyynjktfwpyuoeexusronxhbsrgnzzakjvyrdhyrythvvyorpmamgtgrvsemwqenxrbwhygtjsfovdvglnwhatnxsrftuwpihomsczwmxokkirldpbbvsbhjpoggyrgymvrcfopticaqvtouyxnfcrilnzsqutxdetzfunwnujqkncejwpbjoozwlvwxaeqjjlankxszeburorjaalxavzkmugdzoezmvzhrwwpbunsplzsxejtcupnrshglvtduwaczvpweaezduwynyaukvoqsjzwqukxnakqsrwpvxcuowoopzorhisckygvglvdvezymcxjxgndjdligeyzjhaeasqknveaerdnvalefwllkomeawuxhjmwjgnxktoycezdiczgxdtqsbnbkmwzltwxqodxysjtiaruzmwpdclnprxpzncgydhpmjkqknkpyokvbzfskkoaminzwlbadikoluibeweyiporlnhefyakoyyydnxnccetgkvrvgqmfycylkurymqhhxctysxrmzttvspoabhzcxovnvrdikqkiozencxosatfxahcbnsgzwhfwicnneieqbxzaewedpqmxoevceqsbyxysuodlmwyrbohaxwjxjodfwofbtgjmkjtzmmvuinwmlovohvamsdweshjazdppbzfryistntpbiiotyccifdqhuihqtkomkbcrltgecfidiosnprvgyykvpurxbvpyfissazhtdsphthhqnnlxeettfdtlxqveayybyedsdrfgzqobcluvsnapmlawfejnfvdvsvwutusgmndzfozhyjrfzrrgrrafmdulnuusukincozewrdhcbponybpfrdtwxsvrsmyouplifrabcrkutehkhldzrabmwrnhzbrwvoxcztcaowheuijxklxnwrshnkevnemuvqwlqycmqodalruhzxajbxjvdupehnewffpeqmurrtkfeyifwxtzlhhicwfwokodgkhgqcnpqnkxqlwgznwbqwdxdxniyjmyvvnfqanmyqlrapffrzipfywttxgnryxpugswbayfpdhvuutjwcvpoemqiiwpeyqnrsizsfbdbgkzumfsrsgrisailpubinegomqpqiczgpzmnclzbytvvavykuxrcekaggyondbvztmujvqmmzalpszranyoqonhgglassncrokonshduhqrvlztdymxdrhqcadpsjbepmxtoezjjwuyojmakjdxiynvinjfqcqnsamkmtbpgqnacdwgdxnqhufekudsuwmpoqjtriofgefnpeactnmbyxwzmfxzmlcnvcnmahdvvuzbmbivnyirjgxgycilctmzrjtqzynjqecteftbmwahfbhftjlpemewdnohpzeoupplbdorjyoijtjgrjvyvucvvepjmkfwxvlldfbtlzriibgxhvxapdkasffgqjthikbzwlamynpxygxodzxvkmauswpvdkhqjzaqzmqvvxflukxzkdcqlqsqskgsblhbcbnmqxupgqpezqyvktykwgmfjalaotugccdwemvprwmnahiiafdjvdklmikyxbiiivrcjyspixxfpoqirbcnfgkkiewnwcjmfgtdshikgpzhmucuyuwdsdjmbgdtzuiwxiokbgkevjaexjgblfyxktidejivyjxsdzhndemcxuevrkcxakvvtsfcqcgxlychuserpswgabiqbvobuzsbveogrkfxj\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/tenant\/add-alat-sewa\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/tenant\/add-alat-sewa\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/tenant\/add-alat-sewa\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "The ID of the add alat sewa."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/talent\/profile-talent",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/talent\/profile-talent",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/talent\/profile-talent"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/talent\/profile-talent",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/talent\/profile-talent",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/talent\/profile-talent"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"profile_image\":\"ftctpotkmkhusbcgeekzczkiapeaihrjwfpwtbjxesplujgrthubuggotbfdzjgunvhyzoxmoibrtbqpatfqwiplqiusbdldvoantolmdnfdwcvyqlgphhxqgnhuhcfpahqyztnzpebbwqeqhsknwtnutngelaviagpieqnedenoasqdbwbgaumnpxgozxlduxnyczjncnmkfqcfrrzcmdhxemjsclhkvrebujmxwyuymycwougkekoksvxotspahawzhadtwlmvbnytbvanosbbpqbrsyrkvwefvlilbsophxzscvlknyebovhiyvxxjjzklgdmlqyoasrjlluhrwynzissklaoojitartxxhircexrkvbgeudsgjfufhehhhrcjfpqihhqoydsqhayyraxancxcqxefxeqvsrmcwxluyrkgsxizufmfetipygfdufnyozfgcrmaztfoznrhhpuydljfcdoexqdgyhxkgolcoouwphoovnrywvfqkpuwjlgbpbgyohpnwictyeugzgefjunqdkxdywwefbssbmbbqntigfiskrzpphvemhobtnauubgvjuegpdfczdsbjf\",\"profile_number\":\"aut\",\"profile_age\":\"eius\",\"profile_address_province\":\"magni\",\"profile_address_city\":\"placeat\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/talent\/profile-talent\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/talent\/profile-talent\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/talent\/profile-talent\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "The ID of the profile talent."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/talent\/profile-talent\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/talent\/profile-talent\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/talent\/profile-talent\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "The ID of the profile talent."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"profile_image\":\"kjyxmqmqcexersalzipvbleqgebwgdnjfegrrblbybjcvqblhxsjwkneetuofuqnzpfwpvjrhzzrtqzwrhdoivnuqiwnzgzsyfkachowyxinvbmevsmjtietcbcqxtwfpiwibtkicqymruebjpvqtbxalyztvxgsxcsutuotzbgtksliueimttyfrskzkpigisnnuviohxvnjfjjygvhgpmupasivqjrqsgnidxaoxmbbofnwyqobaoxqpljvfzdiadtoxpejpltkljlbwfysqjyhvwgqvpgsqnnvmcdbnwvmwjkowcjizuxpdxxyyzauqrmghmtqfczzamyflgzqkydwymaccmkboqlxoofcfnkrkxzawkouraitonxrwdmturvvdumknmgaegjqmkdflaqbtbmduagsuccybyjallhhzlhqvcmxisvjicrzhcbzwvahahfohdxpvxwbjicntfavrkqejtrcwqijgxsvvypeqxaefpqqpyrrlandlqqalwdixfdfmiyhquxoamioongyblzurupfpsutdicqcqryxvnylwszoegiahgbxbsadatjrbewpgmurpyetlblzwiteuhfbrbnqgunfmgbeflwmcxwcberhbkfqqzgdashhmboipwwxhfiopnckfejtqsyjnwzafrphmbukggosamyokgdkadrrxfiygmetfreqzxwtcchtyqjftnbagsksmprlznwsqpdmuhbkepdtrvqjyvmcglwrhlnfaqybyypexthybyzchkbzvvoylmmcovymyylaytstrpqdcbcotltgfpkhcydoofapexyhzoargoumrwfgylsgbwstegnjsautdwizekzbtcoedkhpugaffnjtakxlxnhmcaqlradqgtptxkkegdzpajjuubialvgkhkiyolfdkfyetfgcsheayskkxctdikvpswbxpimttlkdlqvceegqbvbuygllcnaeohizqqhaydwlajxlonshyarylzzrtdduhrvzyzpkyaabtrsboiwihxjueunufiqajhkoxeqpsfrrrbvlzxkmrjiresepydwwkjoyfpbphynohynhyppepedjyfbjtmaanznpzynmxokwtuayfhszpztckzfxbsqatdcgmwpgefhvrckcvqquqtznykkafyyfqpcotljikhwlzjsjzpltrimbjugpszgtpksiumcdcuavoxnhwzrwnopwezsdpppjnqjqxcqwuibzopplxkkjlljsxuzolggccoerbqejlulvlhfxcfiaxyzjslhxviqyfnnbbrbozbgsjsltigftkhcucidhopaqcnzxpctwliviotdxkifrwjqxxzuetygiakybvxlerjgwigbfditxburgaoixfrxauiwdtgtbqxovkudjxtyodbiyehbpflxfhmuhxfbabkxlfttxhkouhjcabjspgkppjrbqcjpphhaeacvcjugdruysiwprmguqxfvfseasevcuoskyqcmshnsjtubdmuhikzfpbxortqplwiglpfuoskqrgwxooubaqcikedmqkfedgrgjtqnfjhueuvoxzmpgyvywjuzcblqviahtkashijaxqoqmxzkcxvfvrmhpywqjccwlofelgtfrmultybfyunqdwziojthygvgdcyyufvksfjhcycxhyprpqbybxvgqslunozroyfgadvwqdsfoiszogatnwuyyivaoivzjzrtqkigvmyetaedwdroaeu\",\"profile_number\":\"omnis\",\"profile_age\":\"et\",\"profile_address_province\":\"eligendi\",\"profile_address_city\":\"quas\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/talent\/profile-talent\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/talent\/profile-talent\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/talent\/profile-talent\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the profile talent."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/pelatihan\/add-pelatihan",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/pelatihan\/add-pelatihan",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/pelatihan\/add-pelatihan"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"judul_pelatihan\":\"suscipit\",\"deskripsi\":\"nisi\",\"pembicara\":\"at\",\"kapasitas\":\"repellendus\",\"biaya\":\"et\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/pelatihan\/get-pelatihan\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/pelatihan\/get-pelatihan\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/pelatihan\/get-pelatihan\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "expedita",
+                                    "description": "The ID of the get pelatihan."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/pelatihan\/edit-pelatihan\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/pelatihan\/edit-pelatihan\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/pelatihan\/edit-pelatihan\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "commodi",
+                                    "description": "The ID of the edit pelatihan."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"judul_pelatihan\":\"commodi\",\"deskripsi\":\"ea\",\"pembicara\":\"assumenda\",\"kapasitas\":\"sequi\",\"biaya\":\"saepe\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/pelatihan\/del-pelatihan\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/pelatihan\/del-pelatihan\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/pelatihan\/del-pelatihan\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "asperiores",
+                                    "description": "The ID of the del pelatihan."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/pelatihan\/get-pelatihan",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/pelatihan\/get-pelatihan",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/pelatihan\/get-pelatihan"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "stp\/profile-tenant\/add-profile",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/profile-tenant\/add-profile",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/profile-tenant\/add-profile"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_perusahaan\":\"accusantium\",\"alamat_perusahaan\":\"deleniti\",\"email_perusahaan\":\"fugiat\",\"nomor_perusahaan\":\"ut\",\"ketua_perusahaan\":\"asperiores\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/profile-tenant\/get-profile\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/profile-tenant\/get-profile\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/profile-tenant\/get-profile\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "esse",
+                                    "description": "The ID of the get profile."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/profile-tenant\/edit-profile\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/profile-tenant\/edit-profile\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/profile-tenant\/edit-profile\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "a",
+                                    "description": "The ID of the edit profile."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nama_perusahaan\":\"et\",\"alamat_perusahaan\":\"eum\",\"email_perusahaan\":\"similique\",\"nomor_perusahaan\":\"animi\",\"ketua_perusahaan\":\"porro\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "stp\/profile-tenant\/del-profile\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "stp\/profile-tenant\/del-profile\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/stp\/profile-tenant\/del-profile\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "quia",
+                                    "description": "The ID of the del profile."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
                         "header": [
                             {
                                 "key": "Content-Type",
