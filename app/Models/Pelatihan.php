@@ -8,16 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Pelatihan extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
 
     public $table = 'pelatihans';
 
     protected $fillable = [
         'user_id',
-=======
-    
-    protected $fillable = [
->>>>>>> master
         'judul_pelatihan',
         'deskripsi',
         'pembicara',
@@ -25,7 +20,6 @@ class Pelatihan extends Model
         'biaya',
         'hari',
         'jam',
-<<<<<<< HEAD
         'dokumen_pendukung',
     ];
 
@@ -33,9 +27,4 @@ class Pelatihan extends Model
     {
         return $this->belongsTo(User::class);
     }
-=======
-        'dokumen_pelatihan_path',
-        'gambar_pelatihan_path',
-    ];
->>>>>>> master
 }

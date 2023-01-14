@@ -97,25 +97,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/file_api.php'));
 
-<<<<<<< HEAD
-=======
-            Route::prefix('addalatsewa_api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/addalatsewa_api.php'));
-
-            Route::prefix('profiletalent_api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/profiletalent_api.php'));
-            
->>>>>>> master
             Route::prefix('pelatihan_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/pelatihan_api.php'));
 
-<<<<<<< HEAD
             Route::prefix('mentoring_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
@@ -125,12 +111,6 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/mentoring_peserta_api.php'));
-=======
-            Route::prefix('profile_tenant_api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/profile_tenant_api.php'));
->>>>>>> master
         });
     }
     
