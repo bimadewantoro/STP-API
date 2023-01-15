@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CreateMember;
+use App\Http\Controllers\InkubasiController;
 use Dingo\Api\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -25,7 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'tenant'], function ($api) {
+    $api->group(['middleware' => ['role:admin|super-admin'], 'prefix' => 'inkubasi'], function ($api) {
         $api->post('/add-inkubasi', 'App\Http\Controllers\InkubasiController@store');
         $api->get('/get-inkubasi/{id}', 'App\Http\Controllers\InkubasiController@show');
         $api->put('/update-inkubasi/{id}', 'App\Http\Controllers\InkubasiController@update');
