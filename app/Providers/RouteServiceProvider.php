@@ -97,10 +97,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/file_api.php'));
 
-            Route::prefix('pelatihan_api')
+            Route::prefix('inkubasi_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/pelatihan_api.php'));
+                ->group(base_path('routes/inkubasi_api.php'));
 
             Route::prefix('mentoring_api')
                 ->middleware('api')
