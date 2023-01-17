@@ -39,7 +39,8 @@ class AuthController extends Controller
             'password_confirmation' => Hash::make($request->password_confirmation),
         ]);
 
-        $user->assignRole($request->role);
+        
+        $user->assignRole('User');
 
         $token = auth()->login($user);
         
