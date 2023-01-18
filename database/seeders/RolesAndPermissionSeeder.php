@@ -98,7 +98,7 @@ class RolesAndPermissionSeeder extends Seeder
         Permission::create(['name' => $deleteActivity]);
         Permission::create(['name' => $viewActivity]);
 
-    
+        
         //Roles List
         $superAdmin = 'super-admin';
         $admin = 'admin';
