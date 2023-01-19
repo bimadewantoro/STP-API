@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\UserDetailsController;
 use Dingo\Api\Auth;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormPendaftaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +25,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-    $api->group(['middleware' => 'role:tenant', 'prefix' => 'profile-tenant'], function ($api) {
-        $api->post('/add-user_details', 'App\Http\Controllers\UserDetailsController@store');
-        $api->get('/get-user_details/{id}', 'App\Http\Controllers\UserDetailsController@show');
-        $api->put('/update-user_details/{id}', 'App\Http\Controllers\UserDetailsController@update');
-        $api->delete('/delete-user_details/{id}', 'App\Http\Controllers\UserDetailsController@destroy');
+     $api->group(['middleware' => ['role:tenant'], 'prefix' => 'tenant'], function ($api) {
+        $api->resource('form-pendaftaran', FormPendaftaranController::class);
     });
+    
 });

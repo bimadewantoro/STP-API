@@ -58,6 +58,27 @@ class RolesAndPermissionSeeder extends Seeder
         $deleteActivity = 'delete-activity';
         $viewActivity = 'view-activity';
 
+        $addUserDetails = 'add-user_details';
+        $editUserDetails = 'edit-user_details';
+        $deleteUserDetails = 'delete-user_details';
+        $viewUserDetails = 'view-user_details';
+
+        $addInkubasi = 'add-inkubasi';
+        $editInkubasi = 'edit-inkubasi';
+        $deleteInkubasi = 'delete-inkubasi';
+        $viewInkubasi = 'view-inkubasi';
+
+        $addDaftarMentor = 'add-daftar_mentor';
+        $editDaftarMentor = 'edit-daftar_mentor';
+        $deleteDaftarMentor = 'delete-daftar_mentor';
+        $viewDaftarMentor= 'view-daftar_mentor';
+
+        $addFormPendaftaran = 'add-form-pendaftaran';
+        $editFormPendaftaran = 'edit-form-pendaftaran';
+        $deleteFormPendaftaran = 'delete-form-pendaftaran';
+        $viewFormPendaftaran= 'view-form-pendaftaran';
+
+
         // create permissions
         Permission::create(['name' => $addUser]);
         Permission::create(['name' => $editUser]);
@@ -98,7 +119,27 @@ class RolesAndPermissionSeeder extends Seeder
         Permission::create(['name' => $deleteActivity]);
         Permission::create(['name' => $viewActivity]);
 
-        
+        Permission::create(['name' => $addUserDetails]);
+        Permission::create(['name' => $editUserDetails]);
+        Permission::create(['name' => $deleteUserDetails]);
+        Permission::create(['name' => $viewUserDetails]);
+
+        Permission::create(['name' => $addInkubasi]);
+        Permission::create(['name' => $editInkubasi]);
+        Permission::create(['name' => $deleteInkubasi]);
+        Permission::create(['name' => $viewInkubasi]);
+
+        Permission::create(['name' => $addDaftarMentor]);
+        Permission::create(['name' => $editDaftarMentor]);
+        Permission::create(['name' => $deleteDaftarMentor]);
+        Permission::create(['name' => $viewDaftarMentor]);
+
+        Permission::create(['name' =>  $addFormPendaftaran]);
+        Permission::create(['name' =>  $editFormPendaftaran]);
+        Permission::create(['name' =>  $deleteFormPendaftaran]);
+        Permission::create(['name' =>  $viewFormPendaftaran]);
+
+
         //Roles List
         $superAdmin = 'super-admin';
         $admin = 'admin';
@@ -117,7 +158,11 @@ class RolesAndPermissionSeeder extends Seeder
                 $addTenantDetail, $editTenantDetail, $deleteTenantDetail, $viewTenantDetail,
                 $addProposal, $editProposal, $deleteProposal, $viewProposal, $approveProposal, $rejectProposal,
                 $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
-                $addActivity, $editActivity, $deleteActivity, $viewActivity,
+                $addActivity, $editActivity, $deleteActivity, $viewActivity, 
+                $addUserDetails, $editUserDetails, $deleteUserDetails, $viewUserDetails,
+                $addInkubasi, $editInkubasi, $deleteInkubasi, $viewInkubasi,
+                $addDaftarMentor, $editDaftarMentor, $deleteDaftarMentor, $viewDaftarMentor,
+                $addFormPendaftaran, $editFormPendaftaran, $deleteFormPendaftaran, $viewFormPendaftaran,
             ]);
         Role::create(['name' => $tenant])
             ->givePermissionTo([
@@ -125,6 +170,7 @@ class RolesAndPermissionSeeder extends Seeder
                 $addProposal, $editProposal, $deleteProposal, $viewProposal,
                 $addMentoring, $editMentoring, $deleteMentoring, $viewMentoring,
                 $addActivity, $editActivity, $deleteActivity, $viewActivity,
+                $addFormPendaftaran, $viewFormPendaftaran,
             ]);
         Role::create(['name' => $juri])
             ->givePermissionTo([

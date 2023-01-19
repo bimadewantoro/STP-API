@@ -102,6 +102,16 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/inkubasi_api.php'));
 
+            Route::prefix('daftarmentor_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/daftarmentor_api.php'));
+
+            Route::prefix('form_api')
+                ->middleware('api')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/form_api.php'));
+
             Route::prefix('mentoring_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
