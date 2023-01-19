@@ -15,110 +15,84 @@ class InkubasiController extends Controller
         $inkubasi = Inkubasi::all();
         return $inkubasi;
     }
-
-    
-    public function create()
-    {
-        //
-    }
-
     
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'tentang' => 'required',
-            'durasi' => 'required',
-            'benefit' => 'required',
-            'akses' => 'required',
+        $input = $request->all();
+        $validator = Validator::make($input, [
+            'deskripsi' => 'required|string|max:255',
+            'durasi' => 'required|integer|max:10',
+            'benefit' => 'required|string|max:255',
+            'akses' => 'required|string|max:255',
         ]);
-
         if ($validator->fails()) {
             return response()->json([
                 'status' => 'error',
-                'message' => $validator->errors()->first(),
-            ], 400);
-        }
-
-        $inkubasi = Inkubasi::create([
-            'tentang' => $request->tentang,
-            'durasi' => $request->durasi,
-            'benefit' => $request->benefit,
-            'akses' => $request->akses,
-        ]);
-
-
-        return response()->json([
-            'status' => 'success',
-            'data' => $inkubasi,
-        ], 200);
+                'message' => $validator->errors(),
+            ], 400);       
+    }
+    $inkubasi = Inkubasi::create($input);
+    return response()->json([
+        "success" => true,
+        "message" => "inkubasi created successfully.",
+        "data" => $inkubasi
+    ]);
     }
 
-   
     public function show($id)
     {
         $inkubasi = Inkubasi::find($id);
-
-        return response()->json([
-            'status' => 'success',
-            'data' => $inkubasi,
-        ], 200);
-
-        if (!$inkubasi) {
-            return response()->json([
-                'status' => 'error',
-                'message' => 'Data tidak ditemukan',
-            ], 404);
+        if (is_null($inkubasi)) {
+            return $this->sendError('inkubasi not found.');
         }
-    }
-
-   
-    public function edit(Inkubasi $inkubasi)
-    {
-        //
-    }
-
-   
-    public function update(Request $request, $id)
-    {
-        $validator = Validator::make($request->all(), [
-            'tentang' => 'required',
-            'durasi' => 'required',
-            'benefit' => 'required',
-            'akses' => 'required',
+        return response()->json([
+            "data" => $inkubasi
         ]);
+    }
 
+
+    public function update(Request $request, Inkubasi $inkubasi)
+    {
+        $input = $request->all();
+        $validator = Validator::make($input, [
+            'deskripsi' => 'required|integer|max:10',
+            'durasi' => 'required|string|max:150',
+            'benefit' => 'required|string|max:255',
+            'akses' => 'required|string|max:255',
+        ]);
         if ($validator->fails()) {
             return response()->json([
                 'status' => 'error',
-                'message' => $validator->errors()->first(),
+                'message' => $validator->errors(),
             ], 400);
         }
+            $inkubasi = Inkubasi::find($request->id);
+            $inkubasi->deskripsi = $request->deskripsi;
+            $inkubasi->durasi = $request->durasi;
+            $inkubasi->benefit = $request->benefit;
+            $inkubasi->akses = $request->akses;
+            $inkubasi->save();
 
-        $inkubasi = Inkubasi::find($id);
+            return response()->json([
+            "success" => true,
+            "message" => "proposal updated successfully.",
+            "data" => $inkubasi
+            ]);
+        }
 
-        $inkubasi->update([
-            'tentang' => $request->tentang,
-            'durasi' => $request->durasi,
-            'benefit' => $request->benefit,
-            'akses' => $request->akses,
-        ]);
 
-        return response()->json([
-            'status' => 'success',
-            'data' => $inkubasi,
-        ], 200);
-    }
-
-   
     public function destroy($id)
     {
-        $inkubasi = Inkubasi::find($id);
-        $inkubasi->delete();
+        $inkubasi = Inkubasi::findOrFail($id);
 
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Inkubasi deleted',
-        ], 200);
+        $data = $inkubasi->delete();
+        
+        if ($data){
+            return response()->json([
+                "success" => true,
+                "message" => "inkubasi deleted successfully.",
+            ]);
+        }
     }
 }
 

@@ -15,7 +15,7 @@ class CreateInkubasisTable extends Migration
     {
         Schema::create('inkubasis', function (Blueprint $table) {
             $table->id();
-            $table->string('tentang');
+            $table->string('deskripsi');
             $table->string('durasi');
             $table->string('benefit');
             $table->string('akses');

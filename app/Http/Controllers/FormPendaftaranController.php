@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FormPendaftaran;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class FormPendaftaranController extends Controller
@@ -33,6 +34,7 @@ class FormPendaftaranController extends Controller
             ], 400);       
     }
     $formPendaftaran = FormPendaftaran::create($input);
+    $formPendaftaran->user_id = auth()->id();
     return response()->json([
         "success" => true,
         "message" => "Pendaftaran submitted successfully.",

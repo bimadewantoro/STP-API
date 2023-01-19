@@ -17,36 +17,24 @@ class DaftarMentorController extends Controller
         return $daftarMentor;
     }
 
-    
-    public function create()
-    {
-        //
-    }
-
-    
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'nama' => 'required',
-            'sosmed' => 'required',
-            'kategori' => 'required',
-            'deskripsi' => 'required',
+        $input = $request->all();
+        $validator = Validator::make($input, [
+            'nama' => 'required|string|max:255',
+            'sosmed' => 'required|string|max:255',
+            'kategori' => 'required|string|max:255',
+            'deskripsi' => 'required|string|max:255',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'status' => 'error',
-                'message' => $validator->errors()->first(),
+                'message' => $validator->errors(),
             ], 400);
         }
 
-        $daftarMentor = DaftarMentor::create([
-            'nama' => $request->nama,
-            'sosmed' => $request->sosmed,
-            'kategori' => $request->kategori,
-            'deskripsi' => $request->deskripsi,
-        ]);
-
+        $daftarMentor = DaftarMentor::create($input);
 
         return response()->json([
             'status' => 'success',
@@ -72,13 +60,7 @@ class DaftarMentorController extends Controller
         }
     }
 
-    
-    public function edit(DaftarMentor $daftarMentor)
-    {
-        //
-    }
 
-    
     public function update(Request $request, $id)
     {
         $validator = Validator::make($request->all(), [

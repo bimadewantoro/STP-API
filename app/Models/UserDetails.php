@@ -14,7 +14,7 @@ class UserDetails extends Model
     protected $fillable = [
         'user_id',
         'profile_image',
-        'profile_call_number',
+        'profile_number',
         'profile_age',
         'profile_address_province',
         'profile_address_city',
@@ -24,4 +24,5 @@ class UserDetails extends Model
     {
         return $this->belongsTo(User::class);
     }
+
 }

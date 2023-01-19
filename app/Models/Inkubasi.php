@@ -10,7 +10,7 @@ class Inkubasi extends Model
     use HasFactory;
 
     protected $fillable = [
-        'tentang',
+        'deskripsi',
         'durasi',
         'benefit',
         'akses',

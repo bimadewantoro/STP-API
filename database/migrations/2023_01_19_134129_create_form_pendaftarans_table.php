@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormInkubasisTable extends Migration
+class CreateFormPendaftaransTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateFormInkubasisTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_inkubasis', function (Blueprint $table) {
+        Schema::create('form_pendaftarans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId ('user_id') -> constrained () -> onDelete ('cascade');
+            $table->unsignedInteger('user_id')->nullable();
             $table->string('profil_bisnis');
             $table->string('model_bisnis');
             $table->longtext('deskripsi');
@@ -34,6 +34,7 @@ class CreateFormInkubasisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form_inkubasis');
+        Schema::dropIfExists('form_pendaftarans');
+        $table->foreign('user_id') -> references ('id') -> onDelete ('cascade') -> onUpdate ('cascade');
     }
 }

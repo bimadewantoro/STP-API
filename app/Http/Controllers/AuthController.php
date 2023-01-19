@@ -40,7 +40,7 @@ class AuthController extends Controller
         ]);
 
         
-        $user->assignRole('User');
+        $user->assignRole($request->role);
 
         $token = auth()->login($user);
         

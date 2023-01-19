@@ -15,10 +15,10 @@ class CreateUserDetailsTable extends Migration
     {
         Schema::create('user_details', function (Blueprint $table) {
             $table->id();
-            $table->foreignId ('user_id') -> constrained () -> onDelete ('cascade');
+            $table->unsignedInteger('user_id')->nullable();
             $table->binary('profile_image', 4294967295);
-            $table->integer('profile_call_number');
-            $table->integer('age');
+            $table->integer('profile_number');
+            $table->integer('profile_age');
             $table->string('profile_address_province', 100);
             $table->string('profile_address_city', 100);
             $table->timestamps();
@@ -33,5 +33,6 @@ class CreateUserDetailsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('user_details');
+        $table->foreign('user_id') -> references ('id') -> onDelete ('cascade') -> onUpdate ('cascade');
     }
 }

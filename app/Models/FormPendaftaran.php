@@ -9,6 +9,8 @@ class FormPendaftaran extends Model
 {
     use HasFactory;
 
+    public $table = 'form_pendaftarans';
+
     protected $fillable = [
         'user_id',
         'profil_bisnis',
@@ -19,4 +21,9 @@ class FormPendaftaran extends Model
         'jumlah_pegawai',
         'projeksi_keuangan',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
